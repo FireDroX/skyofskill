@@ -19,16 +19,13 @@ const compactNumber = (number = Number) => {
   return shortValue + suffixes[suffixNum];
 };
 
-const formatNumberWithSpaces = (number = Number) => {
+const formatNumberWithSpaces = (number = 0) => {
   const numberString = number.toString();
   const groups = [];
-  let remainingDigits = numberString.length % 3 || 3;
-  for (let i = numberString.length - 3; i >= 0; i -= 3) {
-      groups.push(numberString.substr(i, 3));
+  for (let i = numberString.length; i > 0; i -= 3) {
+    groups.unshift(numberString.substring(Math.max(0, i - 3), i));
   }
-  groups.push(numberString.substr(0, remainingDigits));
-
-  return groups.reverse().join(' ');
+  return groups.join(' ');
 }
 
 function App() {
@@ -84,11 +81,20 @@ function App() {
     let _15min = calc15min(bloc, blocs);
     let _30sec = calc30sec(_15min);
     return (
-      <div>
-        <p>{compactNumber(bloc)} / bloc cassé<br />( {formatNumberWithSpaces(bloc)} )</p>
-        <p>{compactNumber(_30sec)} / 30 secondes<br />( {formatNumberWithSpaces(_30sec)} )</p>
-        <p>{compactNumber(_15min)} / 15 minutes<br />( {formatNumberWithSpaces(_15min)} )</p>
-      </div>
+      <>
+        <div>
+          <p>{compactNumber(bloc)} / bloc cassé</p>
+          <p>({formatNumberWithSpaces(bloc)})</p>
+        </div>
+        <div>
+          <p>{compactNumber(_30sec)} / 30 secondes</p>
+          <p>({formatNumberWithSpaces(_30sec)})</p>
+        </div>
+        <div>
+          <p>{compactNumber(_15min)} / 15 minutes</p>
+          <p>({formatNumberWithSpaces(_15min)})</p>
+        </div>
+      </>
     )
   }
 
@@ -96,8 +102,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
-          <div>
-            <input type="text" value={fortune} onChange={handleInputChangeFortune}/>
+          <div className="input-values">
+            <div>
+              <p>Fortune de votre pioche</p>
+              <input type="text" value={fortune} onChange={handleInputChangeFortune}/>
+            </div>
             <select defaultValue={mine} onChange={(e) => setMine(e.target.value)}>
               {prestiges.map((value, index) => (
                 <option value={index}>{value}</option>
@@ -108,13 +117,16 @@ function App() {
                 <option value={(index === 8 ? 10 : index + 1)}>{value}</option>
               ))}
             </select>
-            <input type="text" value={blocs} onChange={handleInputChangeBlocs}/>
+            <div>
+              <p>Blocs cassé / 15 minutes</p>
+              <input type="text" value={blocs} onChange={handleInputChangeBlocs}/>
+            </div>
           </div>
-          <div>
+          <div className='calc-values'>
             <CalcValues />
           </div>
           <div className="footer">
-            <p className="footer-title">Développer sous principe que 1 bloc cassé avec une fortune 0 est égal à :</p>
+            <p className="footer-title">Formulé selon le principe qu'un bloc cassé avec une fortune 0 équivaut à :"</p>
             <p className="footer-prestiges">
                 {prestiges.map((value, index) => (
                   value + " = " + formatNumberWithSpaces(f0[index])
