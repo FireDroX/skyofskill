@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 
+const { f0 } = require('./mines.json');
+
 const compactNumber = (number = Number) => {
   const suffixes = ["", "K", "M", "B", "T", "Q"];
   let suffixNum = Math.floor(("" + number).length / 3);
@@ -29,25 +31,6 @@ const formatNumberWithSpaces = (number = 0) => {
 }
 
 function App() {
-  const f0 = [
-    480,   // p5
-    750,   // p10
-    1250,  // p15
-    3000,  // p20
-    3750,  // p25
-    5600,  // p30
-    7000,  // p35
-    9500,  // p40
-    11500, // p45
-    14500, // p50
-    16000, // p55
-    18000, // p60
-    21000, // p65
-    24000, // p70
-    28000, // p75
-    32000, // p80
-    36000, // p85
-  ]
   const prestiges = Array.from({length: 17}, (_, i) => "Prestige " + (i * 5 + 5));
   const [ fortune, setFortune ] = useState(1900);
   const [ blocs, setBlocs ] = useState(17500);
@@ -55,26 +38,20 @@ function App() {
   const [ boost, setBoost ] = useState(7);
 
   const handleInputChangeFortune = (event) => {
-    const newValue = event.target.value.replace(/[^0-9]/g, '');
-    setFortune(newValue);
+    let newValue = event.target.value.replace(/[^0-9]/g, '');
+    if(newValue === '') newValue = 1;
+    setFortune(Number(newValue));
   };
 
   const handleInputChangeBlocs = (event) => {
-    const newValue = event.target.value.replace(/[^0-9]/g, '');
-    setBlocs(newValue);
+    let newValue = event.target.value.replace(/[^0-9]/g, '');
+    if(newValue === '') newValue = 1;
+    setBlocs(Number(newValue));
   };
 
-  const calcBloc = (fx = Number, pioche = Number, booster = Number) => {
-    return Math.round(fx * (pioche + 1) * booster);
-  }
-
-  const calc15min = (rendement = Number, blocs = Number) => {
-    return Math.round(rendement * blocs);
-  }
-
-  const calc30sec = (_15min = Number) => {
-    return Math.round(_15min / 30);
-  }
+  const calcBloc = (fx = Number, pioche = Number, booster = Number) => Math.round(fx * (pioche + 1) * booster);
+  const calc15min = (rendement = Number, blocs = Number) => Math.round(rendement * blocs); 
+  const calc30sec = (_15min = Number) => Math.round(_15min / 30);
 
   const CalcValues = () => {
     let bloc = calcBloc(f0[mine], fortune, boost);
