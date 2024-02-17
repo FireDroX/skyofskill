@@ -89,18 +89,19 @@
   --accent95: hsl(194, 40%, 55%, 95%);
 }
 
-.App {
-  text-align: center;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--bg);
-}
-
-
 
 body {
   font-family: 'Poppins';
   font-weight: 400;
+  width: 100%;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  background-color: var(--bg);
+  width: 100%;
+  height: 100vh;
 }
 
 h1, h2, h3, h4, h5 {

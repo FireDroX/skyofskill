@@ -7,7 +7,7 @@
 }
 
 .minage-values {
-  width: fit-content;
+  width: 27rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -109,3 +109,20 @@
 
 .footer > h5 { color: var(--text85) }
 .footer > small { color: var(--text70); }
+
+@media (max-width: 824px) {
+  .App {
+    height: 150vh;
+  }
+
+  .minage-values {
+    width: 13rem;
+    justify-content: center;
+    border-radius: 10%;
+    gap: 3rem;
+  }
+
+  .footer {
+    width: 24rem;
+  }
+}

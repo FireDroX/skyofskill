@@ -11,10 +11,10 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path='/' element={<Minage />}/>
+        <Route path='/minage' element={<Minage />}/>
 
         {/* REDIRECT WHEN NOT A PATH */}
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<Navigate to="/minage" />} />
       </Routes>
     </>
   )

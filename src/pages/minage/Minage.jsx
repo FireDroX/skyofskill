@@ -90,7 +90,7 @@ const Minage = () => {
   }
 
   return (
-    <div className="App">
+    <section className="App">
       <div>
         <div className='minage-values'>
           <div className="input-values">
@@ -132,7 +132,7 @@ const Minage = () => {
           </small>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
