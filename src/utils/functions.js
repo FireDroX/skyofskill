@@ -2,11 +2,9 @@ export const compactNumber = (number = Number) => {
   const suffixes = ["", "K", "M", "B", "T", "Q"];
   let suffixNum = Math.floor(("" + number).length / 3);
   
-  let shortValue = parseFloat((suffixNum !== 0 ? (number / Math.pow(1000, suffixNum)) : number).toPrecision(4));
+  let shortValue = parseFloat((suffixNum !== 0 ? (number / Math.pow(1000, suffixNum)) : number).toPrecision(3));
   
-  if (shortValue % 1 !== 0 && !(shortValue < 1 && suffixNum > 0)) {
-      shortValue = shortValue.toFixed(2);
-  }
+  if (shortValue % 1 !== 0 && !(shortValue < 1 && suffixNum > 0)) shortValue = shortValue.toFixed(1);
   
   if (shortValue < 1 && suffixNum > 0) {
     shortValue = shortValue.toFixed(3);

@@ -4,43 +4,43 @@ import { compactNumber, formatNumberWithSpaces } from "../../utils/functions";
 import { useState } from 'react';
 import { FaCoins } from "react-icons/fa6";
 
-
-const { f0 } = require('../../utils/mines.json');
+const { mines, boosts } = require('../../utils/values.json');
 
 const Minage = () => {
-  const prestiges = Array.from({length: 17}, (_, i) => "Prestige " + (i * 5 + 5));
   const [ fortune, setFortune ] = useState(1900);
   const [ blocs, setBlocs ] = useState(17000);
   const [ mine, setMine ] = useState(13);
-  const [ boost, setBoost ] = useState(7);
+  const [ boost, setBoost ] = useState(12);
 
-  const handleInputChangeFortune = (event) => {
-    let newValue = event.target.value.replace(/[^0-9]/g, '');
+  const namesTable = [];
+  for (let i = 0; i < mines.length; i += 9) {
+      namesTable.push(mines.slice(i, i + 9));
+  }
+
+  const handleInputChange = (e, v) => {
+    let newValue = e.target.value.replace(/[^0-9]/g, '');
     if(newValue === '') newValue = 1;
-    setFortune(Number(newValue));
-  };
+    if(newValue > 999999) newValue = 999999;
 
-  const handleInputChangeBlocs = (event) => {
-    let newValue = event.target.value.replace(/[^0-9]/g, '');
-    if(newValue === '') newValue = 1;
-    setBlocs(Number(newValue));
+    switch(v) {
+      case "fortune": setFortune(Number(newValue)); break;
+      case "blocs": setBlocs(Number(newValue)); break;
+      default: break;
+    }
   };
-
-  const calcBloc = (fx = Number, pioche = Number, booster = Number) => Math.round(fx * (pioche + 1) * booster);
-  const calc15min = (rendement = Number, blocs = Number) => Math.round(rendement * blocs); 
-  const calc30sec = (_15min = Number) => Math.round(_15min / 30);
 
   const CalcValues = () => {
-    let bloc = calcBloc(f0[mine], fortune, boost);
-    let _15min = calc15min(bloc, blocs);
-    let _30sec = calc30sec(_15min);
+    const bloc = Math.round(mines[mine].value * (fortune + 1) * boosts[boost].multiplicateur);
+    const _15min = Math.round(bloc * blocs); 
+    const _30sec = Math.round(_15min / 30);
+
     return (
       <>
         <div>
           <div>
             <h4>{compactNumber(bloc)}</h4>
             <FaCoins />
-            <h5>/ Bloc</h5>
+            <h6>/ Bloc</h6>
           </div>
           <small>( {formatNumberWithSpaces(bloc)} <FaCoins />)</small>
         </div>
@@ -48,7 +48,7 @@ const Minage = () => {
           <div>
             <h4>{compactNumber(_30sec)}</h4>
             <FaCoins />
-            <h5>/ 30s</h5>
+            <h6>/ 30s</h6>
           </div>
           <small>( {formatNumberWithSpaces(_30sec)} <FaCoins />)</small>
         </div>
@@ -56,7 +56,7 @@ const Minage = () => {
           <div>
             <h4>{compactNumber(_15min)}</h4>
             <FaCoins />
-            <h5>/ 15min</h5>  
+            <h6>/ 15min</h6>  
           </div>
           <small>( {formatNumberWithSpaces(_15min)} <FaCoins />)</small>
         </div>
@@ -71,27 +71,27 @@ const Minage = () => {
           <div className="input-values">
             <div>
               <small>Fortune de votre pioche</small>
-              <input type="text" value={fortune} onChange={handleInputChangeFortune}/>
+              <input type="text" value={fortune} onChange={(e) => handleInputChange(e, "fortune")}/>
             </div>
             <div>
               <small>Votre mine prestige</small>
               <select defaultValue={mine} onChange={(e) => setMine(e.target.value)}>
-                {prestiges.map((value, index) => (
-                  <option value={index}>{value}</option>
+                {mines.map((mine, index) => (
+                  <option key={index} value={index}>{mine.name}</option>
                 ))}
               </select>
             </div>
             <div>
               <small>Votre boost de minage</small>
               <select defaultValue={boost} onChange={(e) => setBoost(e.target.value)}>
-                {Array.from({length: 9}, (_, i) => "Boost x" + (i === 0 ? "0" : (i === 8 ? "10" : i + 1))).map((value, index) => (
-                  <option value={(index === 8 ? 10 : index + 1)}>{value}</option>
+                {boosts.map((b, index) => (
+                  <option key={index} value={index}>{b.name}</option>
                 ))}
               </select>
             </div>
             <div>
               <small>Blocs cassé / 15 minutes</small>
-              <input type="text" value={blocs} onChange={handleInputChangeBlocs}/>
+              <input type="text" value={blocs} onChange={(e) => handleInputChange(e, "blocs")}/>
             </div>
           </div>
           <div className='calc-values'>
@@ -99,12 +99,26 @@ const Minage = () => {
           </div>
         </div>
         <div className="footer">
-          <h5>Formulé selon le principe qu'un bloc cassé avec une fortune 0 équivaut à :</h5>
-          <small>
-              {prestiges.map((value, index) => (
-                value + " = " + formatNumberWithSpaces(f0[index])
-              )).join(" ; ")}
-          </small>
+          <h6>Formulé selon le principe qu'un bloc cassé avec une fortune 0 équivaut à :</h6>
+          <table>
+            <tbody className='parent'>
+                {mines.map((mine, index) => (
+                  <td key={index}>
+                    <small>{mine.name} = {formatNumberWithSpaces(mine.value)}</small>
+                  </td>
+                ))}
+
+                {/* {namesTable.map((rowData, rowIndex) => (
+                    <tr key={rowIndex}>
+                        {rowData.map((mine, columnIndex) => (
+                            <td key={columnIndex}>
+                              <small>{mine.name} = {formatNumberWithSpaces(mine.value)}</small>
+                            </td>
+                        ))}
+                    </tr>
+                ))} */}
+            </tbody>
+          </table>
         </div>
       </div>
     </section>

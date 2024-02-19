@@ -96,23 +96,35 @@
 
 .calc-values > div > div > h4 { color: #FFFF55; }
 .calc-values > div > div > svg { color: #FFAA00; }
-.calc-values > div > div > h5 { color: var(--text70); }
+.calc-values > div > div > h6 { color: var(--text70); }
 
 .footer {
-  margin-top: 5rem;
-  width: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.footer > h5 { color: var(--text85) }
-.footer > small { color: var(--text70); }
+.footer > h6 { color: var(--text85) }
+.footer small { color: var(--text70); }
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding-bottom: 2rem;
+} 
+
+.footer td {
+  border: 1px solid var(--text55);
+  padding: .3rem;
+}
 
 @media (max-width: 824px) {
   .App {
-    height: 200vh;
+    height: 230vh;
   }
 
   .minage-values {
@@ -125,4 +137,12 @@
   .footer {
     width: 24rem;
   }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  } 
 }
