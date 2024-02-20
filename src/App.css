@@ -5,11 +5,11 @@ body {
   font-weight: 400;
   width: 100%;
   height: 100vh;
+  background-color: var(--bg);
 }
 
 .App {
   text-align: center;
-  background-color: var(--bg);
   width: 100%;
   height: 100%;
 }

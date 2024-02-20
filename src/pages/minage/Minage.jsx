@@ -107,16 +107,6 @@ const Minage = () => {
                     <small>{mine.name} = {formatNumberWithSpaces(mine.value)}</small>
                   </td>
                 ))}
-
-                {/* {namesTable.map((rowData, rowIndex) => (
-                    <tr key={rowIndex}>
-                        {rowData.map((mine, columnIndex) => (
-                            <td key={columnIndex}>
-                              <small>{mine.name} = {formatNumberWithSpaces(mine.value)}</small>
-                            </td>
-                        ))}
-                    </tr>
-                ))} */}
             </tbody>
           </table>
         </div>

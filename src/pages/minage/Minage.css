@@ -123,10 +123,6 @@
 }
 
 @media (max-width: 824px) {
-  .App {
-    height: 230vh;
-  }
-
   .minage-values {
     width: 13rem;
     justify-content: center;
