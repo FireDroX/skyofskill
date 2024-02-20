@@ -52,8 +52,14 @@ const Prestiges = () => {
                             <YAxis dataKey="name" type="category" reversed>
                                 <Label value="Prestiges" offset={10} position="insideLeft" angle={-90} />
                             </YAxis>
-                            <Tooltip />
-                            <Line type="monotone" dataKey="prix" stroke="#8884d8" />
+                            <Tooltip contentStyle={{
+                                backgroundColor: "var(--bg)",
+                                border: "var(--primary)",
+                                color: "var(--text)",
+                                borderRadius: "25%",
+                                textTransform: "uppercase"
+                            }}/>
+                            <Line type="monotone" dataKey="prix" stroke="var(--primary)" />
                         </LineChart>
                         <div className="input-btns">
                             <button onClick={() => handleBtn("-")}>-</button>
