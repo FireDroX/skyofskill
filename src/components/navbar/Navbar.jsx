@@ -7,6 +7,7 @@ import { GiWarPick } from "react-icons/gi";
 
 const Navbar = () => {
     const navigate = useNavigate();
+    
     const handleNavigate = (goTo = String) => {
         navigate("/sos/" + goTo);
         document.title = "SkyOfSkill - " + goTo.toString().toUpperCase();
