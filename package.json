@@ -1,7 +1,7 @@
 {
   "name": "minage_skyofskill",
   "version": "0.1.0",
-  "homepage": "https://firedrox.github.io/minage/",
+  "homepage": "https://firedrox.github.io/skyofskill/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

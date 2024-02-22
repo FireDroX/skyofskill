@@ -1,0 +1,60 @@
+.txt-minage, .txt-prestiges, .txt-stuffs { color: var(--text65); }
+
+.txt-minage > small,
+.txt-prestiges > small,
+.txt-stuffs > small {
+    position: absolute;
+    width: 8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.txt-minage > svg,
+.txt-prestiges > svg,
+.txt-stuffs > svg {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.txt-minage > small {
+    top: 9.5rem;
+    left: 50%;
+    transform: translateX(-12.5rem);
+}
+
+.txt-minage > svg {
+    top: 4.5rem;
+    left: 50%;
+    transform: translateX(-12rem) rotate(-210deg);
+}
+
+.txt-prestiges > small {
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-2.5rem);
+}
+
+.txt-prestiges > svg {
+    top: 4em;
+    left: 50%;
+    transform: translateX(-1.5rem) rotate(240deg);
+}
+
+.txt-stuffs > small {
+    top: 8.5rem;
+    left: 50%;
+    transform: translateX(5.5rem);
+}
+
+.txt-stuffs > svg {
+    top: 4.5rem;
+    left: 50%;
+    transform: translateX(9.5rem) rotate(-50deg);
+}
+
+@media (max-width: 465px) {
+    .txt-minage > small { transform: translateX(-10.5rem); }
+    .txt-minage > svg { transform: translateX(-8rem) scaleX(-1) rotate(-210deg); }
+    .txt-stuffs > svg { transform: translateX(4.5rem)  scaleX(-1) rotate(-50deg); }
+}

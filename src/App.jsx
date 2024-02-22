@@ -14,13 +14,13 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path='/sos' element={<Home />} />
-        <Route path='/sos/minage' element={<Minage />}/>
-        <Route path='/sos/prestiges' element={<Prestiges />}/>
-        <Route path='/sos/stuffs' element={<Stuffs />}/>
+        <Route path='/skyofskill' element={<Home />} />
+        <Route path='/skyofskill/minage' element={<Minage />}/>
+        <Route path='/skyofskill/prestiges' element={<Prestiges />}/>
+        <Route path='/skyofskill/stuffs' element={<Stuffs />}/>
 
         {/* REDIRECT WHEN NOT A PATH */}
-        <Route path="*" element={<Navigate to="/sos" />} />
+        <Route path="*" element={<Navigate to="/skyofskill" />} />
       </Routes>
     </>
   )

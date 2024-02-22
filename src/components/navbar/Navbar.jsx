@@ -9,7 +9,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     
     const handleNavigate = (goTo = String) => {
-        navigate("/sos/" + goTo);
+        navigate("/skyofskill/" + goTo);
         document.title = "SkyOfSkill - " + goTo.toString().toUpperCase();
     }; 
     
