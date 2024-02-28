@@ -23,10 +23,6 @@ const Navbar = () => {
                 <h5>Prestiges</h5>
                 <GiWarPick />
             </div>
-            <div onClick={() => handleNavigate("stuffs")}>
-                <h5>Stuffs</h5>
-                <FaKey />
-            </div>
         </div>
     )
 }
