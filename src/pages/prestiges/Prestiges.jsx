@@ -46,12 +46,10 @@ const Prestiges = () => {
                             data={newPrestige[page]}
                         >
                             <CartesianGrid strokeDasharray="5 5" />
-                            <XAxis dataKey="prix" tickFormatter={compactNumber} type="number" domain={['dataMin', 'dataMax']}>
-                                <Label value="Prix des prestiges" offset={0} position="insideBottom"/>
+                            <YAxis dataKey="prix" tickFormatter={compactNumber} type="number" domain={['dataMin', 'dataMax']} reversed />
+                            <XAxis dataKey="name" type="category">
+                                <Label value="Prestiges" offset={0} position="insideBottom" />
                             </XAxis>
-                            <YAxis dataKey="name" type="category" reversed>
-                                <Label value="Prestiges" offset={10} position="insideLeft" angle={-90} />
-                            </YAxis>
                             <Tooltip contentStyle={{
                                 backgroundColor: "var(--bg)",
                                 border: "var(--primary)",
@@ -59,7 +57,7 @@ const Prestiges = () => {
                                 borderRadius: "25%",
                                 textTransform: "uppercase"
                             }}/>
-                            <Line type="monotone" dataKey="prix" stroke="var(--primary)" />
+                            <Line type="monotone" dataKey="name" stroke="var(--primary)" />
                         </LineChart>
                         <div className="input-btns">
                             <button onClick={() => handleBtn("-")}>-</button>
