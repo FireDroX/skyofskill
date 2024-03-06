@@ -7,7 +7,6 @@ import {
   YAxis,
   Tooltip,
   CartesianGrid,
-  Label,
 } from "recharts";
 import { compactNumber, formatNumberWithSpaces } from "../../utils/functions";
 import { FaCoins } from "react-icons/fa6";
