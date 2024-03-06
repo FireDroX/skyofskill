@@ -8,3 +8,4 @@
 - Deleted `file` 🔫
 - New BUILD 💿
 - Merged `pull request` 🔗
+- Mass Update 🎳 : `description`

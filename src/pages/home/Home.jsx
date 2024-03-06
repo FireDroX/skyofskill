@@ -1,17 +1,25 @@
 import "./Home.css";
 
 const Home = () => {
-    return (
-        <section className="App">
-            <div>
-                <div className="txt-minage">
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                        width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
-                        preserveAspectRatio="xMidYMid meet">
-
-                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        fill="var(--text85)" stroke="none">
-                            <path d="M3117 4277 l-37 -32 64 -77 c297 -355 453 -745 407 -1012 -27 -157
+  return (
+    <section className="App">
+      <div>
+        <div className="txt-minage">
+          <svg
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="512.000000pt"
+            height="512.000000pt"
+            viewBox="0 0 512.000000 512.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g
+              transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+              fill="var(--text85)"
+              stroke="none"
+            >
+              <path
+                d="M3117 4277 l-37 -32 64 -77 c297 -355 453 -745 407 -1012 -27 -157
                             -80 -234 -197 -287 -98 -44 -208 -59 -524 -69 -375 -12 -493 -29 -618 -88 -81
                             -37 -173 -131 -200 -204 -49 -131 -51 -261 -6 -396 13 -40 24 -74 24 -77 0 -2
                             -35 -30 -77 -62 -191 -142 -495 -474 -643 -702 -15 -23 -16 -22 -125 110 -149
@@ -25,19 +33,28 @@ const Home = () => {
                             307 17 354 25 294 54 430 222 431 532 0 278 -145 614 -405 938 -99 123 -93
                             119 -138 82z m-130 -2068 c178 -24 348 -111 428 -219 166 -227 -6 -375 -415
                             -357 -274 13 -534 105 -714 253 -35 29 -74 66 -86 84 -22 30 -22 32 -4 45 11
-                            8 64 37 119 64 145 71 269 108 455 135 53 7 142 6 217 -5z"/>
-                        </g>
-                    </svg>
-                    <small>Combien la mine vous donnera.</small>
-                </div>
-                <div className="txt-prestiges">
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                        width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
-                        preserveAspectRatio="xMidYMid meet">
-
-                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                            fill="var(--text85)" stroke="none">
-                            <path d="M3109 3819 c-298 -70 -475 -353 -455 -729 14 -292 137 -583 369 -874
+                            8 64 37 119 64 145 71 269 108 455 135 53 7 142 6 217 -5z"
+              />
+            </g>
+          </svg>
+          <small>Combien la mine vous donnera.</small>
+        </div>
+        <div className="txt-prestiges">
+          <svg
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="512.000000pt"
+            height="512.000000pt"
+            viewBox="0 0 512.000000 512.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g
+              transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+              fill="var(--text85)"
+              stroke="none"
+            >
+              <path
+                d="M3109 3819 c-298 -70 -475 -353 -455 -729 14 -292 137 -583 369 -874
                             l67 -84 -74 -71 c-263 -255 -572 -427 -856 -477 -126 -22 -396 -14 -520 14
                             -225 53 -403 153 -556 314 -99 104 -198 262 -233 369 l-12 37 -46 -14 c-26 -8
                             -48 -16 -50 -18 -7 -7 45 -130 87 -206 239 -435 686 -656 1235 -609 366 31
@@ -49,15 +66,16 @@ const Home = () => {
                             -54 253 -255 396 -555 394 -52 -1 -111 -5 -131 -10z m255 -104 c250 -44 363
                             -210 335 -489 -21 -211 -119 -447 -289 -704 -77 -116 -233 -312 -248 -312 -11
                             1 -91 102 -160 203 -108 158 -189 343 -228 519 -23 102 -23 312 -1 402 57 231
-                            247 390 472 395 22 0 76 -6 119 -14z"/>
-                        </g>
-                    </svg>
-                    <small>Le prix de vos prestiges.</small>
-                </div>
-                {/* TODO: Add more things to the Home menu */}
-            </div>
-        </section>
-    )
-}
+                            247 390 472 395 22 0 76 -6 119 -14z"
+              />
+            </g>
+          </svg>
+          <small>Le prix de vos prestiges.</small>
+        </div>
+        {/* TODO: Add more things to the Home menu */}
+      </div>
+    </section>
+  );
+};
 
 export default Home;
