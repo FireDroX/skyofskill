@@ -10,6 +10,8 @@ import Prestiges from "./pages/prestiges/Prestiges";
 // TODO: Add "memory" to the pages (w/ Context & useContext())
 // NOTE: https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete/7256029-partagez-vos-donnees-avec-le-contexte-et-usecontext
 
+// TODO: Make the pages changes without changing the path, so github dont die when it changes
+
 function App() {
   return (
     <>
