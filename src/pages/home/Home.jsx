@@ -52,9 +52,9 @@ const Home = () => {
                             247 390 472 395 22 0 76 -6 119 -14z"/>
                         </g>
                     </svg>
-
                     <small>Le prix de vos prestiges.</small>
                 </div>
+                {/* TODO: Add more things to the Home menu */}
             </div>
         </section>
     )
