@@ -6,6 +6,11 @@ import { FaCoins } from "react-icons/fa6";
 
 const { prestiges } = require('../../utils/values.json');
 
+/**
+ * FIXME: Make the chart smaller on small screens so it can fit in the div "minage-prestige"
+ * NOTE: Make more pages with half the values in each.
+ */
+
 const Prestiges = () => {
     const [ page, setPage ] = useState(4);
     const [ currentPrestige, setCurrentPrestige ] = useState(70);
