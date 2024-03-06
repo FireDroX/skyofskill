@@ -14,26 +14,43 @@ import { FaCoins } from "react-icons/fa6";
 
 const { prestiges } = require("../../utils/values.json");
 
-/**
- * FIXME: Make the chart smaller on small screens so it can fit in the div "minage-prestige"
- * NOTE: Make more pages with half the values in each.
- */
-
 const Prestiges = () => {
-  const [page, setPage] = useState(4);
+  const [page, setPage] = useState(0);
   const [currentPrestige, setCurrentPrestige] = useState(70);
   const [nextPrestige, setNextPrestige] = useState(85);
   const [price, setPrice] = useState(0);
 
-  const newPrestige = [];
+  const [isSmallSize, setIsSmallSize] = useState(() => {
+    const width = window.innerWidth;
+    if (width <= 824) return Number(1);
+    else return Number(0);
+  });
+
+  useEffect(() => {
+    const handleWidth = () => {
+      const width = window.innerWidth;
+      if (width <= 824) return setIsSmallSize(Number(1));
+      else return setIsSmallSize(Number(0));
+    };
+    window.addEventListener("resize", handleWidth);
+    return () => {
+      setPage(Number(0));
+      window.removeEventListener("resize", handleWidth);
+    };
+  }, [isSmallSize]);
+
+  const newPrestige = [[], []];
   for (let i = 0; i < prestiges.length; i += 17) {
-    newPrestige.push(prestiges.slice(i, i + 17));
+    newPrestige[0].push(prestiges.slice(i, i + 17));
+  }
+  for (let i = 0; i < prestiges.length; i += 5) {
+    newPrestige[1].push(prestiges.slice(i, i + 5));
   }
 
   const handleBtn = (e) => {
     switch (e) {
       case "+":
-        if (page !== 4) setPage(page + 1);
+        if (page !== newPrestige[isSmallSize].length - 1) setPage(page + 1);
         break;
       case "-":
         if (page !== 0) setPage(page - 1);
@@ -60,40 +77,45 @@ const Prestiges = () => {
       <div>
         <div className="minage-prestige">
           <div className="input-prestige">
-            <LineChart
-              layout="vertical"
-              width={500}
-              height={300}
-              data={newPrestige[page]}
-            >
-              <CartesianGrid strokeDasharray="5 5" />
-              <YAxis
-                dataKey="prix"
-                tickFormatter={compactNumber}
-                type="number"
-                domain={["dataMin", "dataMax"]}
-                reversed
-              />
-              <XAxis dataKey="name" type="category">
-                <Label value="Prestiges" offset={0} position="insideBottom" />
-              </XAxis>
-              <Tooltip
-                contentStyle={{
-                  backgroundColor: "var(--bg)",
-                  border: "var(--primary)",
-                  color: "var(--text)",
-                  borderRadius: "25%",
-                  textTransform: "uppercase",
-                }}
-              />
-              <Line type="monotone" dataKey="name" stroke="var(--primary)" />
-            </LineChart>
+            <div className="input-chart">
+              <LineChart
+                layout="vertical"
+                width={isSmallSize === 0 ? 500 : 280}
+                height={300}
+                data={newPrestige[isSmallSize][page]}
+              >
+                <CartesianGrid strokeDasharray="5 5" />
+                <YAxis
+                  dataKey="prix"
+                  tickFormatter={compactNumber}
+                  type="number"
+                  domain={["dataMin", "dataMax"]}
+                  reversed
+                />
+                <XAxis dataKey="name" type="category" />
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: "var(--bg)",
+                    border: "var(--primary)",
+                    color: "var(--text)",
+                    borderRadius: "25%",
+                    textTransform: "uppercase",
+                  }}
+                />
+                <Line type="monotone" dataKey="name" stroke="var(--primary)" />
+              </LineChart>
+            </div>
             <div className="input-btns">
               <button onClick={() => handleBtn("-")}>-</button>
               <button onClick={() => handleBtn("+")}>+</button>
             </div>
             <small>
-              Prix de {newPrestige[page][0].name} à {newPrestige[page][16].name}
+              Prix de {newPrestige[isSmallSize][page][0].name} à{" "}
+              {
+                newPrestige[isSmallSize][page][
+                  newPrestige[isSmallSize][page].length - 1
+                ].name
+              }
             </small>
           </div>
           <div className="calc-prestige">

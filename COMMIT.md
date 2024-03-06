@@ -1,11 +1,10 @@
 ### List of commit messages
 
-- Added FIXMEs 🩹
-- Added TODOs 💡
-- Added NOTEs 📝
-- Created `file` ✨
-- Updated `file` 🔨
-- Deleted `file` 🔫
+- Add FIXMEs 🩹
+- Add TODOs 💡
+- Add NOTEs 📝
+- Create `file` ✨
+- Update `file` 🔨
+- Delete `file` 🔫
 - New BUILD 💿
-- Merged `pull request` 🔗
 - Mass Update 🎳 : `description`
