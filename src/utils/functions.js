@@ -24,5 +24,4 @@ export const formatNumberWithSpaces = (number = 0) => {
 
   if (groups.length > 5) return "That number is too big..."
   else return groups.join(' ');
-
 }
