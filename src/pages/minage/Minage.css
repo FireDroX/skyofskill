@@ -129,7 +129,7 @@
   padding-bottom: 2rem;
 }
 
-.footer td {
+.footer tr {
   border: 1px solid var(--text55);
   padding: 0.3rem;
 }

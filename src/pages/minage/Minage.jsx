@@ -137,11 +137,13 @@ const Minage = () => {
           <table>
             <tbody className="parent">
               {mines.map((mine, index) => (
-                <td key={index}>
-                  <small>
-                    {mine.name} = {formatNumberWithSpaces(mine.value)}
-                  </small>
-                </td>
+                <tr key={index}>
+                  <td>
+                    <small>
+                      {mine.name} = {formatNumberWithSpaces(mine.value)}
+                    </small>
+                  </td>
+                </tr>
               ))}
             </tbody>
           </table>
