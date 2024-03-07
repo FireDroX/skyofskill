@@ -1,5 +1,5 @@
 import "./Prestiges.css";
-import { useState, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import {
   LineChart,
   Line,
@@ -11,13 +11,21 @@ import {
 import { compactNumber, formatNumberWithSpaces } from "../../utils/functions";
 import { FaCoins } from "react-icons/fa6";
 
+import { UserContext } from "../../utils/UserContext";
+
 const { prestiges } = require("../../utils/values.json");
 
 const Prestiges = () => {
-  const [page, setPage] = useState(0);
-  const [currentPrestige, setCurrentPrestige] = useState(70);
-  const [nextPrestige, setNextPrestige] = useState(85);
-  const [price, setPrice] = useState(0);
+  const {
+    page,
+    setPage,
+    currentPrestige,
+    setCurrentPrestige,
+    nextPrestige,
+    setNextPrestige,
+    price,
+    setPrice,
+  } = useContext(UserContext);
 
   const [isSmallSize, setIsSmallSize] = useState(() => {
     const width = window.innerWidth;
