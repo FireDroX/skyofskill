@@ -7,7 +7,6 @@ import { FaCoins } from "react-icons/fa6";
 
 import { UserContext } from "../../utils/UserContext";
 
-
 const Minage = () => {
   const {
     fortune,
@@ -93,6 +92,7 @@ const Minage = () => {
             <div>
               <small>Fortune de votre pioche</small>
               <input
+                name="Fortune de votre pioche"
                 type="text"
                 value={fortune}
                 onChange={(e) => handleInputChange(e, "fortune")}
@@ -101,6 +101,7 @@ const Minage = () => {
             <div>
               <small>Votre mine prestige</small>
               <select
+                name="Votre mine prestige"
                 defaultValue={mine}
                 onChange={(e) => setMine(e.target.value)}
               >
@@ -114,6 +115,7 @@ const Minage = () => {
             <div>
               <small>Votre boost de minage</small>
               <select
+                name="Votre boost de minage"
                 defaultValue={boost}
                 onChange={(e) => setBoost(e.target.value)}
               >
@@ -127,6 +129,7 @@ const Minage = () => {
             <div>
               <small>Blocs cassé / 15 minutes</small>
               <input
+                name="Blocs cassé / 15 minutes"
                 type="text"
                 value={blocs}
                 onChange={(e) => handleInputChange(e, "blocs")}
