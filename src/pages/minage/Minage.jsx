@@ -1,12 +1,12 @@
 import "./Minage.css";
 import { compactNumber, formatNumberWithSpaces } from "../../utils/functions";
+import { mines, boosts } from "../../utils/values";
 
 import { useContext } from "react";
 import { FaCoins } from "react-icons/fa6";
 
 import { UserContext } from "../../utils/UserContext";
 
-const { mines, boosts } = require("../../utils/values.json");
 
 const Minage = () => {
   const {

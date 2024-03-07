@@ -9,11 +9,10 @@ import {
   CartesianGrid,
 } from "recharts";
 import { compactNumber, formatNumberWithSpaces } from "../../utils/functions";
+import { prestiges } from "../../utils/values";
 import { FaCoins } from "react-icons/fa6";
 
 import { UserContext } from "../../utils/UserContext";
-
-const { prestiges } = require("../../utils/values.json");
 
 const Prestiges = () => {
   const {
