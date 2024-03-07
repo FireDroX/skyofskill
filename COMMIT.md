@@ -8,3 +8,4 @@
 - Delete `file` 🔫
 - New BUILD 💿
 - Mass Update 🎳 : `description`
+- Cleaned the code 🚿

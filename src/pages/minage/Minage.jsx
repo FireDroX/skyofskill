@@ -1,16 +1,24 @@
 import "./Minage.css";
 import { compactNumber, formatNumberWithSpaces } from "../../utils/functions";
+import { mines, boosts } from "../../utils/values";
 
-import { useState } from "react";
+import { useContext } from "react";
 import { FaCoins } from "react-icons/fa6";
 
-const { mines, boosts } = require("../../utils/values.json");
+import { UserContext } from "../../utils/UserContext";
+
 
 const Minage = () => {
-  const [fortune, setFortune] = useState(1900);
-  const [blocs, setBlocs] = useState(17000);
-  const [mine, setMine] = useState(13);
-  const [boost, setBoost] = useState(12);
+  const {
+    fortune,
+    setFortune,
+    blocs,
+    setBlocs,
+    mine,
+    setMine,
+    boost,
+    setBoost,
+  } = useContext(UserContext);
 
   const namesTable = [];
   for (let i = 0; i < mines.length; i += 9) {

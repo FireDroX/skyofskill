@@ -2,7 +2,7 @@ import "./Navbar.css";
 
 import { useNavigate } from "react-router-dom";
 
-import { FaCoins, FaKey } from "react-icons/fa6";
+import { FaCoins } from "react-icons/fa6";
 import { GiWarPick } from "react-icons/gi";
 
 const Navbar = () => {
