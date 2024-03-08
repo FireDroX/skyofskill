@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { FaCoins } from "react-icons/fa6";
 import { GiWarPick } from "react-icons/gi";
 
+const logo = require("../../assets/logo.png");
+
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -15,6 +17,14 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
+      <div className="navbar-logo">
+        <img
+          src={logo}
+          alt="Logo"
+          draggable={false}
+          onClick={() => handleNavigate("")}
+        />
+      </div>
       <div onClick={() => handleNavigate("minage")}>
         <h5>Minage</h5>
         <FaCoins />
@@ -28,5 +38,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// TODO: Add a Logo on the top left of the navbar
