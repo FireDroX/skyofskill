@@ -22,7 +22,7 @@ const Navbar = () => {
           src={logo}
           alt="Logo"
           draggable={false}
-          onClick={() => handleNavigate("")}
+          onClick={() => handleNavigate("home")}
         />
       </div>
       <div onClick={() => handleNavigate("minage")}>
