@@ -72,7 +72,7 @@ const Home = () => {
           </svg>
           <small>Le prix de vos prestiges.</small>
         </div>
-        {/* TODO: Add more things to the Home menu */}
+        {/* TODO: Add a Minecraft text color converter (w/ like each will be added one by one) */}
       </div>
     </section>
   );
