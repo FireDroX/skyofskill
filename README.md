@@ -1,20 +1,25 @@
+<a name="readme-top"></a>
+
 <div align="center">
   <img src="src/assets/logo.png" alt="Logo" width="80" height="80">
-  <h3 align="center">A <u>SkyOfSkill</u> WebPage</h3>
+  <h3 align="center">SkyOfSkill ToolBox</h3>
 </div>
 
 <br />
 
-<ol>
-  <li>
-    <a href="#features">Features</a>
-    <ul>
-      <li><a href="#minage">Minage</a></li>
-      <li><a href="#prestiges">Prestiges</a></li>
-      <li><a href="#colored-text">Colored Text</a></li>
-    </ul>
-  </li>
-</ol>
+<details>
+  <summary>Table des Matières</summary>
+  <ol>
+    <li>
+      <a href="#features">Features</a>
+      <ul>
+        <li><a href="#minage">Minage</a></li>
+        <li><a href="#prestiges">Prestiges</a></li>
+        <li><a href="#colored-text">Colored Text</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
 
 <br />
 
@@ -34,6 +39,8 @@ const blocValue = mineValue * (picFortune + 1) * multiplyBoost;
 
 Avec ce calcul nous pouvons estimer combien faisons nous toute les 30 secondes et toutes les 15 minutes.
 
+<p align="right">(<a href="#readme-top">début de page</a>)</p>
+
 ---
 
 ### Prestiges
@@ -51,6 +58,8 @@ export const prestiges = [
 ]
 ```
 
+<p align="right">(<a href="#readme-top">début de page</a>)</p>
+
 ---
 
 ### Colored Text
@@ -61,10 +70,13 @@ Formate un texte que tu souhaites avec des couleurs et des modifications infinie
 Hello World
 &fHello&r&4&l World&r
 ```
+
 ```
 Hi There
 §2§nHi§r§b§l There§r
 ```
+
+<p align="right">(<a href="#readme-top">début de page</a>)</p>
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
