@@ -57,11 +57,11 @@ export const prestiges = [
 
 Formate un texte que tu souhaites avec des couleurs et des modifications infinie !
 
-```sh
+```
 Hello World
 &fHello&r&4&l World&r
 ```
-```sh
+```
 Hi There
 §2§nHi§r§b§l There§r
 ```
