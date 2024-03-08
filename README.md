@@ -10,7 +10,7 @@
     <a href="#features">Features</a>
     <ul>
       <li><a href="#minage">Minage</a></li>
-      <li><a href="#prestige">Prestiges</a></li>
+      <li><a href="#prestiges">Prestiges</a></li>
       <li><a href="#colored-text">Colored Text</a></li>
     </ul>
   </li>
