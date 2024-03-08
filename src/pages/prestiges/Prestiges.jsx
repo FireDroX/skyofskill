@@ -128,6 +128,7 @@ const Prestiges = () => {
             <div>
               <h6>Votre prestige</h6>
               <select
+                name="Votre prestige"
                 defaultValue={currentPrestige}
                 onChange={(e) => setCurrentPrestige(e.target.value)}
               >
@@ -141,6 +142,7 @@ const Prestiges = () => {
             <div>
               <h6>Prestige souhaité</h6>
               <select
+                name="Prestige souhaité"
                 defaultValue={nextPrestige}
                 onChange={(e) => setNextPrestige(e.target.value)}
               >

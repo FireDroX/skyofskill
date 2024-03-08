@@ -28,3 +28,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// TODO: Add a Logo on the top left of the navbar

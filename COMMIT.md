@@ -6,6 +6,7 @@
 - Create `file` ✨
 - Update `file` 🔨
 - Delete `file` 🔫
+- Fixed `problem` 🔮
 - New BUILD 💿
 - Mass Update 🎳 : `description`
 - Cleaned the code 🚿
