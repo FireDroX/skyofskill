@@ -3,6 +3,8 @@ import "./Home.css";
 
 import { convertFinalText } from "../../utils/functions";
 
+// FIXME: Underline and Strokethrough not working together
+
 const Home = () => {
   const [isPrefix, setIsPrefix] = useState(false);
   const [text, setText] = useState("");
