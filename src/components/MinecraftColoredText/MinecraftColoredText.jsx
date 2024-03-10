@@ -36,6 +36,8 @@ const MinecraftColoredText = () => {
         newText.push(prefix + "r");
       }
       newText.unshift(prefix + id);
+
+      return true;
     });
 
     setFinalText([...finalText, newText.join("")]);
