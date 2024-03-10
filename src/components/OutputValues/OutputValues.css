@@ -1,0 +1,25 @@
+.calc-values {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.calc-values > div > div,
+.calc-values > div > small {
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.calc-values > div > div > h4 {
+  color: #ffff55;
+}
+.calc-values > div > div > svg {
+  color: #ffaa00;
+}
+.calc-values > div > div > h6 {
+  color: var(--text70);
+}
