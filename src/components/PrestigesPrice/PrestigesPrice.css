@@ -1,0 +1,70 @@
+.calc-prestige > div > small {
+  color: var(--text85);
+}
+
+.calc-prestige > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.calc-prestige > div > select {
+  background-color: var(--secondary80);
+  color: var(--text50);
+  text-align: center;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  padding: 0.4rem;
+  transition: 0.25s all ease-out;
+}
+
+.calc-prestige > div > select:hover,
+.calc-prestige > div > select:focus {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--text90);
+  outline: var(--text90) 1px solid;
+}
+
+.calc-prestige > div > select:hover > option,
+.calc-prestige > div > select:focus > option {
+  background-color: var(--bg);
+  font-size: 1rem;
+}
+
+.calc-prestige {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.calc-prestige > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.calc-prestige > div > div,
+.calc-prestige > div > h6,
+.calc-prestige > div > small {
+  height: 1.3rem;
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.calc-prestige > div > h6 {
+  margin: 0.5rem;
+}
+.calc-prestige > div > div > h4 {
+  color: #ffff55;
+}
+.calc-prestige > div > div > svg {
+  color: #ffaa00;
+}
+.calc-prestige > div > small {
+  color: var(--text70);
+}
