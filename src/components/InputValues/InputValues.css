@@ -1,0 +1,61 @@
+.input-values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.input-values > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-values > div > small {
+  color: var(--text85);
+}
+.input-values > div > input {
+  background-color: var(--secondary80);
+  color: var(--text50);
+  text-align: center;
+  border: none;
+  font-size: 1.333rem;
+  border-radius: 20px;
+  padding: 0.4rem;
+  width: 5rem;
+  transition: 0.25s all ease-out;
+}
+
+.input-values > div > input:hover,
+.input-values > div > input:focus {
+  background-color: transparent;
+  color: var(--text90);
+  outline: var(--text90) 1px solid;
+}
+
+.input-values > div > select {
+  background-color: var(--secondary80);
+  color: var(--text50);
+  text-align: center;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  padding: 0.4rem;
+  transition: 0.25s all ease-out;
+}
+
+.input-values > div > select:hover,
+.input-values > div > select:focus {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--text90);
+  outline: var(--text90) 1px solid;
+}
+
+.input-values > div > select:hover > option,
+.input-values > div > select:focus > option {
+  background-color: var(--bg);
+  font-size: 1rem;
+}
