@@ -87,10 +87,10 @@ const PrestigesChart = ({ page, setPage }) => {
         <button onClick={() => handleBtn("+")}>+</button>
       </div>
       <small>
-        Prix de {newPrestige[isSmallSize][page][0].name} à{" "}
+        Prix de {newPrestige[isSmallSize][page]?.[0]?.name} à{" "}
         {
-          newPrestige[isSmallSize][page][
-            newPrestige[isSmallSize][page].length - 1
+          newPrestige[isSmallSize][page]?.[
+            newPrestige[isSmallSize][page]?.length - 1
           ].name
         }
       </small>
