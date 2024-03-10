@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/skyofskill/static/css/main.a470c93b.css",
-    "main.js": "/skyofskill/static/js/main.99e1cca3.js",
+    "main.css": "/skyofskill/static/css/main.eab288d3.css",
+    "main.js": "/skyofskill/static/js/main.90741cf5.js",
     "index.html": "/skyofskill/index.html",
-    "main.a470c93b.css.map": "/skyofskill/static/css/main.a470c93b.css.map",
-    "main.99e1cca3.js.map": "/skyofskill/static/js/main.99e1cca3.js.map"
+    "main.eab288d3.css.map": "/skyofskill/static/css/main.eab288d3.css.map",
+    "main.90741cf5.js.map": "/skyofskill/static/js/main.90741cf5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a470c93b.css",
-    "static/js/main.99e1cca3.js"
+    "static/css/main.eab288d3.css",
+    "static/js/main.90741cf5.js"
   ]
 }
