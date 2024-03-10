@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > h6 {
+  color: var(--text85);
+}
+.footer small {
+  color: var(--text70);
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding-bottom: 2rem;
+}
+
+.footer tr {
+  border: 1px solid var(--text55);
+  padding: 0.3rem;
+}
