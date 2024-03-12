@@ -56,9 +56,4 @@
   .txt-prestiges > svg {
     transform: translateX(2rem) rotate(240deg);
   }
-
-  .minecraft-colors {
-    flex-direction: column;
-    width: 16rem;
-  }
 }
