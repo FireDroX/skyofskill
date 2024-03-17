@@ -9,6 +9,7 @@
   border-radius: 50px;
   padding: 3rem 2rem;
   color: var(--text45);
+  border: solid 2px var(--secondary5);
 }
 
 .minecraft-txt {
@@ -361,4 +362,11 @@ input:checked + .txt-slider:before {
   padding: 0.6rem;
   border-radius: 20px;
   color: var(--text85);
+}
+
+@media (max-width: 465px) {
+  .minecraft-colors {
+    flex-direction: column;
+    width: 16rem;
+  }
 }
