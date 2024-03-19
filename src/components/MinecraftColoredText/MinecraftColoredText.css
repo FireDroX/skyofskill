@@ -27,7 +27,8 @@
 
 .minecraft-txt > div > button,
 .minecraft-btns > div > button {
-  width: 3rem;
+  padding: 0.6rem;
+  width: min-content;
   height: 1.5rem;
   border-radius: 10px;
   border: none;
@@ -36,12 +37,18 @@
   font-size: 1.1rem;
   display: flex;
   justify-content: center;
-  line-height: 1.4rem;
+  align-items: center;
   transition: all 0.3s ease-out;
 }
 
 .minecraft-btns > div > button {
   font-size: 0.9rem;
+}
+
+.btns-settings {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .minecraft-txt > div > button:hover,
