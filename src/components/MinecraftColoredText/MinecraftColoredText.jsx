@@ -1,14 +1,19 @@
 import "./MinecraftColoredText.css";
 import { useState, useEffect } from "react";
+import { IoIosReturnLeft } from "react-icons/io";
 
-import { convertFinalText } from "../../utils/functions";
+import { ConvertFinalText } from "../../utils/functions";
 
 const MinecraftColoredText = () => {
-  const [isPrefix, setIsPrefix] = useState(false);
   const [text, setText] = useState("");
-  const [finalText, setFinalText] = useState(["&fHello&r", "&4&l World&r"]);
+  const [finalText, setFinalText] = useState([
+    "&6&l?",
+    "&e&l LuckyBlock",
+    "&6&l ?",
+  ]);
 
   const handleInputChange = (e) => setText(e.target.value);
+  const handleReturn = () => setFinalText([...finalText.slice(0, -1)]);
 
   const handleReset = () => {
     setText("");
@@ -16,7 +21,9 @@ const MinecraftColoredText = () => {
   };
 
   const handleAdd = () => {
-    const prefix = isPrefix ? "§" : "&";
+    if (text === "") return;
+
+    const prefix = "&";
     const checkboxesColors = document.querySelectorAll(
       '.btns-colors input[type="checkbox"]'
     );
@@ -76,23 +83,15 @@ const MinecraftColoredText = () => {
           />
         </div>
         <div className="btns-selector">
-          <button onClick={handleAdd}>Add</button>
-          <div className="prefix-selector">
-            <h6 style={{ color: isPrefix ? "var(--text45)" : "red" }}>&</h6>
-            <label className="txt-switch">
-              <input
-                type="checkbox"
-                name="Prefix"
-                onChange={() => setIsPrefix(!isPrefix)}
-              />
-              <span className="txt-slider txt-round"></span>
-            </label>
-            <h6 style={{ color: isPrefix ? "red" : "var(--text45)" }}>§</h6>
-          </div>
+          <button onClick={handleAdd}>Ajouter</button>
         </div>
         <div className="final-txt">
-          <small>{finalText.map((t) => convertFinalText(t))}</small>
-          <small className="txt-copy">{finalText.join("")}</small>
+          <small>
+            {[...finalText].map((e, i) => (
+              <ConvertFinalText text={e} key={i} />
+            ))}
+          </small>
+          <small className="txt-copy">{[...finalText].join("")}</small>
         </div>
       </div>
       <div className="minecraft-btns">
@@ -125,8 +124,11 @@ const MinecraftColoredText = () => {
           <input type="checkbox" id="n" className="mc-underline" />
           <input type="checkbox" id="o" className="mc-italic" />
         </div>
-        <div>
+        <div className="btns-settings">
           <button onClick={handleReset}>Reset</button>
+          <button onClick={handleReturn}>
+            <IoIosReturnLeft />
+          </button>
         </div>
       </div>
     </div>
