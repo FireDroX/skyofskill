@@ -21,6 +21,7 @@ const PrestigesPrice = ({
       0
     );
     setPrice(totalPrice);
+    console.log(currentPrestige, nextPrestige, price);
   };
 
   useEffect(() => calcPrice(), [currentPrestige, nextPrestige]);
@@ -32,7 +33,7 @@ const PrestigesPrice = ({
         <select
           name="Votre prestige"
           defaultValue={currentPrestige}
-          onChange={(e) => setCurrentPrestige(e.target.value)}
+          onChange={(e) => setCurrentPrestige(Number(e.target.value))}
         >
           {prestiges.map((p, index) => (
             <option key={index} value={index + 1}>
@@ -46,7 +47,7 @@ const PrestigesPrice = ({
         <select
           name="Prestige souhaité"
           defaultValue={nextPrestige}
-          onChange={(e) => setNextPrestige(e.target.value)}
+          onChange={(e) => setNextPrestige(Number(e.target.value))}
         >
           {prestiges.map((p, index) => (
             <option key={index} value={index + 1}>

@@ -12,6 +12,7 @@ import {
 } from "recharts";
 
 const PrestigesChart = ({ page, setPage }) => {
+  const chartPrestiges = prestiges.slice(1);
   const [isSmallSize, setIsSmallSize] = useState(() => {
     const width = window.innerWidth;
     if (width <= 824) return Number(1);
@@ -32,11 +33,11 @@ const PrestigesChart = ({ page, setPage }) => {
   }, [isSmallSize]);
 
   const newPrestige = [[], []];
-  for (let i = 0; i < prestiges.length; i += 17) {
-    newPrestige[0].push(prestiges.slice(i, i + 17));
+  for (let i = 0; i < chartPrestiges.length; i += 17) {
+    newPrestige[0].push(chartPrestiges.slice(i, i + 17));
   }
-  for (let i = 0; i < prestiges.length; i += 5) {
-    newPrestige[1].push(prestiges.slice(i, i + 5));
+  for (let i = 0; i < chartPrestiges.length; i += 5) {
+    newPrestige[1].push(chartPrestiges.slice(i, i + 5));
   }
 
   const handleBtn = (e) => {
