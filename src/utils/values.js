@@ -65,6 +65,7 @@ export const boosts = [
 ];
 
 export const prestiges = [
+  { name: "P0", prix: 0 },
   { name: "P1", prix: 15000000000 },
   { name: "P2", prix: 15000000000 },
   { name: "P3", prix: 25000000000 },
