@@ -62,6 +62,7 @@ export const boosts = [
   { name: "Boost x7", multiplicateur: 7 },
   { name: "Boost x8", multiplicateur: 8 },
   { name: "Boost x10", multiplicateur: 10 },
+  { name: "Boost x20", multiplicateur: 20 },
 ];
 
 export const prestiges = [

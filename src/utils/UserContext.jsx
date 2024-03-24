@@ -8,8 +8,8 @@ export const UserProvider = ({ children }) => {
   const [mine, setMine] = useState(14);
   const [boost, setBoost] = useState(12);
   const [page, setPage] = useState(0);
-  const [currentPrestige, setCurrentPrestige] = useState(75);
-  const [nextPrestige, setNextPrestige] = useState(80);
+  const [currentPrestige, setCurrentPrestige] = useState(76);
+  const [nextPrestige, setNextPrestige] = useState(81);
   const [price, setPrice] = useState(0);
 
   return (
