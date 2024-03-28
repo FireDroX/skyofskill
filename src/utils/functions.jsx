@@ -107,7 +107,7 @@ export const ConvertFinalText = ({ text = String }) => {
 
         default:
           newText = obfuscatedText ? "" : item;
-          return;
+          return newText;
       }
     })
   );
