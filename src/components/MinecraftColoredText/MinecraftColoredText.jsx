@@ -12,6 +12,10 @@ const MinecraftColoredText = () => {
     "&6&l ?",
   ]);
 
+  const handleCopy = () => {
+    navigator.clipboard.writeText([...finalText].join(""));
+  };
+
   const handleInputChange = (e) => setText(e.target.value);
   const handleReturn = () => setFinalText([...finalText.slice(0, -1)]);
 
@@ -37,7 +41,7 @@ const MinecraftColoredText = () => {
     const newText = Array.from([text]);
     checkboxes.toReversed().map(({ id }) => {
       if (
-        ["l", "m", "n", "o"].includes(id) &&
+        ["l", "m", "n", "o", "k"].includes(id) &&
         newText[newText.length - 1] !== prefix + "r"
       ) {
         newText.push(prefix + "r");
@@ -84,6 +88,7 @@ const MinecraftColoredText = () => {
         </div>
         <div className="btns-selector">
           <button onClick={handleAdd}>Ajouter</button>
+          <button onClick={handleCopy}>Copy</button>
         </div>
         <div className="final-txt">
           <small>
@@ -123,6 +128,7 @@ const MinecraftColoredText = () => {
           <input type="checkbox" id="m" className="mc-strikethrough" />
           <input type="checkbox" id="n" className="mc-underline" />
           <input type="checkbox" id="o" className="mc-italic" />
+          <input type="checkbox" id="k" className="mc-obfuscated" />
         </div>
         <div className="btns-settings">
           <button onClick={handleReset}>Reset</button>
