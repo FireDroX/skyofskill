@@ -1,0 +1,10 @@
+.exemple-copy {
+  padding: 0.3rem;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+.exemple-copy:hover {
+  cursor: pointer;
+  background-color: var(--secondary);
+}

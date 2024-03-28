@@ -12,6 +12,10 @@ const MinecraftColoredText = () => {
     "&6&l ?",
   ]);
 
+  const handleCopy = () => {
+    navigator.clipboard.writeText([...finalText].join(""));
+  };
+
   const handleInputChange = (e) => setText(e.target.value);
   const handleReturn = () => setFinalText([...finalText.slice(0, -1)]);
 
@@ -84,6 +88,7 @@ const MinecraftColoredText = () => {
         </div>
         <div className="btns-selector">
           <button onClick={handleAdd}>Ajouter</button>
+          <button onClick={handleCopy}>Copy</button>
         </div>
         <div className="final-txt">
           <small>
