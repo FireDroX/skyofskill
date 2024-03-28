@@ -2,7 +2,7 @@ import "./Navbar.css";
 
 import { useNavigate } from "react-router-dom";
 
-import { FaCoins } from "react-icons/fa6";
+import { IoColorPalette } from "react-icons/io5";
 import { GiWarPick } from "react-icons/gi";
 
 const logo = require("../../assets/logo.png");
@@ -25,9 +25,9 @@ const Navbar = () => {
           onClick={() => handleNavigate("home")}
         />
       </div>
-      <div onClick={() => handleNavigate("minage")}>
-        <h5>Minage</h5>
-        <FaCoins />
+      <div onClick={() => handleNavigate("colors")}>
+        <h5>Colors</h5>
+        <IoColorPalette />
       </div>
       <div onClick={() => handleNavigate("prestiges")}>
         <h5>Prestiges</h5>

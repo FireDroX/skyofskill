@@ -34,6 +34,7 @@ export const formatNumberWithSpaces = (number = 0) => {
 export const ConvertFinalText = ({ text = String }) => {
   const split = Array.from(text.split(/([&].)/g).filter(Boolean));
   let newText = String;
+  let obfuscatedText = false;
   const replacedArray = Array.from(
     split.map((item) => {
       switch (item) {
@@ -97,11 +98,15 @@ export const ConvertFinalText = ({ text = String }) => {
         case "&o":
           return "color-italic";
 
+        case "&k":
+          obfuscatedText = true;
+          return "mc-obfuscated";
+
         case "&r":
           return "";
 
         default:
-          newText = item;
+          newText = obfuscatedText ? "" : item;
           return;
       }
     })
