@@ -127,7 +127,7 @@ export const prestiges = [
   { name: "P58", prix: 15000000000000 },
   { name: "P59", prix: 20000000000000 },
   { name: "P60", prix: 55000000000000 },
-  { name: "P61", prix: 22500000000000 },
+  { name: "P61", prix: 25000000000000 },
   { name: "P62", prix: 25000000000000 },
   { name: "P63", prix: 27500000000000 },
   { name: "P64", prix: 30000000000000 },
