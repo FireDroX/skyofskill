@@ -41,11 +41,25 @@
   height: 4rem;
 }
 
-@media (max-width: 465px) {
+@media (max-width: 600px) {
   .navbar {
-    gap: 1rem;
+    gap: 0;
   }
+  .navbar > div {
+    scale: 0.8;
+  }
+}
+
+@media (max-width: 465px) {
   .navbar > div > svg {
     display: none;
+  }
+
+  .navbar {
+    justify-content: end;
+  }
+
+  .navbar > div {
+    padding-inline: 0;
   }
 }

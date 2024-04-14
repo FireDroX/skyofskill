@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
 
+import Caisses from "./pages/caisses/Caisses";
 import Colors from "./pages/colors/Colors";
 import Minage from "./pages/minage/Minage";
 import Prestiges from "./pages/prestiges/Prestiges";
@@ -14,6 +15,7 @@ function App() {
 
       <Routes>
         <Route path="/skyofskill" element={<Minage />} />
+        <Route path="/skyofskill/caisses" element={<Caisses />} />
         <Route path="/skyofskill/colors" element={<Colors />} />
         <Route path="/skyofskill/prestiges" element={<Prestiges />} />
 

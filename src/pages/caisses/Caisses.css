@@ -1,0 +1,38 @@
+.loadCaisse-container {
+  width: 27rem;
+  background-color: var(--primary5);
+  border-radius: 50px;
+}
+
+.loadCaisse-container > h5 {
+  color: var(--text75);
+}
+
+.loadCaisse-inventory {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+  gap: 0.4rem;
+}
+
+.loadCaisse-item > img {
+  padding: 0.2rem;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  transition: all 0.25s ease-in;
+}
+
+.loadCaisse-item > img:hover,
+.loadCaisse-item > img:focus {
+  cursor: pointer;
+  background-color: var(--secondary35);
+}
+
+@media (max-width: 465px) {
+  .loadCaisse-container {
+    width: 19rem;
+  }
+}
