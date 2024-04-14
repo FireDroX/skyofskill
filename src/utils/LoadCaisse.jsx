@@ -66,5 +66,6 @@ export const LoadCaisse = ({ index }) => {
         false
       )}
     </div>
+    // TODO: Add "enchants" in the ./caisses/{files} with "protection x", "unbreaking x", others and "Do not drop when you die"
   );
 };

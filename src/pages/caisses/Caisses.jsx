@@ -6,6 +6,7 @@ const Caisses = () => {
     <section className="App">
       <div>
         <LoadCaisse index={0} />
+        {/* TODO: Add pages handling "<" & ">" with "caissesDates" as the length */}
       </div>
     </section>
   );
