@@ -24,13 +24,12 @@ const mc_icons = [
 
 export const caissesDates = ["04_24", "03_24"];
 
-export const LoadCaisse = ({ index }) => {
+export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
   const [isClicked, setIsClicked] = useState({ clicked: false, index: 0 });
 
-  const caisse = require(`./caisses/${caissesDates[index]}.js`);
-
+  const caisse = require(`./caisses/${caissesDates[pageID]}.js`);
   const title = caisse.default.title;
-  const items = caisse.default.items;
+  const items = caisse.default.items.sort((a, b) => a.type > b.type);
 
   const handleClick = (i) => {
     if (isClicked.clicked && isClicked.index !== i)
@@ -55,12 +54,35 @@ export const LoadCaisse = ({ index }) => {
         </div>
       </div>
       {isClicked.clicked === true ? (
-        <div className="loadCaisse-item final-txt">
-          <small style={{ userSelect: "none" }}>
+        <div className="loadCaisse-enchants">
+          <h6 style={{ userSelect: "none", fontFamily: "Minecraftia" }}>
             {items[isClicked.index].name.split("&r").map((t, i) => (
               <ConvertFinalText text={t} key={i + t} />
             ))}
-          </small>
+          </h6>
+          <div className="loadCaisse-enchants-list">
+            <div>
+              {items[isClicked.index].enchants.map((e, eIndex) => (
+                <small style={{ userSelect: "none", fontFamily: "Minecraftia" }} key={e + eIndex}>
+                  {e.split("&r").map((t, i) => (
+                    <ConvertFinalText text={t} key={i + t} />
+                  ))}
+                </small>
+              ))}
+            </div>
+            <img src={mc_icons[items[isClicked.index].type]} alt="" />
+          </div>
+          {items[isClicked.index].dontLeaveOnDeath? (
+            <div className="loadCaisse-leaveOnDeath">
+              <small>
+                {["&4&l⚔ ", "&c&lNe se perd pas à la mort."].map((txt, i) => (
+                  <ConvertFinalText text={txt} key={txt + i}/>
+                ))} 
+              </small>
+            </div>
+          ) : (
+            false
+          )}
         </div>
       ) : (
         false
