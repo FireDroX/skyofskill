@@ -63,7 +63,10 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
           <div className="loadCaisse-enchants-list">
             <div>
               {items[isClicked.index].enchants.map((e, eIndex) => (
-                <small style={{ userSelect: "none", fontFamily: "Minecraftia" }} key={e + eIndex}>
+                <small
+                  style={{ userSelect: "none", fontFamily: "Minecraftia" }}
+                  key={e + eIndex}
+                >
                   {e.split("&r").map((t, i) => (
                     <ConvertFinalText text={t} key={i + t} />
                   ))}
@@ -72,12 +75,12 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
             </div>
             <img src={mc_icons[items[isClicked.index].type]} alt="" />
           </div>
-          {items[isClicked.index].dontLeaveOnDeath? (
+          {items[isClicked.index].dontLeaveOnDeath ? (
             <div className="loadCaisse-leaveOnDeath">
               <small>
                 {["&4&l⚔ ", "&c&lNe se perd pas à la mort."].map((txt, i) => (
-                  <ConvertFinalText text={txt} key={txt + i}/>
-                ))} 
+                  <ConvertFinalText text={txt} key={txt + i} />
+                ))}
               </small>
             </div>
           ) : (
