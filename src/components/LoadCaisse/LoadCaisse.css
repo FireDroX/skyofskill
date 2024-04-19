@@ -50,8 +50,8 @@
 }
 
 .loadCaisse-enchants {
+  margin-inline: 0.8rem;
   padding: 1.5rem;
-  width: max-content;
   background-color: var(--primary5);
   border-radius: 30px;
   display: flex;
