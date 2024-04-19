@@ -1,15 +1,14 @@
-import { useState } from "react";
+import "./LoadCaisse.css";
+import { ConvertFinalText } from "../../utils/functions.jsx";
 
-import { ConvertFinalText } from "./functions.jsx";
-
-import helmet from "../assets/mc_icons/diamond_helmet.png";
-import chestplate from "../assets/mc_icons/diamond_chestplate.png";
-import leggings from "../assets/mc_icons/diamond_leggings.png";
-import boots from "../assets/mc_icons/diamond_boots.png";
-import sword from "../assets/mc_icons/diamond_sword.png";
-import axe from "../assets/mc_icons/diamond_axe.png";
-import bow from "../assets/mc_icons/bow_standby.png";
-import pickaxe from "../assets/mc_icons/diamond_pickaxe.png";
+import helmet from "../../assets/mc_icons/diamond_helmet.png";
+import chestplate from "../../assets/mc_icons/diamond_chestplate.png";
+import leggings from "../../assets/mc_icons/diamond_leggings.png";
+import boots from "../../assets/mc_icons/diamond_boots.png";
+import sword from "../../assets/mc_icons/diamond_sword.png";
+import axe from "../../assets/mc_icons/diamond_axe.png";
+import bow from "../../assets/mc_icons/bow_standby.png";
+import pickaxe from "../../assets/mc_icons/diamond_pickaxe.png";
 
 const mc_icons = [
   helmet,
@@ -25,16 +24,14 @@ const mc_icons = [
 export const caissesDates = ["04_24", "03_24"];
 
 export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
-  const [isClicked, setIsClicked] = useState({ clicked: false, index: 0 });
-
-  const caisse = require(`./caisses/${caissesDates[pageID]}.js`);
+  const caisse = require(`../../utils/caisses/${caissesDates[pageID]}.js`);
   const title = caisse.default.title;
   const items = caisse.default.items.sort((a, b) => a.type > b.type);
 
   const handleClick = (i) => {
-    if (isClicked.clicked && isClicked.index !== i)
-      setIsClicked({ clicked: isClicked.clicked, index: i });
-    else setIsClicked({ clicked: !isClicked.clicked, index: i });
+    if (itemID.clicked && itemID.index !== i)
+      setItemID({ clicked: itemID.clicked, index: i });
+    else setItemID({ clicked: !itemID.clicked, index: i });
   };
 
   return (
@@ -53,16 +50,16 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
           ))}
         </div>
       </div>
-      {isClicked.clicked === true ? (
+      {itemID.clicked === true ? (
         <div className="loadCaisse-enchants">
           <h6 style={{ userSelect: "none", fontFamily: "Minecraftia" }}>
-            {items[isClicked.index].name.split("&r").map((t, i) => (
+            {items[itemID.index].name.split("&r").map((t, i) => (
               <ConvertFinalText text={t} key={i + t} />
             ))}
           </h6>
           <div className="loadCaisse-enchants-list">
             <div>
-              {items[isClicked.index].enchants.map((e, eIndex) => (
+              {items[itemID.index].enchants.map((e, eIndex) => (
                 <small
                   style={{ userSelect: "none", fontFamily: "Minecraftia" }}
                   key={e + eIndex}
@@ -73,9 +70,9 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
                 </small>
               ))}
             </div>
-            <img src={mc_icons[items[isClicked.index].type]} alt="" />
+            <img src={mc_icons[items[itemID.index].type]} alt="" />
           </div>
-          {items[isClicked.index].dontLeaveOnDeath ? (
+          {items[itemID.index].dontLeaveOnDeath ? (
             <div className="loadCaisse-leaveOnDeath">
               <small>
                 {["&4&l⚔ ", "&c&lNe se perd pas à la mort."].map((txt, i) => (
@@ -91,6 +88,5 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
         false
       )}
     </div>
-    // TODO: Add "enchants" in the ./caisses/{files} with "protection x", "unbreaking x", others and "Do not drop when you die"
   );
 };

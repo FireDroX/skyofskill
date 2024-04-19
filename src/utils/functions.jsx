@@ -118,3 +118,9 @@ export const ConvertFinalText = ({ text = String }) => {
     </span>
   );
 };
+
+export const numberToMonth = (number = Number) => {
+  const months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+  if (number >= 1 && number <= 12) return months[number - 1];
+  else return months[0];
+}

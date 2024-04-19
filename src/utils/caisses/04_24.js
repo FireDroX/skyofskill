@@ -51,7 +51,7 @@ const caisse = {
       name: "&f&kt&r&a&l❣&r&f&l✡&r&a&l❣&r&f&kt&r&a&l K&r&f&la&r&a&lt&r&f&la&r&a&ln&r&f&la &r&a&lS&r&f&lu&r&a&lc&r&f&lr&r&a&lé &r&f&kt&r&a&l❣&r&f&l✡&r&a&l❣&r&f&kt&r",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&287&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
