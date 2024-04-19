@@ -21,17 +21,58 @@ const mc_icons = [
   pickaxe,
 ];
 
-export const caissesDates = ["04_24", "03_24"];
+export const caissesDates = [
+  "04_24",
+  "03_24",
+  "02_24",
+  "01_24",
+  "12_23",
+  "11_23",
+  "10_23",
+  "09_23",
+  "08_23",
+  "07_23",
+  "06_23",
+  "05_23",
+  "04_23",
+  "03_23",
+  "02_23",
+  "01_23",
+  "12_22",
+  "11_22",
+  "10_22",
+  "09_22",
+  "08_22",
+  "07_22",
+  "06_22",
+  "FireDroX",
+  "inconnus",
+];
 
 export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
   const caisse = require(`../../utils/caisses/${caissesDates[pageID]}.js`);
   const title = caisse.default.title;
-  const items = caisse.default.items.sort((a, b) => a.type > b.type);
+  const items = caisse.default.items.sort((a, b) => a.type - b.type);
 
   const handleClick = (i) => {
     if (itemID.clicked && itemID.index !== i)
       setItemID({ clicked: itemID.clicked, index: i });
     else setItemID({ clicked: !itemID.clicked, index: i });
+  };
+
+  const loopFinishedItems = () => {
+    let finishedItems = 0;
+    for (
+      let caisseDate = 0;
+      caisseDate < caissesDates.length - 2;
+      caisseDate++
+    ) {
+      const newCaisse = require(`../../utils/caisses/${caissesDates[caisseDate]}.js`);
+      finishedItems += newCaisse.default.items.filter((item) =>
+        item.hasOwnProperty("name")
+      ).length;
+    }
+    return finishedItems;
   };
 
   return (
@@ -52,10 +93,11 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
       </div>
       {itemID.clicked === true ? (
         <div className="loadCaisse-enchants">
-          <h6 style={{ userSelect: "none", fontFamily: "Minecraftia" }}>
-            {items[itemID.index].name.split("&r").map((t, i) => (
-              <ConvertFinalText text={t} key={i + t} />
-            ))}
+          <h6>
+            {items[itemID.index].name
+              ?.split("&r")
+              .map((t, i) => <ConvertFinalText text={t} key={i + t} />) ||
+              items[itemID.index].defaultName}
           </h6>
           <div className="loadCaisse-enchants-list">
             <div>
@@ -87,6 +129,7 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
       ) : (
         false
       )}
+      <small>{loopFinishedItems()} items répertoriés.</small>
     </div>
   );
 };

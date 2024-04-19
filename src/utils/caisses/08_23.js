@@ -10,10 +10,10 @@
  */
 
 const caisse = {
-  title: "GALAXIE",
+  title: "COWBOY",
   items: [
     {
-      defaultName: "Arc Spatial",
+      defaultName: "Balle de paille",
       type: 6,
       enchants: [
         "&bPunch &r&3III&r",
@@ -22,7 +22,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "Navi-Nébuleuse",
+      defaultName: "Flingue du Bandit",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -41,7 +41,7 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "EtoileMobile",
+      defaultName: "???",
       type: 6,
       enchants: [
         "&bPunch &r&3V&r",
@@ -51,85 +51,75 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3VI&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
-      defaultName: "Katana Galactique",
+      defaultName: "Super-Colt",
       type: 4,
       enchants: [
-        "&aTranchant &r&277&r",
+        "&aTranchant &r&263&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Calibre .36 PN",
       type: 4,
       enchants: [
-        "&aTranchant &r&286&r",
+        "&aTranchant &r&272&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
     },
     {
-      defaultName: "Foreuse Pulsar",
+      defaultName: "Pioche CowBoy",
       type: 7,
       enchants: [
-        "&bEfficency &r&31650&r",
-        "&eSolidité &r&61650&r",
-        "&aFortune &r&21650&r",
+        "&bEfficency &r&3700&r",
+        "&eSolidité &r&6700&r",
+        "&aFortune &r&2700&r",
       ],
     },
     {
-      defaultName: "Scalpel des Constellation",
+      defaultName: "Pioche Cactus",
       type: 7,
       enchants: [
-        "&bEfficency &r&31900&r",
-        "&eSolidité &r&61900&r",
-        "&aFortune &r&21900&r",
+        "&bEfficency &r&3900&r",
+        "&eSolidité &r&6900&r",
+        "&aFortune &r&2900&r",
       ],
     },
     {
-      defaultName: "Sceptre Cosmisque",
+      defaultName: "???",
       type: 7,
       enchants: [
-        "&bEfficency &r&32050&r",
-        "&eSolidité &r&62050&r",
-        "&aFortune &r&22050&r",
+        "&bEfficency &r&3????&r",
+        "&eSolidité &r&6????&r",
+        "&aFortune &r&2????&r",
       ],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Fourrure par balle",
       type: 0,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l63&r", "&eSolidité &r&663&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Fourrure par balle",
       type: 1,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l63&r", "&eSolidité &r&663&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Fourrure par balle",
       type: 2,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l63&r", "&eSolidité &r&663&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Fourrure par balle",
       type: 3,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l63&r", "&eSolidité &r&663&r"],
     },
     {
-      defaultName: "???",
+      defaultName: "Pacificateur",
       type: 5,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&268&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

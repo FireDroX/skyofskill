@@ -45,7 +45,11 @@ const Caisses = () => {
             itemID={isClicked}
             setItemID={setIsClicked}
           />
-          <small>Box de {getDate()}</small>
+          {caissesDates[boxPage].match("_") ? (
+            <small>Box de {getDate()}</small>
+          ) : (
+            false
+          )}
           <div className="input-btns">
             <button onClick={() => handleBtn("-")}>{"<"}</button>
             <button onClick={() => handleBtn("+")}>{">"}</button>

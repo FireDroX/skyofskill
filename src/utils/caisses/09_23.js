@@ -10,10 +10,10 @@
  */
 
 const caisse = {
-  title: "GALAXIE",
+  title: "FARWEST",
   items: [
     {
-      defaultName: "Arc Spatial",
+      defaultName: "Canon à Six Coups",
       type: 6,
       enchants: [
         "&bPunch &r&3III&r",
@@ -22,7 +22,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "Navi-Nébuleuse",
+      defaultName: "Carabine Infernale",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -41,7 +41,7 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "EtoileMobile",
+      defaultName: "???",
       type: 6,
       enchants: [
         "&bPunch &r&3V&r",
@@ -51,85 +51,75 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3VI&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
-      defaultName: "Katana Galactique",
+      defaultName: "Canon à Six Coups",
       type: 4,
       enchants: [
-        "&aTranchant &r&277&r",
+        "&aTranchant &r&265&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Canon du Jugement",
       type: 4,
       enchants: [
-        "&aTranchant &r&286&r",
+        "&aTranchant &r&274&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
     },
     {
-      defaultName: "Foreuse Pulsar",
+      defaultName: "Trouveuse d'Or",
       type: 7,
       enchants: [
-        "&bEfficency &r&31650&r",
-        "&eSolidité &r&61650&r",
-        "&aFortune &r&21650&r",
+        "&bEfficency &r&3850&r",
+        "&eSolidité &r&6850&r",
+        "&aFortune &r&2850&r",
       ],
     },
     {
-      defaultName: "Scalpel des Constellation",
+      defaultName: "???",
       type: 7,
       enchants: [
-        "&bEfficency &r&31900&r",
-        "&eSolidité &r&61900&r",
-        "&aFortune &r&21900&r",
+        "&bEfficency &r&3????&r",
+        "&eSolidité &r&6????&r",
+        "&aFortune &r&2????&r",
       ],
     },
     {
-      defaultName: "Sceptre Cosmisque",
+      defaultName: "Pioche Criminelle",
       type: 7,
       enchants: [
-        "&bEfficency &r&32050&r",
-        "&eSolidité &r&62050&r",
-        "&aFortune &r&22050&r",
+        "&bEfficency &r&31200&r",
+        "&eSolidité &r&61200&r",
+        "&aFortune &r&21200&r",
       ],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Hors-la-Loi",
       type: 0,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l65&r", "&eSolidité &r&665&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Hors-la-Loi",
       type: 1,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l65&r", "&eSolidité &r&665&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Hors-la-Loi",
       type: 2,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l65&r", "&eSolidité &r&665&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Hors-la-Loi",
       type: 3,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l65&r", "&eSolidité &r&665&r"],
     },
     {
-      defaultName: "???",
+      defaultName: "Révolver Dernier Souffle",
       type: 5,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&270&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

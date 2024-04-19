@@ -10,10 +10,10 @@
  */
 
 const caisse = {
-  title: "GALAXIE",
+  title: "NOEL",
   items: [
     {
-      defaultName: "Arc Spatial",
+      defaultName: "Arc de Neige",
       type: 6,
       enchants: [
         "&bPunch &r&3III&r",
@@ -22,7 +22,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "Navi-Nébuleuse",
+      defaultName: "???",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -41,7 +41,7 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "EtoileMobile",
+      defaultName: "???",
       type: 6,
       enchants: [
         "&bPunch &r&3V&r",
@@ -51,85 +51,75 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3VI&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
-      defaultName: "Katana Galactique",
+      defaultName: "Sabre de Neige",
       type: 4,
       enchants: [
-        "&aTranchant &r&277&r",
+        "&aTranchant &r&271&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Sabre Père Noël",
       type: 4,
       enchants: [
-        "&aTranchant &r&286&r",
+        "&aTranchant &r&280&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
     },
     {
-      defaultName: "Foreuse Pulsar",
+      defaultName: "Pioche de Neige",
       type: 7,
       enchants: [
-        "&bEfficency &r&31650&r",
-        "&eSolidité &r&61650&r",
-        "&aFortune &r&21650&r",
+        "&bEfficency &r&31250&r",
+        "&eSolidité &r&61250&r",
+        "&aFortune &r&21250&r",
       ],
     },
     {
-      defaultName: "Scalpel des Constellation",
+      defaultName: "Pioche Mère Noël",
       type: 7,
       enchants: [
-        "&bEfficency &r&31900&r",
-        "&eSolidité &r&61900&r",
-        "&aFortune &r&21900&r",
+        "&bEfficency &r&31500&r",
+        "&eSolidité &r&61500&r",
+        "&aFortune &r&21500&r",
       ],
     },
     {
-      defaultName: "Sceptre Cosmisque",
+      defaultName: "???",
       type: 7,
       enchants: [
-        "&bEfficency &r&32050&r",
-        "&eSolidité &r&62050&r",
-        "&aFortune &r&22050&r",
+        "&bEfficency &r&3????&r",
+        "&eSolidité &r&6????&r",
+        "&aFortune &r&2????&r",
       ],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Armure de Neige",
       type: 0,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l71&r", "&eSolidité &r&671&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Armure de Neige",
       type: 1,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l71&r", "&eSolidité &r&671&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Armure de Neige",
       type: 2,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l71&r", "&eSolidité &r&671&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Armure de Neige",
       type: 3,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l71&r", "&eSolidité &r&671&r"],
     },
     {
-      defaultName: "???",
+      defaultName: "Katana Cadeau",
       type: 5,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&277&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

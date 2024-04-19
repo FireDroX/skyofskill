@@ -10,10 +10,10 @@
  */
 
 const caisse = {
-  title: "GALAXIE",
+  title: "MILLIONNAIRE",
   items: [
     {
-      defaultName: "Arc Spatial",
+      defaultName: "Arc Suprême",
       type: 6,
       enchants: [
         "&bPunch &r&3III&r",
@@ -22,7 +22,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "Navi-Nébuleuse",
+      defaultName: "Propulseur de Rubis",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -41,7 +41,7 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "EtoileMobile",
+      defaultName: "Courbe de Saphir",
       type: 6,
       enchants: [
         "&bPunch &r&3V&r",
@@ -61,34 +61,43 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "Katana Galactique",
+      defaultName: "Lame Suprême",
       type: 4,
       enchants: [
-        "&aTranchant &r&277&r",
+        "&aTranchant &r&275&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Sabre de l'Oligarque",
       type: 4,
       enchants: [
-        "&aTranchant &r&286&r",
+        "&aTranchant &r&284&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
     },
     {
-      defaultName: "Foreuse Pulsar",
+      defaultName: "Perceuse Suprême",
       type: 7,
       enchants: [
-        "&bEfficency &r&31650&r",
-        "&eSolidité &r&61650&r",
-        "&aFortune &r&21650&r",
+        "&bEfficency &r&31500&r",
+        "&eSolidité &r&61500&r",
+        "&aFortune &r&21500&r",
       ],
     },
     {
-      defaultName: "Scalpel des Constellation",
+      defaultName: "Marteau-piqueur de l'Empire",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&31750&r",
+        "&eSolidité &r&61750&r",
+        "&aFortune &r&21750&r",
+      ],
+    },
+    {
+      defaultName: "Foreuse du Capitaliste",
       type: 7,
       enchants: [
         "&bEfficency &r&31900&r",
@@ -97,39 +106,30 @@ const caisse = {
       ],
     },
     {
-      defaultName: "Sceptre Cosmisque",
-      type: 7,
-      enchants: [
-        "&bEfficency &r&32050&r",
-        "&eSolidité &r&62050&r",
-        "&aFortune &r&22050&r",
-      ],
-    },
-    {
-      defaultName: "Armure Spatial",
+      defaultName: "Armure Suprême",
       type: 0,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l75&r", "&eSolidité &r&675&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Armure Suprême",
       type: 1,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l75&r", "&eSolidité &r&675&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Armure Suprême",
       type: 2,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l75&r", "&eSolidité &r&675&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Armure Suprême",
       type: 3,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l75&r", "&eSolidité &r&675&r"],
     },
     {
-      defaultName: "???",
+      defaultName: "Cimeterre du Sultan",
       type: 5,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&281&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

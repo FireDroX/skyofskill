@@ -60,6 +60,9 @@
 
 .loadCaisse-enchants > h6 {
   margin: 0;
+  user-select: none;
+  font-family: "Minecraftia";
+  color: var(--text75);
 }
 
 .loadCaisse-enchants-list {
@@ -89,4 +92,12 @@
   font-size: 0.666rem;
   user-select: none;
   font-family: "Minecraftia";
+}
+
+.loadCaisse > small {
+  color: var(--secondary35);
+  scale: 0.9;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

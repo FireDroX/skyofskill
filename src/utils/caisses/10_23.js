@@ -10,10 +10,10 @@
  */
 
 const caisse = {
-  title: "GALAXIE",
+  title: "PIRATE",
   items: [
     {
-      defaultName: "Arc Spatial",
+      defaultName: "???",
       type: 6,
       enchants: [
         "&bPunch &r&3III&r",
@@ -22,7 +22,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "Navi-Nébuleuse",
+      defaultName: "???",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -41,7 +41,7 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "EtoileMobile",
+      defaultName: "???",
       type: 6,
       enchants: [
         "&bPunch &r&3V&r",
@@ -52,19 +52,9 @@ const caisse = {
     },
     {
       defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3VI&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
-      defaultName: "Katana Galactique",
       type: 4,
       enchants: [
-        "&aTranchant &r&277&r",
+        "&aTranchant &r&267&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
@@ -73,57 +63,57 @@ const caisse = {
       defaultName: "???",
       type: 4,
       enchants: [
-        "&aTranchant &r&286&r",
+        "&aTranchant &r&2??&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
     },
     {
-      defaultName: "Foreuse Pulsar",
+      defaultName: "Scie du Cambrioleur",
       type: 7,
       enchants: [
-        "&bEfficency &r&31650&r",
-        "&eSolidité &r&61650&r",
-        "&aFortune &r&21650&r",
+        "&bEfficency &r&3950&r",
+        "&eSolidité &r&6950&r",
+        "&aFortune &r&2950&r",
       ],
     },
     {
-      defaultName: "Scalpel des Constellation",
+      defaultName: "???",
       type: 7,
       enchants: [
-        "&bEfficency &r&31900&r",
-        "&eSolidité &r&61900&r",
-        "&aFortune &r&21900&r",
+        "&bEfficency &r&3????&r",
+        "&eSolidité &r&6????&r",
+        "&aFortune &r&2????&r",
       ],
     },
     {
-      defaultName: "Sceptre Cosmisque",
+      defaultName: "Foreuse Thermique",
       type: 7,
       enchants: [
-        "&bEfficency &r&32050&r",
-        "&eSolidité &r&62050&r",
-        "&aFortune &r&22050&r",
+        "&bEfficency &r&31350&r",
+        "&eSolidité &r&61350&r",
+        "&aFortune &r&21350&r",
       ],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Pirate",
       type: 0,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l67&r", "&eSolidité &r&667&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Pirate",
       type: 1,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l67&r", "&eSolidité &r&667&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Pirate",
       type: 2,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l67&r", "&eSolidité &r&667&r"],
     },
     {
-      defaultName: "Armure Spatial",
+      defaultName: "Pirate",
       type: 3,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
+      enchants: ["&b&lProtection &r&3&l67&r", "&eSolidité &r&667&r"],
     },
     {
       defaultName: "???",

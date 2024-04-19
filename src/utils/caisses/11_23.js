@@ -10,10 +10,10 @@
  */
 
 const caisse = {
-  title: "GALAXIE",
+  title: "HALLOWEEN",
   items: [
     {
-      defaultName: "Arc Spatial",
+      defaultName: "Quad des Ténèbres",
       type: 6,
       enchants: [
         "&bPunch &r&3III&r",
@@ -22,7 +22,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "Navi-Nébuleuse",
+      defaultName: "???",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -41,7 +41,7 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "EtoileMobile",
+      defaultName: "Carrosse des Ténèbres",
       type: 6,
       enchants: [
         "&bPunch &r&3V&r",
@@ -51,20 +51,10 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3VI&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
-      defaultName: "Katana Galactique",
+      defaultName: "Lame Citrouille",
       type: 4,
       enchants: [
-        "&aTranchant &r&277&r",
+        "&aTranchant &r&269&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
@@ -72,64 +62,64 @@ const caisse = {
     {
       defaultName: "???",
       type: 4,
-      enchants: [
-        "&aTranchant &r&286&r",
-        "&eSolidité &r&610&r",
-        "&dAura de Feu &r&510&r",
-      ],
-    },
-    {
-      defaultName: "Foreuse Pulsar",
-      type: 7,
-      enchants: [
-        "&bEfficency &r&31650&r",
-        "&eSolidité &r&61650&r",
-        "&aFortune &r&21650&r",
-      ],
-    },
-    {
-      defaultName: "Scalpel des Constellation",
-      type: 7,
-      enchants: [
-        "&bEfficency &r&31900&r",
-        "&eSolidité &r&61900&r",
-        "&aFortune &r&21900&r",
-      ],
-    },
-    {
-      defaultName: "Sceptre Cosmisque",
-      type: 7,
-      enchants: [
-        "&bEfficency &r&32050&r",
-        "&eSolidité &r&62050&r",
-        "&aFortune &r&22050&r",
-      ],
-    },
-    {
-      defaultName: "Armure Spatial",
-      type: 0,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
-    },
-    {
-      defaultName: "Armure Spatial",
-      type: 1,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
-    },
-    {
-      defaultName: "Armure Spatial",
-      type: 2,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
-    },
-    {
-      defaultName: "Armure Spatial",
-      type: 3,
-      enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
-    },
-    {
-      defaultName: "???",
-      type: 5,
       enchants: [
         "&aTranchant &r&2??&r",
+        "&eSolidité &r&610&r",
+        "&dAura de Feu &r&510&r",
+      ],
+    },
+    {
+      defaultName: "Foreuse Citrouille",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&31100&r",
+        "&eSolidité &r&61100&r",
+        "&aFortune &r&21100&r",
+      ],
+    },
+    {
+      defaultName: "???",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3????&r",
+        "&eSolidité &r&6????&r",
+        "&aFortune &r&2????&r",
+      ],
+    },
+    {
+      defaultName: "Tronçonneuse Zombie",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&31500&r",
+        "&eSolidité &r&61500&r",
+        "&aFortune &r&21500&r",
+      ],
+    },
+    {
+      defaultName: "Costume des Ténèbres",
+      type: 0,
+      enchants: ["&b&lProtection &r&3&l69&r", "&eSolidité &r&669&r"],
+    },
+    {
+      defaultName: "Costume des Ténèbres",
+      type: 1,
+      enchants: ["&b&lProtection &r&3&l69&r", "&eSolidité &r&669&r"],
+    },
+    {
+      defaultName: "Costume des Ténèbres",
+      type: 2,
+      enchants: ["&b&lProtection &r&3&l69&r", "&eSolidité &r&669&r"],
+    },
+    {
+      defaultName: "Costume des Ténèbres",
+      type: 3,
+      enchants: ["&b&lProtection &r&3&l69&r", "&eSolidité &r&669&r"],
+    },
+    {
+      defaultName: "Lame du Jugement",
+      type: 5,
+      enchants: [
+        "&aTranchant &r&274&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
