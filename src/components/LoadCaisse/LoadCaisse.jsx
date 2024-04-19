@@ -86,6 +86,12 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
                 src={mc_icons[item.type]}
                 alt=""
                 onClick={() => handleClick(index)}
+                style={{
+                  backgroundColor:
+                    itemID.index === index && itemID.clicked
+                      ? "var(--secondary35)"
+                      : "transparent",
+                }}
               />
             </div>
           ))}

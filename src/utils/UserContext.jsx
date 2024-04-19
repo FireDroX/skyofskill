@@ -11,8 +11,8 @@ export const UserProvider = ({ children }) => {
   const [currentPrestige, setCurrentPrestige] = useState(76);
   const [nextPrestige, setNextPrestige] = useState(81);
   const [price, setPrice] = useState(0);
-  const [boxPage, setBoxPage] = useState(0);
-  const [isClicked, setIsClicked] = useState({ clicked: false, index: 0 });
+  const [boxPage, setBoxPage] = useState(2);
+  const [isClicked, setIsClicked] = useState({ clicked: true, index: 14 });
 
   return (
     <UserContext.Provider
