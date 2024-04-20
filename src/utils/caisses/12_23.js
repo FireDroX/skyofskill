@@ -13,6 +13,7 @@ const caisse = {
   title: "NOEL",
   items: [
     {
+      name: "&r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki&r&8&l &r&b&lA&r&f&lr&r&b&lc &r&f&ld&r&b&le&r&f&l N&r&b&le&r&f&li&r&b&lg&r&f&le &r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki",
       defaultName: "Arc de Neige",
       type: 6,
       enchants: [
@@ -51,6 +52,7 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
+      name: "&r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki&r&8&l &r&b&lS&r&f&la&r&b&lb&r&f&lr&r&b&le&r&f&l d&r&b&le&r&f&l N&r&b&le&r&f&li&r&b&lg&r&f&le &r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki",
       defaultName: "Sabre de Neige",
       type: 4,
       enchants: [
@@ -60,6 +62,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&4&ki&r&f&ki&r&c⁑&r&4​☃&r&c⁑&r&f&ki&r&4&ki&r&4&l &r&4&lS&r&f&la&r&4&lb&r&f&lr&r&4&le&r&f&l P&r&4&lè&r&f&lr&r&4&le&r&f&l N&r&4&lo&r&f&lë&r&4&ll &r&4&ki&r&f&ki&r&c⁑&r&4​☃&r&c⁑&r&f&ki&r&4&ki&r&4&l",
       defaultName: "Sabre Père Noël",
       type: 4,
       enchants: [
@@ -69,6 +72,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki&r&8&l &r&b&lP&r&f&li&r&b&lo&r&f&lc&r&b&lh&r&f&le&r&b&l d&r&f&le&r&b&l N&r&f&le&r&b&li&r&f&lg&r&b&le &r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki",
       defaultName: "Pioche de Neige",
       type: 7,
       enchants: [
@@ -78,6 +82,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&d&ki&r&f&ki&r&d​❤&r&f&ki&r&d&ki&r&8&l &r&d&lP&r&f&li&r&d&lo&r&f&lc&r&d&lh&r&f&le&r&d&l M&r&f&lè&r&d&lr&r&f&le&r&d&l N&r&f&lo&r&d&lë&r&f&ll &r&d&ki&r&f&ki&r&d​❤&r&f&ki&r&d&ki",
       defaultName: "Pioche Mère Noël",
       type: 7,
       enchants: [
@@ -96,26 +101,31 @@ const caisse = {
       ],
     },
     {
+      name: "&r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki&r&8&l &r&b&lA&r&f&lr&r&b&lm&r&f&lu&r&b&lr&r&f&le &r&f&ld&r&b&le&r&f&l N&r&b&le&r&f&li&r&b&lg&r&f&le &r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki",
       defaultName: "Armure de Neige",
       type: 0,
       enchants: ["&b&lProtection &r&3&l71&r", "&eSolidité &r&671&r"],
     },
     {
+      name: "&r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki&r&8&l &r&b&lA&r&f&lr&r&b&lm&r&f&lu&r&b&lr&r&f&le &r&f&ld&r&b&le&r&f&l N&r&b&le&r&f&li&r&b&lg&r&f&le &r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki",
       defaultName: "Armure de Neige",
       type: 1,
       enchants: ["&b&lProtection &r&3&l71&r", "&eSolidité &r&671&r"],
     },
     {
+      name: "&r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki&r&8&l &r&b&lA&r&f&lr&r&b&lm&r&f&lu&r&b&lr&r&f&le &r&f&ld&r&b&le&r&f&l N&r&b&le&r&f&li&r&b&lg&r&f&le &r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki",
       defaultName: "Armure de Neige",
       type: 2,
       enchants: ["&b&lProtection &r&3&l71&r", "&eSolidité &r&671&r"],
     },
     {
+      name: "&r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki&r&8&l &r&b&lA&r&f&lr&r&b&lm&r&f&lu&r&b&lr&r&f&le &r&f&ld&r&b&le&r&f&l N&r&b&le&r&f&li&r&b&lg&r&f&le &r&f&ki&r&b&ki&r&f⁂&r&b​❄&r&f⁂&r&b&ki&r&f&ki",
       defaultName: "Armure de Neige",
       type: 3,
       enchants: ["&b&lProtection &r&3&l71&r", "&eSolidité &r&671&r"],
     },
     {
+      name: "&r&e&ki&r&f&ki&r&e⁂&r&f​☃&r&e⁂&r&f&ki&r&e&ki&r&8&l &r&e&lK&r&f&la&r&e&lt&r&f&la&r&e&ln&r&f&la &r&e&lC&r&f&la&r&e&ld&r&f&le&r&e&la&r&f&lu &r&e&ki&r&f&ki&r&e⁂&r&f​☃&r&e⁂&r&f&ki&r&e&ki",
       defaultName: "Katana Cadeau",
       type: 5,
       enchants: [
