@@ -21,7 +21,6 @@ const PrestigesPrice = ({
       0
     );
     setPrice(totalPrice);
-    console.log(currentPrestige, nextPrestige, price);
   };
 
   useEffect(() => calcPrice(), [currentPrestige, nextPrestige]);

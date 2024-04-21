@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 
 import { IoColorPalette } from "react-icons/io5";
-import { GiWarPick } from "react-icons/gi";
+import { GiWarPick, GiOpenChest } from "react-icons/gi";
 
 const logo = require("../../assets/logo.png");
 
@@ -32,6 +32,10 @@ const Navbar = () => {
       <div onClick={() => handleNavigate("prestiges")}>
         <h5>Prestiges</h5>
         <GiWarPick />
+      </div>
+      <div onClick={() => handleNavigate("caisses")}>
+        <h5>Caisses</h5>
+        <GiOpenChest />
       </div>
     </div>
   );
