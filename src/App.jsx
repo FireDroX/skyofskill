@@ -13,6 +13,8 @@ function App() {
     <>
       <Navbar />
 
+      {/* TODO: Add lazy loading (see screenshot) */}
+
       <Routes>
         <Route path="/skyofskill" element={<Minage />} />
         <Route path="/skyofskill/caisses" element={<Caisses />} />
