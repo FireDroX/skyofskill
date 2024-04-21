@@ -36,17 +36,17 @@ const Caisses = () => {
     return `${numberToMonth(dateArray[0]) + " 20" + dateArray[1]}`;
   };
 
-  const [convertedTxt, setConvertedTxt] = useState("nothing");
+  // const [convertedTxt, setConvertedTxt] = useState("nothing");
 
-  const convertText = (text) => {
-    setConvertedTxt(text.replace(/§/g, "&").replace(/&([^lmonk&])/g, "&r&$1"));
-  };
+  // const convertText = (text) => {
+  //   setConvertedTxt(text.replace(/§/g, "&").replace(/&([^lmonk&])/g, "&r&$1"));
+  // };
 
   return (
     <section className="App">
       <div>
-        <input type="text" onChange={(e) => convertText(e.target.value)} />
-        <small style={{ userSelect: "all" }}>{convertedTxt}</small>
+        {/* <input type="text" onChange={(e) => convertText(e.target.value)} />
+        <small style={{ userSelect: "all" }}>{convertedTxt}</small> */}
         <div className="caisses-container">
           <LoadCaisse
             pageID={boxPage}

@@ -45,8 +45,8 @@ export const caissesDates = [
   "08_22",
   "07_22",
   "06_22",
-  "FireDroX",
   "inconnus",
+  "FireDroX",
 ];
 
 export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
@@ -62,11 +62,7 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
 
   const loopFinishedItems = () => {
     let finishedItems = 0;
-    for (
-      let caisseDate = 0;
-      caisseDate < caissesDates.length - 2;
-      caisseDate++
-    ) {
+    for (let caisseDate = 0; caisseDate < caissesDates.length; caisseDate++) {
       const newCaisse = require(`../../utils/caisses/${caissesDates[caisseDate]}.js`);
       finishedItems += newCaisse.default.items.filter((item) =>
         item.hasOwnProperty("name")
