@@ -5,11 +5,6 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Loader from "./components/Loader/Loader";
 import Navbar from "./components/Navbar/Navbar";
 
-// import Caisses from "./pages/caisses/Caisses";
-// import Colors from "./pages/colors/Colors";
-// import Minage from "./pages/minage/Minage";
-// import Prestiges from "./pages/prestiges/Prestiges";
-
 const Caisses = lazy(() => import("./pages/caisses/Caisses"));
 const Colors = lazy(() => import("./pages/colors/Colors"));
 const Minage = lazy(() => import("./pages/minage/Minage"));
