@@ -1,4 +1,6 @@
 import "./Caisses.css";
+import "../../components/MinecraftColoredText/MinecraftColoredText.css";
+
 import { useContext, useState } from "react";
 import { UserContext } from "../../utils/UserContext";
 
