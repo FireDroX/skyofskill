@@ -22,6 +22,7 @@ const mc_icons = [
 ];
 
 export const caissesDates = [
+  "05_24",
   "04_24",
   "03_24",
   "02_24",
@@ -103,7 +104,7 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
           </h6>
           <div className="loadCaisse-enchants-list">
             <div>
-              {items[itemID.index].enchants.map((e, eIndex) => (
+              {items[itemID.index].enchants?.map((e, eIndex) => (
                 <small
                   style={{ userSelect: "none", fontFamily: "Minecraftia" }}
                   key={e + eIndex}
