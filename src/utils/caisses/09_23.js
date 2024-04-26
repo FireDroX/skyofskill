@@ -43,7 +43,7 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "???",
+      defaultName: "Derringer Légendaire",
       type: 6,
       enchants: [
         "&bPunch &r&3V&r",

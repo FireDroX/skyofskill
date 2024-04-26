@@ -137,10 +137,11 @@ const caisse = {
       enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
     },
     {
-      defaultName: "???",
+      name: "&r&8&ki&r&7⌖&r&f​✈&r&7⌖&r&8&ki&r&8&l &r&8&lG&r&7&ll&r&f&la&r&8&li&r&7&lv&r&f&le &r&8&lS&r&7&lt&r&f&le&r&8&ll&r&7&ll&r&f&la&r&8&li&r&7&lr&r&f&le &r&8&ki&r&7⌖&r&f​✈&r&7⌖&r&8&ki",
+      defaultName: "Glaive Stellaire",
       type: 5,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&283&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

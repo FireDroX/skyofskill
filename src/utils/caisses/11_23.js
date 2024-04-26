@@ -23,7 +23,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Voiture Fantôme",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -32,7 +32,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Skate Apocalyptique",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -63,10 +63,10 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Faucille Sanguinaire",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&277&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
@@ -82,12 +82,13 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&f&ki&r&6&ki&r&e⟨&r&6​✡&r&e⟩&r&6&ki&r&f&ki&r&8&l &r&6&lP&r&e&li&r&6&lo&r&e&lc&r&6&lh&r&e&le &r&6&ld&r&e&lu&r&6&l J&r&e&lu&r&6&lg&r&e&le&r&6&lm&r&e&le&r&6&ln&r&e&lt &r&f&ki&r&6&ki&r&e⟨&r&6​✡&r&e⟩&r&6&ki&r&f&ki&r&8&l",
+      defaultName: "Pioche du Jugement",
       type: 7,
       enchants: [
-        "&bEfficency &r&3????&r",
-        "&eSolidité &r&6????&r",
-        "&aFortune &r&2????&r",
+        "&bEfficency &r&31350&r",
+        "&eSolidité &r&61350&r",
+        "&aFortune &r&21350&r",
       ],
     },
     {
