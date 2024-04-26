@@ -71,6 +71,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&f&kt&r&e⋆&r&6✩&r&e⋆&r&f&kt&r&6&l &r&6&lP&r&e&li&r&6&lo&r&e&lc&r&6&lh&r&e&le &r&6&lDé&r&e&lm&r&6&lé&r&e&lt&r&6&lé&r&e&lr&r&6&lo&r&e&ls &r&f&kt&r&e⋆&r&6✩&r&e⋆&r&f&kt",
       defaultName: "Pioche Démétéros",
       type: 7,
       enchants: [

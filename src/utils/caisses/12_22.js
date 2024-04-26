@@ -60,6 +60,16 @@ const caisse = {
       ],
     },
     {
+      name: "&r&b&l&ki&r&f&kt&r&b​☃&r&f&kt&r&b&l&kt&r&b&l P&r&f&li&r&b&lo&r&f&lc&r&b&lh&r&f&le &r&b&lA&r&f&lv&r&b&la&r&f&ll&r&b&la&r&f&ln&r&b&lc&r&f&lh&r&b&le &r&b&l&ki&r&f&kt&r&b​☃&r&f&kt&r&b&l&kt&r&b&l",
+      defaultName: "Pioche Avalanche",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3150&r",
+        "&eSolidité &r&650&r",
+        "&aFortune &r&2325&r",
+      ],
+    },
+    {
       name: "&r&f◘&r&d&kt&r&5&kt&r&d​❤&r&5&kt&r&d&kt&r&f◘&r&5&l &r&5&lA&r&d&ls&r&5&lp&r&d&li&r&5&lr&r&d&la&r&5&lt&r&d&le&r&5&lu&r&d&lr&r&5&l à &r&d&lC&r&5&la&r&d&ld&r&5&le&r&d&la&r&5&lu&r&d&lx &r&f◘&r&d&kt&r&5&kt&r&d​❤&r&5&kt&r&d&kt&r&f◘&r&5&l",
       defaultName: "Aspirateur à Cadeaux",
       type: 7,
@@ -77,15 +87,6 @@ const caisse = {
         "&bEfficency &r&3300&r",
         "&eSolidité &r&6100&r",
         "&aFortune &r&2500&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 7,
-      enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
       ],
     },
     {
