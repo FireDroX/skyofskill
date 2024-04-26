@@ -7,21 +7,20 @@
 
 <br />
 
-<details>
-  <summary>Table des Matières</summary>
-  <ol>
-    <li>
-      <a href="#features">Features</a>
-      <ul>
-        <li><a href="#minage">Minage</a></li>
-        <li><a href="#caisses">Caisses</a></li>
-        <li><a href="#prestiges">Prestiges</a></li>
-        <li><a href="#colored-text">Colored Text</a></li>
-      </ul>
-      <a href="#special-thanks">Special Thanks</a>
-    </li>
-  </ol>
-</details>
+<ol>
+  <li>
+    <a href="#features">Features</a>
+    <ul>
+      <li><a href="#minage">Minage</a></li>
+      <li><a href="#caisses">Caisses</a></li>
+      <li><a href="#prestiges">Prestiges</a></li>
+      <li><a href="#colored-text">Colored Text</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#special-thanks">Special Thanks</a>
+  </li>
+</ol>
 
 <br />
 
@@ -93,6 +92,8 @@ Formate un texte que tu souhaites avec des couleurs et des modifications infinie
   - Okamino\_
   - HDIFOX302
   - OverRhity
+
+<p align="right">(<a href="#readme-top">début de page</a>)</p>
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://react.dev/
