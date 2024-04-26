@@ -14,6 +14,7 @@
       <a href="#features">Features</a>
       <ul>
         <li><a href="#minage">Minage</a></li>
+        <li><a href="caisses">Caisses</a></li>
         <li><a href="#prestiges">Prestiges</a></li>
         <li><a href="#colored-text">Colored Text</a></li>
       </ul>
@@ -43,21 +44,29 @@ Avec ce calcul nous pouvons estimer combien faisons nous toute les 30 secondes e
 
 ---
 
+### Caisses
+
+Visualisez TOUT les items du serveur ! Les pioches, les armures, les épées, les arcs et les haches.
+Et en couleur !
+
+<div align="center">
+  <img src="src/assets/example/example_item.png" alt="Example" />
+</div>
+<br />
+<p align="right">(<a href="#readme-top">début de page</a>)</p>
+
+---
+
 ### Prestiges
 
 Permet de calculer le prix du passage de un ou de plusieurs prestiges, ainsi que de visionner l'évolution des prix.
 <br />
 _PS : Les prix peuvent changer dans le temps._
 
-```js
-export const prestiges = [
-  ...
-  { name: "P69", prix: 55000000000000 },
-  { name: "P70", prix: 150000000000000 },
-  ...
-]
-```
-
+<div align="center">
+  <img src="src/assets/example/example_prestiges.png" alt="Prestiges" />
+</div>
+<br />
 <p align="right">(<a href="#readme-top">début de page</a>)</p>
 
 ---
@@ -66,16 +75,10 @@ export const prestiges = [
 
 Formate un texte que tu souhaites avec des couleurs et des modifications infinie !
 
-```
-Hello World
-&fHello&r&4&l World&r
-```
-
-```
-Hi There
-§2§nHi§r§b§l There§r
-```
-
+<div align="center">
+  <img src="src/assets/example/example_colors.png" alt="Colors" />
+</div>
+<br />
 <p align="right">(<a href="#readme-top">début de page</a>)</p>
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
