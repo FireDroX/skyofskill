@@ -60,7 +60,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "HALLOWEEN",
+      defaultName: "???",
       type: 7,
       enchants: [
         "&bEfficency &r&3???&r",
@@ -69,12 +69,13 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&6&l&ki&r&8&l&kii&r&6&l&ki&r&f​☠&r&6&l&ki&r&8&l&kii&r&6&l&ki&r&6&l H&r&8&lA&r&6&lL&r&8&lL&r&6&lO&r&8&lW&r&6&lE&r&8&lE&r&6&lN &r&6&l&ki&r&8&l&kii&r&6&l&ki&r&f​☠&r&6&l&ki&r&8&l&kii&r&6&l&ki&r&6",
+      defaultName: "HALLOWEEN",
       type: 7,
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3150&r",
+        "&eSolidité &r&650&r",
+        "&aFortune &r&2300&r",
       ],
     },
     {

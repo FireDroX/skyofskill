@@ -13,7 +13,8 @@ const caisse = {
   title: "PIRATE",
   items: [
     {
-      defaultName: "???",
+      name: "&r&f&ki&r&7*&r&8​⚔&r&7*&r&f&ki&r&4&l &r&8&lP&r&7&li&r&f&lr&r&8&la&r&7&lt&r&f&le &r&f&ki&r&7*&r&8​⚔&r&7*&r&f&ki",
+      defaultName: "Pirate",
       type: 6,
       enchants: [
         "&bPunch &r&3III&r",

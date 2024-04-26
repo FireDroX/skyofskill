@@ -23,7 +23,8 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&a&ki&r&f✦&r&a​☃&r&f✦&r&a&ki&r&a &r&a&lM&r&f&lo&r&a&lt&r&f&lo&r&a&l d&r&f&lu&r&a&l L&r&f&lu&r&a&lt&r&f&li&r&a&ln &r&a&ki&r&f✦&r&a​☃&r&f✦&r&a&ki",
+      defaultName: "Moto du Lutin",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -32,7 +33,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Fusée de Noël",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -42,7 +43,7 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "???",
+      defaultName: "Traineau Père Noël",
       type: 6,
       enchants: [
         "&bPunch &r&3V&r",
@@ -92,12 +93,12 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Foreuse Père Noël",
       type: 7,
       enchants: [
-        "&bEfficency &r&3????&r",
-        "&eSolidité &r&6????&r",
-        "&aFortune &r&2????&r",
+        "&bEfficency &r&31650&r",
+        "&eSolidité &r&61650&r",
+        "&aFortune &r&21650&r",
       ],
     },
     {

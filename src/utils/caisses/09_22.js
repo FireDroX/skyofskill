@@ -77,12 +77,13 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&6&l&kt&r&e&kt&r&b&kt&r&e​⚔&r&b&kt&r&e&kt&r&6&l&kt&r&6&l D&r&e&lé&r&6&lt&r&e&le&r&6&lc&r&e&lt&r&6&le&r&e&lu&r&6&lr &r&e&ld&r&6'&r&e&lO&r&6&lr &r&6&l&kt&r&e&kt&r&b&kt&r&e​⚔&r&b&kt&r&e&kt&r&6&l&kt&r&6&l",
+      defaultName: "Détecteur d'Or",
       type: 7,
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3250&r",
+        "&eSolidité &r&6100&r",
+        "&aFortune &r&2300&r",
       ],
     },
     {

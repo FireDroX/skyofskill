@@ -23,7 +23,8 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&d&ki&r&f&ki&r&dϟ&r&f✩&r&dϟ&r&f&ki&r&d&ki&r&8&l &r&d&lA&r&f&lr&r&d&lc&r&f&l d&r&d&le&r&f&ls&r&d&l C&r&f&lé&r&d&ll&r&f&lé&r&d&lb&r&f&lr&r&d&la&r&f&lt&r&d&li&r&f&lo&r&d&ln&r&f&ls &r&d&ki&r&f&ki&r&dϟ&r&f✩&r&dϟ&r&f&ki&r&d&ki",
+      defaultName: "Arc des Célébrations",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -134,10 +135,11 @@ const caisse = {
       enchants: ["&b&lProtection &r&3&l73&r", "&eSolidité &r&673&r"],
     },
     {
-      defaultName: "???",
+      name: "&r&d&ki&r&f&ki&r&dϟ&r&f✩&r&dϟ&r&f&ki&r&d&ki&r&8&l &r&d&lS&r&f&lc&r&d&le&r&f&lp&r&d&lt&r&f&lr&r&d&le&r&f&l d&r&d&le&r&f&ls&r&d&l C&r&f&lé&r&d&ll&r&f&lé&r&d&lb&r&f&lr&r&d&la&r&f&lt&r&d&li&r&f&lo&r&d&ln&r&f&ls &r&d&ki&r&f&ki&r&dϟ&r&f✩&r&dϟ&r&f&ki&r&d&ki",
+      defaultName: "Sceptre des Célébrations",
       type: 5,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&279&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

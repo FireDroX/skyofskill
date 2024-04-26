@@ -99,6 +99,6 @@
 .loadCaisse > small {
   color: var(--secondary35);
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   right: 10px;
 }

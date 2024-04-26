@@ -60,12 +60,13 @@ const caisse = {
       ],
     },
     {
+      name: "&r&6&l&ki&r&e&kt&r&f✯&r&e&kt&r&6&l&kt&r &r&6&l &nP&r&e&l&nerforatrice&r &r&6 &l&nU&r&e&l&nltime&r &r&6 &l&ki&r&e&kt&r&f✯&r&e&kt&r&6&l&kt&r&6&l",
       defaultName: "Perforatrice Ultime",
       type: 7,
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3400&r",
+        "&eSolidité &r&6400&r",
+        "&aFortune &r&2475&r",
       ],
     },
     {
@@ -78,12 +79,13 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&1&l&kt&r&3&kt&r&b&kt&r&f✯&r&b&kt&r&3&kt&r&1&l&kt&r&1&l P&r&3&le&r&b&lr&r&f&lf&r&1&lo&r&3&lr&r&b&la&r&f&lt&r&1&le&r&9&lu&r&3&lr&r&b&l D&r&1&li&r&3&lv&r&b&li&r&f&ln &r&1&l&kt&r&3&kt&r&b&kt&r&f✯&r&b&kt&r&3&kt&r&1&l&kt&r&1&l",
+      defaultName: "Perforateur Divin",
       type: 7,
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3525&r",
+        "&eSolidité &r&6525&r",
+        "&aFortune &r&2525&r",
       ],
     },
     {

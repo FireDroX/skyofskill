@@ -82,21 +82,23 @@ const caisse = {
       ],
     },
     {
+      name: "&r&8&kt&r&f⋆&r&e​⚓&r&f⋆&r&8&kt&r&6&l &r&8&lF&r&7&lo&r&e&lr&r&8&le&r&7&lu&r&e&ls&r&8&le &r&7&lL&r&e&la&r&8&ls&r&7&ls&r&e&lo &r&8&kt&r&f⋆&r&e​⚓&r&f⋆&r&8&kt&r&6&l",
+      defaultName: "Foreuse Lasso",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3800&r",
+        "&eSolidité &r&6800&r",
+        "&aFortune &r&2800&r",
+      ],
+    },
+    {
+      name: "&r&a&kt&r&f&kt&r&2✕&r&a​✖&r&2✕&r&f&kt&r&a&kt&r&2&l &r&2&lP&r&a&li&r&2&lo&r&a&lc&r&2&lh&r&a&le &r&f&lC&r&a&la&r&f&lc&r&a&lt&r&f&lu&r&a&ls &r&a&kt&r&f&kt&r&2✕&r&a​✖&r&2✕&r&f&kt&r&a&kt",
       defaultName: "Pioche Cactus",
       type: 7,
       enchants: [
         "&bEfficency &r&3900&r",
         "&eSolidité &r&6900&r",
         "&aFortune &r&2900&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 7,
-      enchants: [
-        "&bEfficency &r&3????&r",
-        "&eSolidité &r&6????&r",
-        "&aFortune &r&2????&r",
       ],
     },
     {
