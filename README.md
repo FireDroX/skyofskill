@@ -14,10 +14,11 @@
       <a href="#features">Features</a>
       <ul>
         <li><a href="#minage">Minage</a></li>
-        <li><a href="caisses">Caisses</a></li>
+        <li><a href="#caisses">Caisses</a></li>
         <li><a href="#prestiges">Prestiges</a></li>
         <li><a href="#colored-text">Colored Text</a></li>
       </ul>
+      <a href="#special-thanks">Special Thanks</a>
     </li>
   </ol>
 </details>
@@ -80,6 +81,18 @@ Formate un texte que tu souhaites avec des couleurs et des modifications infinie
 </div>
 <br />
 <p align="right">(<a href="#readme-top">début de page</a>)</p>
+
+---
+
+## Special Thanks
+
+- Pour l'aide sur les noms des items de box:
+  - HDIFOX302 (17 items)
+  - OverRhity (12 items)
+- Pour l'aide sur les différents prix des prestiges:
+  - Okamino\_
+  - HDIFOX302
+  - OverRhity
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://react.dev/
