@@ -26,6 +26,11 @@
 
 [![React][React.js]][React-url]
 
+> [!WARNING]
+> Les informations peuvent être fausses et peuvent changer dans le temps !
+
+> Projet personnel, non affilié au serveur de `TryToKnowMe_`
+
 ## Features
 
 ---
@@ -61,7 +66,6 @@ Et en couleur !
 
 Permet de calculer le prix du passage de un ou de plusieurs prestiges, ainsi que de visionner l'évolution des prix.
 <br />
-_PS : Les prix peuvent changer dans le temps._
 
 <div align="center">
   <img src="src/assets/example/example_prestiges.png" alt="Prestiges" />
@@ -95,6 +99,17 @@ Formate un texte que tu souhaites avec des couleurs et des modifications infinie
   - OverRhity
 
 <p align="right">(<a href="#readme-top">début de page</a>)</p>
+
+---
+
+<div align="center">
+  <br/>
+  <img src="https://github.com/SAWARATSUKI/ServiceLogos/blob/main/React/React.png?raw=true" alt="react" height="150" >
+  <br/>
+</div>
+
+> Icon by [@Sawaratsuki](https://x.com/sawaratsuki1004) ;
+> Github [ServiceLogos](https://github.com/SAWARATSUKI/ServiceLogos)
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://react.dev/
