@@ -2,7 +2,8 @@
 
 <div align="center">
   <img src="src/assets/logo.png" alt="Logo" width="80" height="80">
-  <h3 align="center">SkyOfSkill ToolBox</h3>
+  <img src="https://skyofskill.fr/storage/img/newlog.png" alt="sos" width=140>
+  <h3 align="center">Boîte à Outils SkyOfSkill 🛠️🎮</h3>
 </div>
 
 <br />
@@ -27,9 +28,9 @@
 [![React][React.js]][React-url]
 
 > [!WARNING]
-> Les informations peuvent être fausses et peuvent changer dans le temps !
+> Les informations fournies peuvent être obsolètes et sujettes à modification dans le temps !
 
-> Projet personnel, non affilié au serveur de `TryToKnowMe_`
+> Ce projet est personnel et n'est pas affilié au serveur de `TryToKnowMe_` > _(play.skyofskill.fr)_
 
 ## Features
 
@@ -37,68 +38,72 @@
 
 ### Minage
 
-_Formule du calcul théorique de combien chaque bloc de votre mine vous donne en fonction de votre pioche ainsi que du boost que vous allez utiliser._
+Pour estimer le rendement potentiel de chaque bloc extrait de votre mine, vous pouvez utiliser la formule suivante, qui prend en compte la valeur de la mine, la qualité de votre pioche (exprimée par un coefficient de fortune), ainsi que l'effet multiplicateur d'un éventuel boost :
 
 ```js
 const blocValue = mineValue * (picFortune + 1) * multiplyBoost;
 ```
 
-Avec ce calcul nous pouvons estimer combien faisons nous toute les 30 secondes et toutes les 15 minutes.
+En utilisant cette formule, vous pouvez estimer la production toutes les 30 secondes ainsi que toutes les 15 minutes.
 
-<p align="right">(<a href="#readme-top">début de page</a>)</p>
+<p align="right">(<a href="#readme-top">Retour en haut de la page</a>)</p>
 
 ---
 
 ### Caisses
 
-Visualisez TOUT les items du serveur ! Les pioches, les armures, les épées, les arcs et les haches.
-Et en couleur !
+Affichez tous les éléments du serveur en un coup d'œil ! Des pioches aux armures, en passant par les épées, les arcs et les haches. Et avec une touche de couleur !
 
 <div align="center">
   <img src="src/assets/example/example_item.png" alt="Example" />
 </div>
 <br />
-<p align="right">(<a href="#readme-top">début de page</a>)</p>
+
+<p align="right">(<a href="#readme-top">Retour en haut de la page</a>)</p>
 
 ---
 
 ### Prestiges
 
-Permet de calculer le prix du passage de un ou de plusieurs prestiges, ainsi que de visionner l'évolution des prix.
+Facilitez le calcul du coût pour passer un ou plusieurs niveaux de prestige, et visualisez l'évolution des prix avec cette fonctionnalité.
 <br />
 
 <div align="center">
   <img src="src/assets/example/example_prestiges.png" alt="Prestiges" />
 </div>
 <br />
-<p align="right">(<a href="#readme-top">début de page</a>)</p>
+
+<p align="right">(<a href="#readme-top">Retour en haut de la page</a>)</p>
 
 ---
 
 ### Colored Text
 
-Formate un texte que tu souhaites avec des couleurs et des modifications infinie !
+Personnalisez votre texte avec des couleurs et des modifications infinies selon vos préférences !
 
 <div align="center">
   <img src="src/assets/example/example_colors.png" alt="Colors" />
 </div>
 <br />
-<p align="right">(<a href="#readme-top">début de page</a>)</p>
+
+<p align="right">(<a href="#readme-top">Retour en haut de la page</a>)</p>
 
 ---
 
 ## Special Thanks
 
-- Pour l'aide sur les noms des items de box:
-  - HDIFOX302 (17 items)
-  - yoann71C (17 items)
-  - OverRhity (14 items)
-- Pour l'aide sur les différents prix des prestiges:
+- Pour l'aide concernant les noms des objets des caisses :
+
+  - HDIFOX302 (17 objets)
+  - yoann71C (17 objets)
+  - OverRhity (14 objets)
+
+- Pour l'aide sur les prix des différents niveaux de prestige :
   - Okamino\_
   - HDIFOX302
   - OverRhity
 
-<p align="right">(<a href="#readme-top">début de page</a>)</p>
+<p align="right">(<a href="#readme-top">Retour en haut de la page</a>)</p>
 
 ---
 
