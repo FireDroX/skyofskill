@@ -13,34 +13,6 @@ const caisse = {
   title: "HALLOWEEN",
   items: [
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3III&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
       name: "&r&6&l&kt&r&8&kt&r&6&kt&r&e​☠&r&6&kt&r&8&kt&r&6&l&kt&r&6&l L&r&8&le &r&6&lC&r&8&le&r&6&lr&r&8&lc&r&6&lu&r&8&le&r&6i&r&8&ll &r&6&l&kt&r&8&kt&r&6&kt&r&e​☠&r&6&kt&r&8&kt&r&6&l&kt&r&6&l",
       defaultName: "Le Cercueil",
       type: 4,
@@ -57,6 +29,15 @@ const caisse = {
         "&aTranchant &r&2??&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
+      ],
+    },
+    {
+      defaultName: "???",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3???&r",
+        "&eSolidité &r&6???&r",
+        "&aFortune &r&2???&r",
       ],
     },
     {

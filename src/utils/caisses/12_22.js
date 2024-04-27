@@ -13,34 +13,6 @@ const caisse = {
   title: "NOEL",
   items: [
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3III&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
       name: "&r&b&kt&r&3​☃&r&b&kt&r&b&l Pè&r&f&lre &r&b&lNo&r&f&lël &r&b&kt&r&3​☃&r&b&kt&r&6&l",
       defaultName: "Père Noël",
       type: 4,
@@ -67,6 +39,16 @@ const caisse = {
         "&bEfficency &r&3150&r",
         "&eSolidité &r&650&r",
         "&aFortune &r&2325&r",
+      ],
+    },
+    {
+      name: "&r&4&l&kt&r&c&kt&r&e&kt&r&c✪&r&e&kt&r&c&kt&r&4&l&kt&r&4&l Br&r&c&loy&r&4&leu&r&c&lr d&r&4&le G&r&c&lât&r&4&lea&r&c&lu &r&4&l&kt&r&c&kt&r&e&kt&r&c✪&r&e&kt&r&c&kt&r&4&l&kt&r&4&l",
+      defaultName: "Broyeur de Gâteau",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3150&r",
+        "&eSolidité &r&6100&r",
+        "&aFortune &r&2400&r",
       ],
     },
     {

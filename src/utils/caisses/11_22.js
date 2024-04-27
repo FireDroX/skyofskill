@@ -13,34 +13,6 @@ const caisse = {
   title: "HALLOWEEN",
   items: [
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3III&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
       defaultName: "Halloween",
       type: 4,
       enchants: [
@@ -50,12 +22,21 @@ const caisse = {
       ],
     },
     {
-      defaultName: "Faucille Sanguinaire",
+      defaultName: "???",
       type: 4,
       enchants: [
         "&aTranchant &r&2??&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
+      ],
+    },
+    {
+      defaultName: "???",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3???&r",
+        "&eSolidité &r&6???&r",
+        "&aFortune &r&2???&r",
       ],
     },
     {
@@ -78,12 +59,13 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&f◘&r&b&kt&r&9&kt&r&3✟&r&9&kt&r&b&kt&r&f◘&r&9&l F&r&3&la&r&b&lu&r&9&lc&r&3&lh&r&b&le&r&9&lu&r&3&ls&r&b&le &r&9&lM&r&3&la&r&b&ll&r&9&lé&r&3&lf&r&b&li&r&9&lq&r&3&lu&r&b&le &r&f◘&r&b&kt&r&9&kt&r&3✟&r&9&kt&r&b&kt&r&f◘&r&9&l",
+      defaultName: "Faucheuse Maléfique",
       type: 7,
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3150&r",
+        "&eSolidité &r&6100&r",
+        "&aFortune &r&2400&r",
       ],
     },
     {

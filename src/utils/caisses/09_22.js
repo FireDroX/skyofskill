@@ -14,34 +14,6 @@ const caisse = {
   items: [
     {
       defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3III&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
-      defaultName: "???",
       type: 4,
       enchants: [
         "&aTranchant &r&2??&r",
@@ -56,6 +28,15 @@ const caisse = {
         "&aTranchant &r&2??&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
+      ],
+    },
+    {
+      defaultName: "???",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3???&r",
+        "&eSolidité &r&6???&r",
+        "&aFortune &r&2???&r",
       ],
     },
     {
