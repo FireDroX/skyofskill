@@ -51,10 +51,11 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&5&l&kt&r&f&ktt&r&d​❤&r&f&ktt&r&5&l&kt&r&5&l &r&5&lL&r&d&la&r&5&lm&r&d&le &r&5&ld&r&d&le &r&a&lC&r&b&lo&r&c&le&r&d&lu&r&e&lr &r&5&l&kt&r&f&ktt&r&d​❤&r&f&ktt&r&5&l&kt&r&5&l",
+      defaultName: "Lame de Coeur",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&253&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

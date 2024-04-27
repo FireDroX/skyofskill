@@ -53,10 +53,11 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&d&kt&r&f&kt&r&b〠&r&f&kt&r&d&kt&r&8&l &r&b&lB&r&f&lo&r&d&lu&r&f&lf&r&b&lt&r&f&lo&r&d&lu &r&d&kt&r&f&kt&r&b〠&r&f&kt&r&d&kt&r&8&l",
+      defaultName: "Bouftou",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&263&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

@@ -66,6 +66,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&e&k&l|&r&a★&r&2☭&r&a★&r&e&k&l|&r&r &r&b&lB&r&f&lR&r&b&lO&r&f&lY&r&b&lE&r&f&lU&r&b&lR &r&f&lD&r&b&lE &r&f&lT&r&b&lE&r&f&lS&r&b&lS&r&f&lE&r&b&lR&r&f&lA&r&b&lC&r&f&lT &r&e&k&l|&r&a★&r&2☭&r&a★&r&e&k&l|",
       defaultName: "Broyeur de Tesseract",
       type: 7,
       enchants: [

@@ -62,6 +62,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&4&kt&r&c​✡&r&4&kt&r&4&l P&r&c&li&r&4&lo&r&c&lc&r&4&lh&r&c&le &r&4&lY&r&c&lV&r&4&lE&r&c&lL&r&4&lT&r&c&lA&r&4&lL &r&4&kt&r&c​✡&r&4&kt&r&4&l",
       defaultName: "Pioche YVELTAL",
       type: 7,
       enchants: [

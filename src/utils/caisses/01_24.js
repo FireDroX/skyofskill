@@ -33,7 +33,8 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&c&ki&r&f​☄&r&c​⚠&r&f​☄&r&c&ki&r&c &l C&r&f&la&r&c&ln&r&f&lo&r&c&ln&r&f&l à&r&c&l C&r&f&lo&r&c&ln&r&f&lf&r&c&le&r&f&lt&r&c&lt&r&f&li&r&c&ls &r&c&ki&r&f​☄&r&c​⚠&r&f​☄&r&c&ki",
+      defaultName: "Canon à Confettis",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",

@@ -51,10 +51,11 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&c&ktt&r&4​⚔&r&c&ktt&r&4&l &r&4&lK&r&c&la&r&4&lt&r&c&la&r&4&ln&r&c&la &r&4&ld&r&c&l'&r&4&lA&r&c&lt&r&4&lh&r&c&lé&r&4&ln&r&c&la &r&c&ktt&r&4​⚔&r&c&ktt&r&4&l",
+      defaultName: "Katana d'Athéna",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&256&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
@@ -113,10 +114,11 @@ const caisse = {
       enchants: ["&b&lProtection &r&3&l50&r", "&eSolidité &r&650&r"],
     },
     {
-      defaultName: "???",
+      name: "&r&a&kt&r&d&kt&r&5​⚔&r&d&kt&r&a&kt&r&5&l B&r&d&lr&r&a&la&r&5&lq&r&d&lu&r&a&le&r&5&lm&r&d&la&r&a&lr&r&5&lt&r&d&l d&r&a'&r&5&lA&r&d&lt&r&a&lh&r&5&lé&r&d&ln&r&a&la &r&a&kt&r&d&kt&r&5​⚔&r&d&kt&r&a&kt&r&5&l",
+      defaultName: "Braquemart d'Athéna",
       type: 5,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&255&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

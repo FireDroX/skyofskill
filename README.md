@@ -87,6 +87,7 @@ Formate un texte que tu souhaites avec des couleurs et des modifications infinie
 
 - Pour l'aide sur les noms des items de box:
   - HDIFOX302 (17 items)
+  - yoann71C (17 items)
   - OverRhity (14 items)
 - Pour l'aide sur les différents prix des prestiges:
   - Okamino\_

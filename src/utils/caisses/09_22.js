@@ -80,7 +80,7 @@ const caisse = {
       enchants: ["&b&lProtection &r&3&l37&r", "&eSolidité &r&637&r"],
     },
     {
-      defaultName: "???",
+      defaultName: "Pantalon de Pirate",
       type: 2,
       enchants: ["&b&lProtection &r&3&l37&r", "&eSolidité &r&637&r"],
     },

@@ -113,10 +113,11 @@ const caisse = {
       enchants: ["&b&lProtection &r&3&l53&r", "&eSolidité &r&653&r"],
     },
     {
-      defaultName: "???",
+      name: "&r&9&kt&r&b&kt&r&1​♨&r&b&kt&r&9&kt&r&1&l P&r&9&lo&r&b&li&r&f&ls&r&1&ls&r&9&lo&r&b&ln &r&f&lM&r&1&la&r&9&lg&r&b&li&r&f&lq&r&1&lu&r&9&le &r&9&kt&r&b&kt&r&1​♨&r&b&kt&r&9&kt&r&1&l",
+      defaultName: "Poisson Magique",
       type: 5,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&258&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

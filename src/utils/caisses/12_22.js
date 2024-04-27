@@ -23,10 +23,11 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&4&l&kt&r&c&ktt&r&f​☃&r&c&ktt&r&4&l&kt&r&4&l F&r&c&lo&r&4&lu&r&c&le&r&4&lt&r&c&l d&r&4&lu &r&4&lP&r&c&lè&r&4&lr&r&c&le&r&4&l F&r&c&lo&r&4&lu&r&c&le&r&4&lt&r&c&lt&r&4&la&r&c&lr&r&4&ld &r&4&l&kt&r&c&ktt&r&f​☃&r&c&ktt&r&4&l&kt&r&4&l",
+      defaultName: "Fouet du Père Fouettard",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&248&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
