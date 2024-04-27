@@ -4,26 +4,63 @@ import "../../components/MinecraftColoredText/MinecraftColoredText.css";
 import { useContext, useState } from "react";
 import { UserContext } from "../../utils/UserContext";
 
-import {
-  LoadCaisse,
-  caissesDates,
-} from "../../components/LoadCaisse/LoadCaisse";
+import { LoadCaisse } from "../../components/LoadCaisse/LoadCaisse";
 import { numberToMonth } from "../../utils/functions";
+
+const caissesDates = [
+  "05_24",
+  "04_24",
+  "03_24",
+  "02_24",
+  "01_24",
+  "12_23",
+  "11_23",
+  "10_23",
+  "09_23",
+  "08_23",
+  "07_23",
+  "06_23",
+  "05_23",
+  "04_23",
+  "03_23",
+  "02_23",
+  "01_23",
+  "12_22",
+  "11_22",
+  "10_22",
+  "09_22",
+  "08_22",
+  "07_22",
+  "06_22",
+  "inconnus",
+  "FireDroX",
+];
 
 const Caisses = () => {
   const { boxPage, setBoxPage, isClicked, setIsClicked } =
     useContext(UserContext);
 
+  const [caisse, setCaisse] = useState(
+    require(`../../utils/caisses/${caissesDates[boxPage]}.js`)
+  );
+  const [search, setSearch] = useState("");
+
   const handleBtn = (e) => {
     switch (e) {
       case "+":
         if (boxPage !== caissesDates.length - 1) {
+          setCaisse(
+            require(`../../utils/caisses/${caissesDates[boxPage + 1]}.js`)
+          );
           setBoxPage(boxPage + 1);
           setIsClicked({ clicked: false, index: 0 });
         }
         break;
       case "-":
         if (boxPage !== 0) {
+          setCaisse(
+            require(`../../utils/caisses/${caissesDates[boxPage - 1]}.js`)
+          );
           setBoxPage(boxPage - 1);
           setIsClicked({ clicked: false, index: 0 });
         }
@@ -33,9 +70,25 @@ const Caisses = () => {
     }
   };
 
+  const handleSearch = (e) => {
+    setSearch(e.toLowerCase());
+    setIsClicked({ clicked: false, index: 0 });
+  };
+
   const getDate = () => {
     let dateArray = caissesDates[boxPage].split("_");
     return `${numberToMonth(dateArray[0]) + " 20" + dateArray[1]}`;
+  };
+
+  const loopFinishedItems = () => {
+    let finishedItems = [];
+    for (let caisseDate = 0; caisseDate < caissesDates.length; caisseDate++) {
+      const newCaisse = require(`../../utils/caisses/${caissesDates[caisseDate]}.js`);
+      newCaisse.default.items
+        .filter((item) => item.hasOwnProperty("name"))
+        .map((i) => finishedItems.push(i));
+    }
+    return finishedItems;
   };
 
   // const [convertedTxt, setConvertedTxt] = useState("nothing");
@@ -50,22 +103,66 @@ const Caisses = () => {
         {/* <input type="text" onChange={(e) => convertText(e.target.value)} />
         <small style={{ userSelect: "all" }}>{convertedTxt}</small> */}
         <div className="caisses-container">
-          <LoadCaisse
-            pageID={boxPage}
-            itemID={isClicked}
-            setItemID={setIsClicked}
-          />
-          {caissesDates[boxPage].match("_") ? (
-            <small>Box de {getDate()}</small>
+          <div className="caisse-search">
+            <small style={{ color: "var(--text85)" }}>Rechercher un item</small>
+            <input
+              name="Rechercher un item"
+              type="text"
+              value={search.toLowerCase()}
+              onChange={(e) => handleSearch(e.target.value)}
+            />
+          </div>
+          {search === "" ? (
+            <>
+              <LoadCaisse
+                box={{
+                  title: "Caisse " + caisse.default.title,
+                  items: caisse.default.items,
+                }}
+                itemID={isClicked}
+                setItemID={setIsClicked}
+              />
+              {caissesDates[boxPage].match("_") ? (
+                <small>Box de {getDate()}</small>
+              ) : (
+                false
+              )}
+            </>
+          ) : (
+            <LoadCaisse
+              box={{
+                title: "",
+                items: loopFinishedItems().filter(
+                  (item) =>
+                    item.defaultName.toLowerCase().match(search) ||
+                    (search === "type:pioche" && item.type === 7) ||
+                    (search === "type:arc" && item.type === 6) ||
+                    (search === "type:hache" && item.type === 5) ||
+                    (search === "type:épée" && item.type === 4) ||
+                    (search === "type:bottes" && item.type === 3) ||
+                    (search === "type:pantalon" && item.type === 2) ||
+                    (search === "type:plastron" && item.type === 1) ||
+                    (search === "type:casque" && item.type === 0) ||
+                    search === "type:all"
+                ),
+              }}
+              itemID={isClicked}
+              setItemID={setIsClicked}
+            />
+          )}
+          {search === "" ? (
+            <div className="input-btns">
+              <button onClick={() => handleBtn("-")}>{"<"}</button>
+              <button onClick={() => handleBtn("+")}>{">"}</button>
+            </div>
           ) : (
             false
           )}
-          <div className="input-btns">
-            <button onClick={() => handleBtn("-")}>{"<"}</button>
-            <button onClick={() => handleBtn("+")}>{">"}</button>
-          </div>
         </div>
       </div>
+      <small className="caisse-footer">
+        {loopFinishedItems().length} items répertoriés.
+      </small>
     </section>
   );
 };

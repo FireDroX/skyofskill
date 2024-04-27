@@ -21,39 +21,9 @@ const mc_icons = [
   pickaxe,
 ];
 
-export const caissesDates = [
-  "05_24",
-  "04_24",
-  "03_24",
-  "02_24",
-  "01_24",
-  "12_23",
-  "11_23",
-  "10_23",
-  "09_23",
-  "08_23",
-  "07_23",
-  "06_23",
-  "05_23",
-  "04_23",
-  "03_23",
-  "02_23",
-  "01_23",
-  "12_22",
-  "11_22",
-  "10_22",
-  "09_22",
-  "08_22",
-  "07_22",
-  "06_22",
-  "inconnus",
-  "FireDroX",
-];
-
-export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
-  const caisse = require(`../../utils/caisses/${caissesDates[pageID]}.js`);
-  const title = caisse.default.title;
-  const items = caisse.default.items.sort((a, b) => a.type - b.type);
+export const LoadCaisse = ({ box, itemID, setItemID }) => {
+  const title = box.title;
+  const items = box.items.sort((a, b) => a.type - b.type);
 
   const handleClick = (i) => {
     if (itemID.clicked && itemID.index !== i)
@@ -61,21 +31,10 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
     else setItemID({ clicked: !itemID.clicked, index: i });
   };
 
-  const loopFinishedItems = () => {
-    let finishedItems = 0;
-    for (let caisseDate = 0; caisseDate < caissesDates.length; caisseDate++) {
-      const newCaisse = require(`../../utils/caisses/${caissesDates[caisseDate]}.js`);
-      finishedItems += newCaisse.default.items.filter((item) =>
-        item.hasOwnProperty("name")
-      ).length;
-    }
-    return finishedItems;
-  };
-
   return (
     <div className="loadCaisse">
       <div className="loadCaisse-container">
-        <h5>Caisse {title}</h5>
+        <h5>{title}</h5>
         <div className="loadCaisse-inventory">
           {items.map((item, index) => (
             <div className="loadCaisse-item" key={title + index}>
@@ -132,7 +91,6 @@ export const LoadCaisse = ({ pageID, itemID, setItemID }) => {
       ) : (
         false
       )}
-      <small>{loopFinishedItems()} items répertoriés.</small>
     </div>
   );
 };
