@@ -5,10 +5,12 @@ import { ConvertFinalText } from "../../utils/functions.jsx";
 import mc_icons from "../../utils/mc_icons.js";
 
 const ImportItem = () => {
-  const [itemType, setItemType] = useState(0);
-  const [convertedTxt, setConvertedTxt] = useState("");
-  const [defaultName, setDefaultName] = useState("");
-  const [enchantValue, setEnchantValue] = useState(0);
+  const [itemType, setItemType] = useState(4);
+  const [convertedTxt, setConvertedTxt] = useState(
+    "&r&b&kt&r&r&r&f&kt&r&r&r&9☛&r&b❤&r&9☚&r&f&kt&r&r&r&b&kt&r&r&r&9  (╯°□°)╯︵ ┻━┻  &r&b&kt&r&r&r&f&kt&r&r&r&9☛&r&b❤&r&9☚&r&f&kt&r&r&r&b&kt&r&r"
+  );
+  const [defaultName, setDefaultName] = useState("(╯°□°)╯︵ ┻━┻");
+  const [enchantValue, setEnchantValue] = useState("69");
   const [DLOD, setDLOD] = useState(false);
 
   const enchantsList = [
@@ -73,6 +75,14 @@ const ImportItem = () => {
     navigator.clipboard.writeText(copiedObject);
   };
 
+  const handleReset = () => {
+    setItemType(0);
+    setConvertedTxt("");
+    setDefaultName("");
+    setEnchantValue("");
+    setDLOD(false);
+  };
+
   return (
     <div className="importItem-container">
       <div className="importItem-values">
@@ -81,6 +91,8 @@ const ImportItem = () => {
             <small>name</small>
             <input
               type="text"
+              value={convertedTxt}
+              defaultValue={convertedTxt}
               onChange={(e) => convertText(e.target.value)}
               style={{ width: "8rem" }}
             />
@@ -89,6 +101,8 @@ const ImportItem = () => {
             <small>defaultName</small>
             <input
               type="text"
+              value={defaultName}
+              defaultValue={defaultName}
               onChange={(e) => setDefaultName(e.target.value)}
               style={{ width: "8rem" }}
             />
@@ -99,6 +113,7 @@ const ImportItem = () => {
             <small>type</small>
             <select
               name="Type"
+              value={itemType}
               defaultValue={itemType}
               onChange={(e) => setItemType(Number(e.target.value))}
             >
@@ -118,6 +133,8 @@ const ImportItem = () => {
             <small>enchants</small>
             <input
               type="text"
+              value={enchantValue}
+              defaultValue={enchantValue}
               onChange={(e) => setEnchantValue(e.target.value)}
               style={{ width: "3rem" }}
             />
@@ -128,7 +145,7 @@ const ImportItem = () => {
               <input
                 type="checkbox"
                 name="dontLeaveOnDeath"
-                defaultValue={DLOD}
+                checked={DLOD}
                 onChange={() => setDLOD(!DLOD)}
               />
             </div>
@@ -175,6 +192,7 @@ const ImportItem = () => {
         </div>
         <div className="importItem-copy">
           <button onClick={handleCopy}>Copy</button>
+          <button onClick={handleReset}>Reset</button>
         </div>
       </div>
     </div>
