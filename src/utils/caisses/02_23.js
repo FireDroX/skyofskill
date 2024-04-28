@@ -51,30 +51,33 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&5&l&kt&r&f&ktt&r&d​❤&r&f&ktt&r&5&l&kt&r&5&l &r&5&lL&r&d&la&r&5&lm&r&d&le &r&5&ld&r&d&le &r&a&lC&r&b&lo&r&c&le&r&d&lu&r&e&lr &r&5&l&kt&r&f&ktt&r&d​❤&r&f&ktt&r&5&l&kt&r&5&l",
+      defaultName: "Lame de Coeur",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&253&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&9&l&ki&r&b&kt&r&f​❤&r&b&kt&r&9&l&kt&r &r&9&l&nP&r&b&l&nioche&r &r&b&l&nde&r &r&9&l&nV&r&b&l&nalentine&r&b &r&9&l&ki&r&b&kt&r&f​❤&r&b&kt&r&9&l&kt&r&9&l",
       type: 7,
+      defaultName: "Pioche de Valentine",
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3200&r",
+        "&eSolidité &r&6200&r",
+        "&aFortune &r&2400&r",
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&6&l&kt&r&6&kt&r&e&kt&r&a​❤&r&e&kt&r&6&kt&r&e&l&kt&r&6&l Ma&r&e&lst&r&6&lic&r&e&lat&r&6&leu&r&e&lr d&r&6&le L&r&e&lov&r&6&lés &r&6&l&kt&r&6&kt&r&e&kt&r&a​❤&r&e&kt&r&6&kt&r&e&l&kt&r&6&l",
       type: 7,
+      defaultName: "Masticateur de Lovés",
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3300&r",
+        "&eSolidité &r&6300&r",
+        "&aFortune &r&2450&r",
       ],
     },
     {

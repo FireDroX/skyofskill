@@ -43,7 +43,7 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "???",
+      defaultName: "Derringer Légendaire",
       type: 6,
       enchants: [
         "&bPunch &r&3V&r",
@@ -82,12 +82,13 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&e&kt&r&f&kt&r&e▲&r&6$&r&e▲&r&f&kt&r&e&kt&r&2&l &r&6&lE&r&e&lx&r&6&lc&r&e&la&r&6&lv&r&e&la&r&6&lt&r&e&le&r&6&lu&r&e&lr &r&6&ld&r&e&le&r&6&l l&r&f'&r&e&lO&r&6&lu&r&e&le&r&6&ls&r&e&lt &r&e&kt&r&f&kt&r&e▲&r&6$&r&e▲&r&f&kt&r&e&kt",
+      defaultName: "Excavateur de l'Ouest",
       type: 7,
       enchants: [
-        "&bEfficency &r&3????&r",
-        "&eSolidité &r&6????&r",
-        "&aFortune &r&2????&r",
+        "&bEfficency &r&31000&r",
+        "&eSolidité &r&61000&r",
+        "&aFortune &r&21000&r",
       ],
     },
     {

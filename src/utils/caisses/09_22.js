@@ -14,34 +14,6 @@ const caisse = {
   items: [
     {
       defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3III&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
-      defaultName: "???",
       type: 4,
       enchants: [
         "&aTranchant &r&2??&r",
@@ -83,6 +55,16 @@ const caisse = {
         "&bEfficency &r&3???&r",
         "&eSolidité &r&6???&r",
         "&aFortune &r&2???&r",
+      ],
+    },
+    {
+      name: "&r&6&l&kt&r&e&kt&r&b&kt&r&e​⚔&r&b&kt&r&e&kt&r&6&l&kt&r&6&l D&r&e&lé&r&6&lt&r&e&le&r&6&lc&r&e&lt&r&6&le&r&e&lu&r&6&lr &r&e&ld&r&6'&r&e&lO&r&6&lr &r&6&l&kt&r&e&kt&r&b&kt&r&e​⚔&r&b&kt&r&e&kt&r&6&l&kt&r&6&l",
+      defaultName: "Détecteur d'Or",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3250&r",
+        "&eSolidité &r&6100&r",
+        "&aFortune &r&2300&r",
       ],
     },
     {
@@ -98,7 +80,7 @@ const caisse = {
       enchants: ["&b&lProtection &r&3&l37&r", "&eSolidité &r&637&r"],
     },
     {
-      defaultName: "???",
+      defaultName: "Pantalon de Pirate",
       type: 2,
       enchants: ["&b&lProtection &r&3&l37&r", "&eSolidité &r&637&r"],
     },

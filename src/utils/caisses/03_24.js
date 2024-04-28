@@ -33,7 +33,8 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&b&kt&r&f≣&r&b✮&r&f≣&r&b&kt&r&b &l P&r&f&li&r&b&ls&r&f&lt&r&b&lo&r&f&ll&r&b&le&r&f&lt&r&b&l É&r&f&lt&r&b&lo&r&f&li&r&b&ll&r&f&le &r&b&kt&r&f≣&r&b✮&r&f≣&r&b&kt&r&b",
+      defaultName: "Pistolet Etoile",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -54,7 +55,8 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "???",
+      name: "&r&8&ki&r&b​♦&r&8&ki&r&b⚝&r&8&ki&r&b​♦&r&8&ki&r&6 &r&8&lA&r&b&ls&r&8&lt&r&b&lr&r&8&lo&r&7-&r&b&lQ&r&8&lu&r&b&la&r&8&ld &r&8&ki&r&b​♦&r&8&ki&r&b⚝&r&8&ki&r&b​♦&r&8&ki&r&6",
+      defaultName: "Astro-Quad",
       type: 6,
       enchants: [
         "&bPunch &r&3VI&r",
@@ -137,10 +139,11 @@ const caisse = {
       enchants: ["&b&lProtection &r&3&l77&r", "&eSolidité &r&677&r"],
     },
     {
-      defaultName: "???",
+      name: "&r&8&ki&r&7⌖&r&f​✈&r&7⌖&r&8&ki&r&8&l &r&8&lG&r&7&ll&r&f&la&r&8&li&r&7&lv&r&f&le &r&8&lS&r&7&lt&r&f&le&r&8&ll&r&7&ll&r&f&la&r&8&li&r&7&lr&r&f&le &r&8&ki&r&7⌖&r&f​✈&r&7⌖&r&8&ki",
+      defaultName: "Glaive Stellaire",
       type: 5,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&283&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

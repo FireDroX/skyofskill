@@ -13,7 +13,8 @@ const caisse = {
   title: "PIRATE",
   items: [
     {
-      defaultName: "???",
+      name: "&r&f&ki&r&7*&r&8​⚔&r&7*&r&f&ki&r&4&l &r&8&lP&r&7&li&r&f&lr&r&8&la&r&7&lt&r&f&le &r&f&ki&r&7*&r&8​⚔&r&7*&r&f&ki",
+      defaultName: "Pirate",
       type: 6,
       enchants: [
         "&bPunch &r&3III&r",
@@ -41,7 +42,7 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "???",
+      defaultName: "WINCHESTER",
       type: 6,
       enchants: [
         "&bPunch &r&3V&r",
@@ -60,10 +61,10 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Sabre du Fantôme",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&275&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],

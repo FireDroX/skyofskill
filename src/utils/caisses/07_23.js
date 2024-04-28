@@ -62,6 +62,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&4&kt&r&c​✡&r&4&kt&r&4&l P&r&c&li&r&4&lo&r&c&lc&r&4&lh&r&c&le &r&4&lY&r&c&lV&r&4&lE&r&c&lL&r&4&lT&r&c&lA&r&4&lL &r&4&kt&r&c​✡&r&4&kt&r&4&l",
       defaultName: "Pioche YVELTAL",
       type: 7,
       enchants: [
@@ -71,6 +72,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&f&kt&r&e⋆&r&6✩&r&e⋆&r&f&kt&r&6&l &r&6&lP&r&e&li&r&6&lo&r&e&lc&r&6&lh&r&e&le &r&6&lDé&r&e&lm&r&6&lé&r&e&lt&r&6&lé&r&e&lr&r&6&lo&r&e&ls &r&f&kt&r&e⋆&r&6✩&r&e⋆&r&f&kt",
       defaultName: "Pioche Démétéros",
       type: 7,
       enchants: [

@@ -23,7 +23,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Voiture Fantôme",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -32,7 +32,8 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&5&ki&r&f​⬇&r&d​✈&r&f​⬇&r&5&ki&r&5 &l S&r&d&lk&r&5&la&r&d&lt&r&5&le A&r&d&lp&r&5&lo&r&d&lc&r&5&la&r&d&ll&r&5&ly&r&d&lp&r&5&lt&r&d&li&r&5&lq&r&d&lu&r&5&le &r&5&ki&r&f​⬇&r&d​✈&r&f​⬇&r&5&ki&r&5",
+      defaultName: "Skate Apocalyptique",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
@@ -63,10 +64,11 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&f&ki&r&4&ki&r&c⁑&r&4✟&r&c⁑&r&4&ki&r&f&ki&r&8&l &r&4&lF&r&c&la&r&4&lu&r&c&lc&r&4&li&r&c&ll&r&4&ll&r&c&le&r&4&l S&r&c&la&r&4&ln&r&c&lg&r&4&lu&r&c&li&r&4&ln&r&c&la&r&4&li&r&c&lr&r&4&le &r&f&ki&r&4&ki&r&c⁑&r&4✟&r&c⁑&r&4&ki&r&f&ki&r&8&l",
+      defaultName: "Faucille Sanguinaire",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&277&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
@@ -82,15 +84,17 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&f&ki&r&6&ki&r&e⟨&r&6​✡&r&e⟩&r&6&ki&r&f&ki&r&8&l &r&6&lP&r&e&li&r&6&lo&r&e&lc&r&6&lh&r&e&le &r&6&ld&r&e&lu&r&6&l J&r&e&lu&r&6&lg&r&e&le&r&6&lm&r&e&le&r&6&ln&r&e&lt &r&f&ki&r&6&ki&r&e⟨&r&6​✡&r&e⟩&r&6&ki&r&f&ki&r&8&l",
+      defaultName: "Pioche du Jugement",
       type: 7,
       enchants: [
-        "&bEfficency &r&3????&r",
-        "&eSolidité &r&6????&r",
-        "&aFortune &r&2????&r",
+        "&bEfficency &r&31350&r",
+        "&eSolidité &r&61350&r",
+        "&aFortune &r&21350&r",
       ],
     },
     {
+      name: "&r&2&ki&r&f​ℹ&r&2​✡&r&f​ℹ&r&2&ki&r&4&l &r&2&lT&r&a&lr&r&2&lo&r&a&ln&r&2&lç&r&f&lo&r&2&ln&r&f&ln&r&2&le&r&f&lu&r&2&ls&r&f&le &r&2&lZ&r&f&lo&r&2&lm&r&f&lb&r&2&li&r&f&le &r&2&ki&r&f​ℹ&r&2​✡&r&f​ℹ&r&2&ki&r&4&l",
       defaultName: "Tronçonneuse Zombie",
       type: 7,
       enchants: [

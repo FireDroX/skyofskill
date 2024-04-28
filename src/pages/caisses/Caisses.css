@@ -12,3 +12,63 @@
   font-weight: 600;
   color: var(--text75);
 }
+
+.input-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input-btns > button {
+  width: 2rem;
+  height: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary65);
+  color: var(--text85);
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  line-height: 1.3rem;
+  transition: all 0.3s ease-out;
+}
+
+.input-btns > button:hover {
+  cursor: pointer;
+  background-color: var(--text85);
+  color: var(--bg);
+}
+
+.caisse-footer {
+  color: var(--secondary35);
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+}
+
+.caisse-search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.caisse-search > input {
+  background-color: var(--secondary80);
+  color: var(--text50);
+  text-align: center;
+  border: none;
+  font-size: 1.333rem;
+  border-radius: 20px;
+  padding: 0.4rem;
+  width: 12rem;
+  transition: 0.25s all ease-out;
+}
+
+.caisse-search > input:hover,
+.caisse-search > input:focus {
+  background-color: transparent;
+  color: var(--text90);
+  outline: var(--text90) 1px solid;
+}

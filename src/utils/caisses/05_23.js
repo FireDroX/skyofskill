@@ -53,10 +53,11 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&d&kt&r&f&kt&r&b〠&r&f&kt&r&d&kt&r&8&l &r&b&lB&r&f&lo&r&d&lu&r&f&lf&r&b&lt&r&f&lo&r&d&lu &r&d&kt&r&f&kt&r&b〠&r&f&kt&r&d&kt&r&8&l",
+      defaultName: "Bouftou",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&263&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
@@ -82,12 +83,13 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&2&kt&r&aϟ&r&f❃&r&aϟ&r&2&kt&r&2&l P&r&a&li&r&f&lo&r&2&lc&r&a&lh&r&f&le &r&2&lS&r&a&lc&r&2&lo&r&a&lu&r&2&lb&r&a&li&r&2&ld&r&a&lo&r&2&lu&r&a&ls &r&2&kt&r&aϟ&r&f❃&r&aϟ&r&2&kt&r&2&l",
+      defaultName: "Pioche Scoubidous",
       type: 7,
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3750&r",
+        "&eSolidité &r&6750&r",
+        "&aFortune &r&2750&r",
       ],
     },
     {

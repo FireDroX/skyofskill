@@ -109,7 +109,6 @@
   width: 1.5em;
   height: 1.5em;
   border: 0.2em solid currentColor;
-  border-radius: 0.15em;
 }
 
 .btns-colors > input[type="checkbox"]:is(:checked),

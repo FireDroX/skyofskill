@@ -31,9 +31,9 @@ export const formatNumberWithSpaces = (number = 0) => {
   else return groups.join(" ");
 };
 
-export const ConvertFinalText = ({ text = String }) => {
+export const ConvertFinalText = ({ text = "" }) => {
   const split = Array.from(text.split(/([&].)/g).filter(Boolean));
-  let newText = String;
+  let newText = "";
   let obfuscatedText = false;
   const replacedArray = Array.from(
     split.map((item) => {
@@ -103,6 +103,7 @@ export const ConvertFinalText = ({ text = String }) => {
           return "mc-obfuscated";
 
         case "&r":
+          obfuscatedText = false;
           return "";
 
         default:
@@ -120,7 +121,20 @@ export const ConvertFinalText = ({ text = String }) => {
 };
 
 export const numberToMonth = (number = Number) => {
-  const months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+  const months = [
+    "Janvier",
+    "Février",
+    "Mars",
+    "Avril",
+    "Mai",
+    "Juin",
+    "Juillet",
+    "Août",
+    "Septembre",
+    "Octobre",
+    "Novembre",
+    "Décembre",
+  ];
   if (number >= 1 && number <= 12) return months[number - 1];
   else return months[0];
-}
+};
