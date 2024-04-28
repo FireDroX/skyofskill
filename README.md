@@ -60,7 +60,7 @@ Affichez tous les éléments du serveur en un coup d'œil ! Des pioches aux armu
 <br />
 
 > [!NOTE]
-> Recherchez `type:` suivis d'un type d'object ou de `all`, pour afficher tout les items du même type d'un coup !
+> Recherchez `type:` suivi d'un type d'objet ou de `all`, pour afficher tous les items du même type en une seule fois !
 
 <p align="right">(<a href="#readme-top">Retour en haut de la page</a>)</p>
 
