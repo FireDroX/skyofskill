@@ -4,6 +4,7 @@ import "../../components/MinecraftColoredText/MinecraftColoredText.css";
 import { useContext, useState } from "react";
 import { UserContext } from "../../utils/UserContext";
 
+import ImportItem from "../../components/ImportItem/ImportItem";
 import { LoadCaisse } from "../../components/LoadCaisse/LoadCaisse";
 import { numberToMonth } from "../../utils/functions";
 
@@ -44,6 +45,7 @@ const Caisses = () => {
     require(`../../utils/caisses/${caissesDates[boxPage]}.js`)
   );
   const [search, setSearch] = useState("");
+  const [importMenu, setImportMenu] = useState(false);
 
   const handleBtn = (e) => {
     switch (e) {
@@ -91,76 +93,79 @@ const Caisses = () => {
     return finishedItems;
   };
 
-  // const [convertedTxt, setConvertedTxt] = useState("nothing");
-
-  // const convertText = (text) => {
-  //   setConvertedTxt(text.replace(/§/g, "&").replace(/&([^lmonk&])/g, "&r&$1"));
-  // };
-
   return (
     <section className="App">
       <div>
-        {/* <input type="text" onChange={(e) => convertText(e.target.value)} />
-        <small style={{ userSelect: "all" }}>{convertedTxt}</small> */}
         <div className="caisses-container">
-          <div className="caisse-search">
-            <small style={{ color: "var(--text85)" }}>Rechercher un item</small>
-            <input
-              name="Rechercher un item"
-              type="text"
-              value={search.toLowerCase()}
-              onChange={(e) => handleSearch(e.target.value)}
-            />
-          </div>
-          {search === "" ? (
+          {importMenu ? (
+            <ImportItem />
+          ) : (
             <>
-              <LoadCaisse
-                box={{
-                  title: "Caisse " + caisse.default.title,
-                  items: caisse.default.items,
-                }}
-                itemID={isClicked}
-                setItemID={setIsClicked}
-              />
-              {caissesDates[boxPage].match("_") ? (
-                <small>Box de {getDate()}</small>
+              <div className="caisse-search">
+                <small style={{ color: "var(--text85)" }}>
+                  Rechercher un item
+                </small>
+                <input
+                  name="Rechercher un item"
+                  type="text"
+                  value={search.toLowerCase()}
+                  onChange={(e) => handleSearch(e.target.value)}
+                />
+              </div>
+              {search === "" ? (
+                <>
+                  <LoadCaisse
+                    box={{
+                      title: "Caisse " + caisse.default.title,
+                      items: caisse.default.items,
+                    }}
+                    itemID={isClicked}
+                    setItemID={setIsClicked}
+                  />
+                  {caissesDates[boxPage].match("_") ? (
+                    <small>Box de {getDate()}</small>
+                  ) : (
+                    false
+                  )}
+                </>
+              ) : (
+                <LoadCaisse
+                  box={{
+                    title: "",
+                    items: loopFinishedItems().filter(
+                      (item) =>
+                        item.defaultName.toLowerCase().match(search) ||
+                        (search === "type:pioche" && item.type === 7) ||
+                        (search === "type:arc" && item.type === 6) ||
+                        (search === "type:hache" && item.type === 5) ||
+                        (search === "type:épée" && item.type === 4) ||
+                        (search === "type:bottes" && item.type === 3) ||
+                        (search === "type:pantalon" && item.type === 2) ||
+                        (search === "type:plastron" && item.type === 1) ||
+                        (search === "type:casque" && item.type === 0) ||
+                        search === "type:all"
+                    ),
+                  }}
+                  itemID={isClicked}
+                  setItemID={setIsClicked}
+                />
+              )}
+              {search === "" ? (
+                <div className="input-btns">
+                  <button onClick={() => handleBtn("-")}>{"<"}</button>
+                  <button onClick={() => handleBtn("+")}>{">"}</button>
+                </div>
               ) : (
                 false
               )}
             </>
-          ) : (
-            <LoadCaisse
-              box={{
-                title: "",
-                items: loopFinishedItems().filter(
-                  (item) =>
-                    item.defaultName.toLowerCase().match(search) ||
-                    (search === "type:pioche" && item.type === 7) ||
-                    (search === "type:arc" && item.type === 6) ||
-                    (search === "type:hache" && item.type === 5) ||
-                    (search === "type:épée" && item.type === 4) ||
-                    (search === "type:bottes" && item.type === 3) ||
-                    (search === "type:pantalon" && item.type === 2) ||
-                    (search === "type:plastron" && item.type === 1) ||
-                    (search === "type:casque" && item.type === 0) ||
-                    search === "type:all"
-                ),
-              }}
-              itemID={isClicked}
-              setItemID={setIsClicked}
-            />
-          )}
-          {search === "" ? (
-            <div className="input-btns">
-              <button onClick={() => handleBtn("-")}>{"<"}</button>
-              <button onClick={() => handleBtn("+")}>{">"}</button>
-            </div>
-          ) : (
-            false
           )}
         </div>
       </div>
-      <small className="caisse-footer">
+      <small
+        className="caisse-footer"
+        onClick={() => setImportMenu(!importMenu)}
+      >
         {loopFinishedItems().length} items répertoriés.
       </small>
     </section>
