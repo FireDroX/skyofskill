@@ -100,6 +100,7 @@ Personnalisez votre texte avec des couleurs et des modifications infinies selon 
   - HDIFOX302 (17 objets)
   - yoann71C (17 objets)
   - OverRhity (14 objets)
+  - Diictateur_DowN (2 objets)
 
 - Pour l'aide sur les prix des différents niveaux de prestige :
   - Okamino\_
