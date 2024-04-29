@@ -3,7 +3,9 @@
 <div align="center">
   <img src="src/assets/logo.png" alt="Logo" width="80" height="80">
   <img src="https://skyofskill.fr/storage/img/newlog.png" alt="sos" width=140>
-  <h3 align="center">Boîte à Outils SkyOfSkill 🛠️🎮</h3>
+  <a href="https://firedrox.github.io/skyofskill/">
+    <h3 align="center">Boîte à Outils SkyOfSkill 🛠️🎮</h3>
+  </a>
 </div>
 
 <br />
@@ -15,7 +17,7 @@
       <li><a href="#minage">Minage</a></li>
       <li><a href="#caisses">Caisses</a></li>
       <li><a href="#prestiges">Prestiges</a></li>
-      <li><a href="#colored-text">Colored Text</a></li>
+      <!-- <li><a href="#colored-text">Colored Text</a></li> -->
     </ul>
   </li>
   <li>
@@ -26,6 +28,9 @@
 <br />
 
 [![React][React.js]][React-url]
+[![contributors][contributors-shield]][contributors-url]
+[![stars][stars-icon]][stars-url]
+[![Discord][discord-icon]][discord-url]
 
 > [!WARNING]
 > Les informations fournies peuvent être obsolètes et sujettes à modification dans le temps !
@@ -80,7 +85,7 @@ Facilitez le calcul du coût pour passer un ou plusieurs niveaux de prestige, et
 
 ---
 
-### Colored Text
+<!-- ### Colored Text
 
 Personnalisez votre texte avec des couleurs et des modifications infinies selon vos préférences !
 
@@ -91,7 +96,7 @@ Personnalisez votre texte avec des couleurs et des modifications infinies selon 
 
 <p align="right">(<a href="#readme-top">Retour en haut de la page</a>)</p>
 
----
+--- -->
 
 ## Special Thanks
 
@@ -120,5 +125,11 @@ Personnalisez votre texte avec des couleurs et des modifications infinies selon 
 > Icon by [@Sawaratsuki](https://x.com/sawaratsuki1004) ;
 > Github [ServiceLogos](https://github.com/SAWARATSUKI/ServiceLogos)
 
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&colorB=555
 [React-url]: https://react.dev/
+[contributors-shield]: https://img.shields.io/github/contributors/firedrox/skyofskill.svg?style=for-the-badge
+[contributors-url]: https://github.com/FireDroX/skyofskill/graphs/contributors
+[stars-icon]: https://img.shields.io/github/stars/firedrox/skyofskill.svg?style=for-the-badge
+[stars-url]: https://github.com/FireDroX/skyofskill/stargazers
+[discord-icon]: https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&colorB=555
+[discord-url]: https://discord.gg/qJsZxEaZVM

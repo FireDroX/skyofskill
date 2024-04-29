@@ -91,7 +91,6 @@ const ImportItem = () => {
             <small>name</small>
             <input
               type="text"
-              value={convertedTxt}
               defaultValue={convertedTxt}
               onChange={(e) => convertText(e.target.value)}
               style={{ width: "8rem" }}
@@ -101,7 +100,6 @@ const ImportItem = () => {
             <small>defaultName</small>
             <input
               type="text"
-              value={defaultName}
               defaultValue={defaultName}
               onChange={(e) => setDefaultName(e.target.value)}
               style={{ width: "8rem" }}
@@ -113,7 +111,6 @@ const ImportItem = () => {
             <small>type</small>
             <select
               name="Type"
-              value={itemType}
               defaultValue={itemType}
               onChange={(e) => setItemType(Number(e.target.value))}
             >
@@ -133,7 +130,6 @@ const ImportItem = () => {
             <small>enchants</small>
             <input
               type="text"
-              value={enchantValue}
               defaultValue={enchantValue}
               onChange={(e) => setEnchantValue(e.target.value)}
               style={{ width: "3rem" }}
