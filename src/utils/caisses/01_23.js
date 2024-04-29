@@ -13,34 +13,6 @@ const caisse = {
   title: "TENUE DE SOIREE",
   items: [
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3III&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
       name: "&r&f&kt&r&6✯&r&f&kt&r&d&l &r&e&lPaille &r&f&len&r&e&l Or &r&f&kt&r&6✯&r&f&kt&r&d&l",
       defaultName: "Paille en Or",
       type: 4,
@@ -62,6 +34,15 @@ const caisse = {
     },
     {
       defaultName: "Pioche de 2023",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3???&r",
+        "&eSolidité &r&6???&r",
+        "&aFortune &r&2???&r",
+      ],
+    },
+    {
+      defaultName: "???",
       type: 7,
       enchants: [
         "&bEfficency &r&3???&r",

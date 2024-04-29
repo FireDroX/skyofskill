@@ -33,16 +33,6 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
       name: "&r&8&kt&r&f✰&r&8&kt&r&b&l&r&8&l S&r&7&la&r&8&lb&r&7&lr&r&8&le &r&7&lS&r&8&lm&r&7&lo&r&8&lg&r&7&lo &r&8&kt&r&f✰&r&8&kt&r&b&l",
       defaultName: "Sabre Smogo",
       type: 4,

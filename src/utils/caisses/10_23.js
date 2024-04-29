@@ -23,7 +23,8 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&d&ki&r&7❈&r&8☫&r&7❈&r&d&ki&r&a &r&d&lF&r&8&ll&r&7&li&r&d&ln&r&8&lg&r&7&lu&r&d&le&r&8&l d&r&7&lu&r&d&l B&r&8&la&r&7&ln&r&d&ld&r&8&li&r&7&lt &r&d&ki&r&7❈&r&8☫&r&7❈&r&d&ki",
+      defaultName: "Flingue du Bandit",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",

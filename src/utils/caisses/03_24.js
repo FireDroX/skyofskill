@@ -76,7 +76,7 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Spatio-Sabre",
       type: 4,
       enchants: [
         "&aTranchant &r&286&r",

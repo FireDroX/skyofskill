@@ -33,16 +33,6 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
       name: "&r&f&kt&r&b☉&r&f&kt&r&b&l L&r&f&la&r&b&lm&r&f&le &r&a&lD&r&b&lr&r&c&la&r&d&lg&r&e&li&r&f&lb&r&a&lu&r&b&ls &r&f&kt&r&b☉&r&f&kt&r&b&l",
       defaultName: "Lame Dragibus",
       type: 4,

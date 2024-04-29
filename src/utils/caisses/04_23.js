@@ -32,16 +32,6 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
       name: "&r&d&kt&r&f✠&r&d&kt&r&6&l &r&5&lM&r&d&la&r&f&lg&r&5&li&r&d&lc&r&f&la&r&5&ll &r&d&lS&r&f&lw&r&5&lo&r&d&lr&r&f&ld &r&d&kt&r&f✠&r&d&kt&r&6&l",
       defaultName: "Magical Sword",
       type: 4,
