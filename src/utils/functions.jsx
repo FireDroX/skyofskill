@@ -1,5 +1,5 @@
 export const compactNumber = (number = Number) => {
-  const suffixes = ["", "K", "M", "B", "T", "Q"];
+  const suffixes = ["", "K", "M", "B", "T", "Q", "Qu"];
   let suffixNum = Math.floor(("" + number).length / 3);
 
   let shortValue = parseFloat(
