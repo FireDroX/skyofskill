@@ -114,8 +114,9 @@ const caisse = {
       ],
     },
     {
-      type: 6,
+      name: "&r&1&k&l|&r&r&r&3★&r&f☭&r&3★&r&1&k&l|&r&r &r&9&lA&r&3&lR&r&9&lC &r&3&lD&r&9&lE &r&3&lY&r&9&lO&r&3&lN&r&9&lD&r&3&lU &r&1&k&l|&r&r&r&3★&r&f☭&r&3★&r&1&k|",
       defaultName: "Arc de Yondu",
+      type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
         "&eSolidité &r&610&r",
