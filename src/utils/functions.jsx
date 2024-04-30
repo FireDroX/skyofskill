@@ -27,8 +27,10 @@ export const formatNumberWithSpaces = (number = 0) => {
     groups.unshift(numberString.substring(Math.max(0, i - 3), i));
   }
 
-  if (groups.length > 5) return "That number is too big...";
-  else return groups.join(" ");
+  // if (groups.length > 5) return "That number is too big...";
+  // else return groups.join(" ");
+
+  return groups.join(" ");
 };
 
 export const ConvertFinalText = ({ text = "" }) => {
