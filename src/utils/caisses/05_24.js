@@ -23,6 +23,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&e&k&l|&r&r&r&f★&r&b☭&r&f★&r&e&k&l|&r&r &r&5&lL&l&r&7A&r&5&lM&r&7&lE &r&5&lV&r&7&lI&r&5&lB&r&7&lR&r&5&lA&r&7&lN&r&5&lI&r&7&lU&r&5&lM &r&e&k&l|&r&r&r&f★&r&b☭&r&f★&r&e&k&l|",
       defaultName: "Lame Vibranium",
       type: 4,
       enchants: [
@@ -30,6 +31,7 @@ const caisse = {
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&r&e&k&l|&r&r&r&f★&r&b☭&r&f★&r&e&k&l|&r&r &r&4&lA&r&b&lR&r&4&lM&r&b&lU&r&4&lR&r&b&lE &r&4&lD&r&b&lE &r&4&lT&r&b&lH&r&4&lO&r&b&lR &r&e&k&l|&r&r&r&f★&r&b☭&r&f★&r&e&k&l|",
