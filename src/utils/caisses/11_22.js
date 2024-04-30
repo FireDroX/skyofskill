@@ -13,10 +13,11 @@ const caisse = {
   title: "HALLOWEEN",
   items: [
     {
+      name: "&r&4&kt&r&c✟&r&4&kt&r&4&l Ha&r&c&lll&r&4&low&r&c&lee&r&4&ln &r&4&kt&r&c✟&r&4&kt&r&6&l",
       defaultName: "Halloween",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&242&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
