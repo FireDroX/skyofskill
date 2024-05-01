@@ -2,7 +2,7 @@ import "./Caisses.css";
 import "../../components/MinecraftColoredText/MinecraftColoredText.css";
 
 import { useContext, useState } from "react";
-import { UserContext } from "../../utils/UserContext";
+import { UserContext } from "../../utils/contexts/UserContext";
 
 import ImportItem from "../../components/ImportItem/ImportItem";
 import { LoadCaisse } from "../../components/LoadCaisse/LoadCaisse";

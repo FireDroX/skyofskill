@@ -1,17 +1,25 @@
 import "./ImportItem.css";
-import { useState } from "react";
+import { useContext } from "react";
 
-import { ConvertFinalText } from "../../utils/functions.jsx";
+import { ConvertFinalText, findHexCharacters } from "../../utils/functions.jsx";
+import { InputContext } from "../../utils/contexts/InputContext.jsx";
 import mc_icons from "../../utils/mc_icons.js";
 
 const ImportItem = () => {
-  const [itemType, setItemType] = useState(4);
-  const [convertedTxt, setConvertedTxt] = useState(
-    "&r&b&kt&r&r&r&f&kt&r&r&r&9☛&r&b❤&r&9☚&r&f&kt&r&r&r&b&kt&r&r&r&9  (╯°□°)╯︵ ┻━┻  &r&b&kt&r&r&r&f&kt&r&r&r&9☛&r&b❤&r&9☚&r&f&kt&r&r&r&b&kt&r&r"
-  );
-  const [defaultName, setDefaultName] = useState("(╯°□°)╯︵ ┻━┻");
-  const [enchantValue, setEnchantValue] = useState("69");
-  const [DLOD, setDLOD] = useState(false);
+  const {
+    itemType,
+    setItemType,
+    normalTxt,
+    setNormalTxt,
+    convertedTxt,
+    setConvertedTxt,
+    defaultName,
+    setDefaultName,
+    enchantValue,
+    setEnchantValue,
+    DLOD,
+    setDLOD,
+  } = useContext(InputContext);
 
   const enchantsList = [
     [
@@ -53,6 +61,7 @@ const ImportItem = () => {
   ];
 
   const convertText = (text) => {
+    setNormalTxt(text);
     setConvertedTxt(text.replace(/§/g, "&").replace(/&([^lmonk&])/g, "&r&$1"));
   };
 
@@ -77,6 +86,7 @@ const ImportItem = () => {
 
   const handleReset = () => {
     setItemType(0);
+    setNormalTxt("");
     setConvertedTxt("");
     setDefaultName("");
     setEnchantValue("");
@@ -91,7 +101,7 @@ const ImportItem = () => {
             <small>name</small>
             <input
               type="text"
-              defaultValue={convertedTxt}
+              value={normalTxt}
               onChange={(e) => convertText(e.target.value)}
               style={{ width: "8rem" }}
             />
@@ -100,7 +110,7 @@ const ImportItem = () => {
             <small>defaultName</small>
             <input
               type="text"
-              defaultValue={defaultName}
+              value={defaultName}
               onChange={(e) => setDefaultName(e.target.value)}
               style={{ width: "8rem" }}
             />
@@ -111,7 +121,7 @@ const ImportItem = () => {
             <small>type</small>
             <select
               name="Type"
-              defaultValue={itemType}
+              value={itemType}
               onChange={(e) => setItemType(Number(e.target.value))}
             >
               <option value={0}>Helmet</option>
@@ -130,7 +140,7 @@ const ImportItem = () => {
             <small>enchants</small>
             <input
               type="text"
-              defaultValue={enchantValue}
+              value={enchantValue}
               onChange={(e) => setEnchantValue(e.target.value)}
               style={{ width: "3rem" }}
             />
@@ -177,7 +187,12 @@ const ImportItem = () => {
           {DLOD && itemType === 6 ? (
             <div className="importItem-preview-leaveOnDeath">
               <small>
-                {["&4&l⚔ ", "&c&lNe se perd pas à la mort."].map((txt, i) => (
+                {[
+                  `&${findHexCharacters(convertedTxt)[0]}&l⚔ `,
+                  `&${
+                    findHexCharacters(convertedTxt)[1]
+                  }&lNe se perd pas à la mort.`,
+                ].map((txt, i) => (
                   <ConvertFinalText text={txt} key={txt + i} />
                 ))}
               </small>

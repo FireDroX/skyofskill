@@ -1,7 +1,7 @@
 import "./Minage.css";
 
 import { useContext } from "react";
-import { UserContext } from "../../utils/UserContext";
+import { UserContext } from "../../utils/contexts/UserContext";
 
 import UnbanTimer from "../../components/UnbanTimer/UnbanTimer";
 import InputValues from "../../components/InputValues/InputValues";

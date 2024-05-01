@@ -1,5 +1,5 @@
 import "./LoadCaisse.css";
-import { ConvertFinalText } from "../../utils/functions.jsx";
+import { ConvertFinalText, findHexCharacters } from "../../utils/functions.jsx";
 import mc_icons from "../../utils/mc_icons.js";
 
 export const LoadCaisse = ({ box, itemID, setItemID }) => {
@@ -60,7 +60,12 @@ export const LoadCaisse = ({ box, itemID, setItemID }) => {
           {items[itemID.index].dontLeaveOnDeath ? (
             <div className="loadCaisse-leaveOnDeath">
               <small>
-                {["&4&l⚔ ", "&c&lNe se perd pas à la mort."].map((txt, i) => (
+                {[
+                  `&${findHexCharacters(items[itemID.index].name)[0]}&l⚔ `,
+                  `&${
+                    findHexCharacters(items[itemID.index].name)[1]
+                  }&lNe se perd pas à la mort.`,
+                ].map((txt, i) => (
                   <ConvertFinalText text={txt} key={txt + i} />
                 ))}
               </small>

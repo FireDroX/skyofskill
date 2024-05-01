@@ -140,3 +140,9 @@ export const numberToMonth = (number = Number) => {
   if (number >= 1 && number <= 12) return months[number - 1];
   else return months[0];
 };
+
+export const findHexCharacters = (inputString) => {
+  if ([undefined, ""].includes(inputString)) return ["4", "c"];
+  const hexCharacters = inputString.match(/[0-9a-fA-F]{1,2}/g);
+  return hexCharacters ? hexCharacters.map((hex) => hex.substring(0, 2)) : [];
+};
