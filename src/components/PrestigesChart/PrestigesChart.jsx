@@ -84,8 +84,26 @@ const PrestigesChart = ({ page, setPage }) => {
         </LineChart>
       </div>
       <div className="input-btns">
-        <button onClick={() => handleBtn("-")}>-</button>
-        <button onClick={() => handleBtn("+")}>+</button>
+        <button
+          style={{
+            backgroundColor:
+              page === 0 ? "var(--primary15)" : "var(--primary65)",
+          }}
+          onClick={() => handleBtn("-")}
+        >
+          -
+        </button>
+        <button
+          style={{
+            backgroundColor:
+              page === newPrestige[isSmallSize].length - 1
+                ? "var(--primary15)"
+                : "var(--primary65)",
+          }}
+          onClick={() => handleBtn("+")}
+        >
+          +
+        </button>
       </div>
       <small>
         Prix de {newPrestige[isSmallSize][page]?.[0]?.name} à{" "}
