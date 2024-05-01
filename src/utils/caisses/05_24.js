@@ -107,13 +107,15 @@ const caisse = {
       ],
     },
     {
+      name: "&r&1&k&l|&r&f★&r&e☭&r&f★&r&1&k&l|&r&r &r&4&lL&r&e&lA&r&4&lS&r&e&lE&r&4&lR &r&e&lD&r&4&lE &r&e&lV&r&4&lI&r&e&lS&r&4&lI&r&e&lO&r&4&lN &r&1&k&l|&r&r&r&f★&r&e☭&r&f★&r&1&k|",
+      defaultName: "Laser de vision",
       type: 6,
-      defaultName: "Laser de Vision",
       enchants: [
         "&bPunch &r&3IV&r",
         "&eSolidité &r&610&r",
         "&bInfinity &r&3I&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&r&1&k&l|&r&r&r&3★&r&f☭&r&3★&r&1&k&l|&r&r &r&9&lA&r&3&lR&r&9&lC &r&3&lD&r&9&lE &r&3&lY&r&9&lO&r&3&lN&r&9&lD&r&3&lU &r&1&k&l|&r&r&r&3★&r&f☭&r&3★&r&1&k|",
