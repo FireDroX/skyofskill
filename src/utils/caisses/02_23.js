@@ -13,34 +13,6 @@ const caisse = {
   title: "SAINT-VALENTIN",
   items: [
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3III&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
       name: "&r&c&kt&r&4​❤&r&c&kt&r&4&l &r&4&lSa&r&c&lbr&r&4&le e&r&c&ln C&r&4&lho&r&c&lco&r&4&lla&r&c&lt &r&c&kt&r&4​❤&r&c&kt&r&4&l",
       defaultName: "Sabre en Chocolat",
       type: 4,
@@ -68,6 +40,15 @@ const caisse = {
         "&bEfficency &r&3200&r",
         "&eSolidité &r&6200&r",
         "&aFortune &r&2400&r",
+      ],
+    },
+    {
+      defaultName: "???",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3???&r",
+        "&eSolidité &r&6???&r",
+        "&aFortune &r&2???&r",
       ],
     },
     {

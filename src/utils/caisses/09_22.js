@@ -13,7 +13,7 @@ const caisse = {
   title: "PIRATE",
   items: [
     {
-      defaultName: "???",
+      defaultName: "Dague de Pirate",
       type: 4,
       enchants: [
         "&aTranchant &r&2??&r",

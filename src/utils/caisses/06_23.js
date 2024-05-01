@@ -33,16 +33,6 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
       name: "&r&f&kt&r&9‡&r&f&kt&r&9&l G&r&f&lr&r&9&li&r&f&lf&r&9&lf&r&f&le&r&9&l d&r&f&le &r&9&lL&r&f&lu&r&9&lc&r&f&la&r&9&lr&r&f&li&r&9&lo &r&f&kt&r&9‡&r&f&kt&r&b&l",
       defaultName: "Griffe de Lucario",
       type: 4,

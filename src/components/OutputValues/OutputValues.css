@@ -1,25 +1,50 @@
 .calc-values {
-  margin-top: 0.7rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.calc-values > div > div,
-.calc-values > div > small {
+.minage-output > div > div,
+.minage-output > div > small {
   line-height: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  width: max-content;
 }
 
-.calc-values > div > div > h4 {
+.minage-output > div > div > h4 {
   color: #ffff55;
+  margin: 0;
+  width: max-content;
 }
-.calc-values > div > div > svg {
+.minage-output > div > div > svg {
   color: #ffaa00;
 }
-.calc-values > div > div > h6 {
+.minage-output > div > div > h6 {
   color: var(--text70);
+  margin: 0;
+  width: max-content;
+}
+
+.minage-output {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.minage-output > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 690px) {
+  .minage-output {
+    height: 18rem;
+  }
 }

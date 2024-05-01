@@ -23,6 +23,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&e&k&l|&r&r&r&f★&r&b☭&r&f★&r&e&k&l|&r&r &r&5&lL&l&r&7A&r&5&lM&r&7&lE &r&5&lV&r&7&lI&r&5&lB&r&7&lR&r&5&lA&r&7&lN&r&5&lI&r&7&lU&r&5&lM &r&e&k&l|&r&r&r&f★&r&b☭&r&f★&r&e&k&l|",
       defaultName: "Lame Vibranium",
       type: 4,
       enchants: [
@@ -30,6 +31,7 @@ const caisse = {
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&r&e&k&l|&r&r&r&f★&r&b☭&r&f★&r&e&k&l|&r&r &r&4&lA&r&b&lR&r&4&lM&r&b&lU&r&4&lR&r&b&lE &r&4&lD&r&b&lE &r&4&lT&r&b&lH&r&4&lO&r&b&lR &r&e&k&l|&r&r&r&f★&r&b☭&r&f★&r&e&k&l|",
@@ -86,6 +88,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&e&k&l|&r&7★&r&c☭&r&7★&r&e&k&l|&r&r &r&4&lM&r&7&lJ&r&4&lO&r&7&lL&r&4&lN&r&7&lI&r&4&lR &r&e&k&l|&r&7★&r&c☭&r&7★&r&e&k&l|&r&7",
       defaultName: "Mjolnir",
       type: 7,
       enchants: [
@@ -93,6 +96,7 @@ const caisse = {
         "&eSolidité &r&62400&r",
         "&aFortune &r&22400&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&r&e&k&l|&r&r&r&f★&r&b☭&r&f★&r&e&k&l|&r&r &r&b&lA&r&4&lR&r&b&lC &r&4&lD&r&b&lE &r&4&lT&r&b&lH&r&4&lO&r&b&lR &r&e&k&l|&r&r&r&f★&r&b☭&r&f★&r&e&k&l|",
@@ -105,17 +109,20 @@ const caisse = {
       ],
     },
     {
+      name: "&r&1&k&l|&r&f★&r&e☭&r&f★&r&1&k&l|&r&r &r&4&lL&r&e&lA&r&4&lS&r&e&lE&r&4&lR &r&e&lD&r&4&lE &r&e&lV&r&4&lI&r&e&lS&r&4&lI&r&e&lO&r&4&lN &r&1&k&l|&r&r&r&f★&r&e☭&r&f★&r&1&k|",
+      defaultName: "Laser de vision",
       type: 6,
-      defaultName: "Laser de Vision",
       enchants: [
         "&bPunch &r&3IV&r",
         "&eSolidité &r&610&r",
         "&bInfinity &r&3I&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
-      type: 6,
+      name: "&r&1&k&l|&r&r&r&3★&r&f☭&r&3★&r&1&k&l|&r&r &r&9&lA&r&3&lR&r&9&lC &r&3&lD&r&9&lE &r&3&lY&r&9&lO&r&3&lN&r&9&lD&r&3&lU &r&1&k&l|&r&r&r&3★&r&f☭&r&3★&r&1&k|",
       defaultName: "Arc de Yondu",
+      type: 6,
       enchants: [
         "&bPunch &r&3IV&r",
         "&eSolidité &r&610&r",
@@ -124,8 +131,9 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      type: 6,
+      name: "&r&9&k&l|&r&r&r&4★&r&c☭&r&4★&r&9&k&l|&r&r &r&4&lL&r&1&lA&r&f&lN&r&4&lC&r&1&lE &r&f&lT&r&4&lO&r&1&lI&r&f&lL&r&4&lE &r&9&k&l|&r&r&r&4★&r&c☭&r&4★&r&9&k|&r&7",
       defaultName: "Lance Toile",
+      type: 6,
       enchants: [
         "&bPunch &r&3V&r",
         "&eSolidité &r&610&r",
@@ -134,8 +142,9 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
+      name: "&r&f&k&l|&r&r&r&d★&r&5☭&r&d★&r&f&k&l|&r&r &r&8&lA&r&f&lR&r&5&lC &r&8D&r&f&lE &r&5&lH&r&8&lA&r&f&lW&r&5&lK&r&8&lE&r&f&lY&r&5&lE &r&f&k&l|&r&r&r&d★&r&5☭&r&d★&r&f&k&l|&r&7",
+      defaultName: "Lance Toile",
       type: 6,
-      defaultName: "Arc de Hawkeye",
       enchants: [
         "&bPunch &r&3VI&r",
         "&eSolidité &r&610&r",

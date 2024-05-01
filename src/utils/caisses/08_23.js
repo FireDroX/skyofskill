@@ -23,34 +23,14 @@ const caisse = {
       ],
     },
     {
-      name: "&r&d&ki&r&7❈&r&8☫&r&7❈&r&d&ki&r&a &r&d&lF&r&8&ll&r&7&li&r&d&ln&r&8&lg&r&7&lu&r&d&le&r&8&l d&r&7&lu&r&d&l B&r&8&la&r&7&ln&r&d&ld&r&8&li&r&7&lt &r&d&ki&r&7❈&r&8☫&r&7❈&r&d&ki",
-      defaultName: "Flingue du Bandit",
+      name: "&r&f&kt&r&a​▶&r&b➽&r&a​▶&r&f&kt&r&a&l C&r&b&lh&r&a&le&r&b&lv&r&a&la&r&b&ll&r&a&l d&r&b&le&r&a&l c&r&b&lo&r&a&lu&r&b&lr&r&a&ls&r&b&le &r&f&kt&r&a​▶&r&b➽&r&a​▶&r&f&kt&r&a",
       type: 6,
+      defaultName: "Cheval de course",
       enchants: [
         "&bPunch &r&3IV&r",
         "&eSolidité &r&610&r",
         "&bInfinity &r&3I&r",
       ],
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3IV&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
-    },
-    {
-      defaultName: "???",
-      type: 6,
-      enchants: [
-        "&bPunch &r&3V&r",
-        "&eSolidité &r&610&r",
-        "&bInfinity &r&3I&r",
-      ],
-      dontLeaveOnDeath: true,
     },
     {
       name: "&r&f&kt&r&b✥&r&f&kt&r&b&l&r&b&l S&r&f&lu&r&b&lp&r&f&le&r&b&lr&r&7-&r&f&lC&r&b&lo&r&f&ll&r&b&lt &r&f&kt&r&b✥&r&f&kt&r&b&l&r&b&l",

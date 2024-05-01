@@ -24,7 +24,7 @@ const UnbanTimer = () => {
     };
   });
 
-  return (unban - newTime > 0) ? (
+  return unban - newTime > 0 ? (
     <small className="unban-timer">Unban de FireDroX dans : {getTime()}</small>
   ) : undefined;
 };

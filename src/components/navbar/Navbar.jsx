@@ -1,11 +1,19 @@
 import "./Navbar.css";
 
+import { createElement } from "react";
 import { useNavigate } from "react-router-dom";
 
+import { FaSackDollar } from "react-icons/fa6";
 import { IoColorPalette } from "react-icons/io5";
 import { GiWarPick, GiOpenChest } from "react-icons/gi";
 
 const logo = require("../../assets/logo.png");
+
+const componentsMap = {
+  Caisses: GiOpenChest,
+  Prestiges: GiWarPick,
+  Minage: FaSackDollar,
+};
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -25,18 +33,13 @@ const Navbar = () => {
           onClick={() => handleNavigate("home")}
         />
       </div>
-      <div onClick={() => handleNavigate("colors")}>
-        <h5>Colors</h5>
-        <IoColorPalette />
-      </div>
-      <div onClick={() => handleNavigate("prestiges")}>
-        <h5>Prestiges</h5>
-        <GiWarPick />
-      </div>
-      <div onClick={() => handleNavigate("caisses")}>
-        <h5>Caisses</h5>
-        <GiOpenChest />
-      </div>
+
+      {["Minage", "Prestiges", "Caisses"].map((el, i) => (
+        <div onClick={() => handleNavigate(el.toLowerCase())} key={el + i}>
+          <h5>{el}</h5>
+          {createElement(componentsMap[el])}
+        </div>
+      ))}
     </div>
   );
 };

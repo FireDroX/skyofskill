@@ -1,5 +1,5 @@
 export const compactNumber = (number = Number) => {
-  const suffixes = ["", "K", "M", "B", "T", "Q"];
+  const suffixes = ["", "K", "M", "B", "T", "Q", "Qu"];
   let suffixNum = Math.floor(("" + number).length / 3);
 
   let shortValue = parseFloat(
@@ -27,8 +27,10 @@ export const formatNumberWithSpaces = (number = 0) => {
     groups.unshift(numberString.substring(Math.max(0, i - 3), i));
   }
 
-  if (groups.length > 5) return "That number is too big...";
-  else return groups.join(" ");
+  // if (groups.length > 5) return "That number is too big...";
+  // else return groups.join(" ");
+
+  return groups.join(" ");
 };
 
 export const ConvertFinalText = ({ text = "" }) => {
@@ -137,4 +139,10 @@ export const numberToMonth = (number = Number) => {
   ];
   if (number >= 1 && number <= 12) return months[number - 1];
   else return months[0];
+};
+
+export const findHexCharacters = (inputString) => {
+  if ([undefined, ""].includes(inputString)) return ["4", "c"];
+  const hexCharacters = inputString.match(/[0-9a-fA-F]{1,2}/g);
+  return hexCharacters ? hexCharacters.map((hex) => hex.substring(0, 2)) : [];
 };

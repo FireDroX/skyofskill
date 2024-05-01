@@ -11,9 +11,10 @@ const OutputValues = ({ mine, fortune, boost, blocs }) => {
     );
     const _15min = Math.round(bloc * blocs);
     const _30sec = Math.round(_15min / 30);
+    const _1h = Math.round(_15min * 4);
 
     return (
-      <>
+      <div className="minage-output">
         <div>
           <div>
             <h4>{compactNumber(bloc)}</h4>
@@ -44,7 +45,17 @@ const OutputValues = ({ mine, fortune, boost, blocs }) => {
             ( {formatNumberWithSpaces(_15min)} <FaCoins />)
           </small>
         </div>
-      </>
+        <div>
+          <div>
+            <h4>{compactNumber(_1h)}</h4>
+            <FaCoins />
+            <h6>/ heure</h6>
+          </div>
+          <small>
+            ( {formatNumberWithSpaces(_1h)} <FaCoins />)
+          </small>
+        </div>
+      </div>
     );
   };
 

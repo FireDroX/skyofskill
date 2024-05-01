@@ -10,11 +10,10 @@ const InputValues = ({
   mine,
   setMine,
   boost,
-  setBoost
+  setBoost,
 }) => {
   const handleInputChange = (e, v) => {
     let newValue = e.target.value.replace(/[^0-9]/g, "");
-    if (newValue === "") newValue = 1;
     if (newValue > 999999) newValue = 999999;
 
     switch (v) {

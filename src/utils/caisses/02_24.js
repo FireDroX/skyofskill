@@ -33,7 +33,8 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&f&ki&r&e&l◊&r&f⿴&r&e&l◊&r&f&ki&r&f &l R&r&e&lecurve &r&f&lR&r&e&loyale &r&f&ki&r&e&l◊&r&f⿴&r&e&l◊&r&f&ki&r&f",
+      defaultName: "Recurve Royale",
       type: 6,
       enchants: [
         "&bPunch &r&3IV&r",

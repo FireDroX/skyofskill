@@ -1,5 +1,5 @@
 import "./LoadCaisse.css";
-import { ConvertFinalText } from "../../utils/functions.jsx";
+import { ConvertFinalText, findHexCharacters } from "../../utils/functions.jsx";
 import mc_icons from "../../utils/mc_icons.js";
 
 export const LoadCaisse = ({ box, itemID, setItemID }) => {
@@ -21,7 +21,7 @@ export const LoadCaisse = ({ box, itemID, setItemID }) => {
             <div className="loadCaisse-item" key={title + index}>
               <img
                 src={mc_icons[item.type]}
-                alt=""
+                alt="Small Item Icon"
                 onClick={() => handleClick(index)}
                 style={{
                   backgroundColor:
@@ -55,12 +55,17 @@ export const LoadCaisse = ({ box, itemID, setItemID }) => {
                 </small>
               ))}
             </div>
-            <img src={mc_icons[items[itemID.index].type]} alt="" />
+            <img src={mc_icons[items[itemID.index].type]} alt="Big Item Icon" />
           </div>
           {items[itemID.index].dontLeaveOnDeath ? (
             <div className="loadCaisse-leaveOnDeath">
               <small>
-                {["&4&l⚔ ", "&c&lNe se perd pas à la mort."].map((txt, i) => (
+                {[
+                  `&${findHexCharacters(items[itemID.index].name)[0]}&l⚔ `,
+                  `&${
+                    findHexCharacters(items[itemID.index].name)[1]
+                  }&lNe se perd pas à la mort.`,
+                ].map((txt, i) => (
                   <ConvertFinalText text={txt} key={txt + i} />
                 ))}
               </small>

@@ -2,7 +2,7 @@ import "./Caisses.css";
 import "../../components/MinecraftColoredText/MinecraftColoredText.css";
 
 import { useContext, useState } from "react";
-import { UserContext } from "../../utils/UserContext";
+import { UserContext } from "../../utils/contexts/UserContext";
 
 import ImportItem from "../../components/ImportItem/ImportItem";
 import { LoadCaisse } from "../../components/LoadCaisse/LoadCaisse";
@@ -152,8 +152,26 @@ const Caisses = () => {
               )}
               {search === "" ? (
                 <div className="input-btns">
-                  <button onClick={() => handleBtn("-")}>{"<"}</button>
-                  <button onClick={() => handleBtn("+")}>{">"}</button>
+                  <button
+                    style={{
+                      backgroundColor:
+                        boxPage === 0 ? "var(--primary15)" : "var(--primary65)",
+                    }}
+                    onClick={() => handleBtn("-")}
+                  >
+                    {"<"}
+                  </button>
+                  <button
+                    style={{
+                      backgroundColor:
+                        boxPage === caissesDates.length - 1
+                          ? "var(--primary15)"
+                          : "var(--primary65)",
+                    }}
+                    onClick={() => handleBtn("+")}
+                  >
+                    {">"}
+                  </button>
                 </div>
               ) : (
                 false

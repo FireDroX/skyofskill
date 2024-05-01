@@ -1,6 +1,6 @@
 import "./Prestiges.css";
 import { useContext } from "react";
-import { UserContext } from "../../utils/UserContext";
+import { UserContext } from "../../utils/contexts/UserContext";
 
 import PrestigesChart from "../../components/PrestigesChart/PrestigesChart";
 import PrestigesPrice from "../../components/PrestigesPrice/PrestigesPrice";

@@ -1,15 +1,27 @@
 import "./ImportItem.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
-import { ConvertFinalText } from "../../utils/functions.jsx";
+import { ConvertFinalText, findHexCharacters } from "../../utils/functions.jsx";
+import { InputContext } from "../../utils/contexts/InputContext.jsx";
 import mc_icons from "../../utils/mc_icons.js";
 
 const ImportItem = () => {
-  const [itemType, setItemType] = useState(0);
-  const [convertedTxt, setConvertedTxt] = useState("");
-  const [defaultName, setDefaultName] = useState("");
-  const [enchantValue, setEnchantValue] = useState(0);
-  const [DLOD, setDLOD] = useState(false);
+  const {
+    itemType,
+    setItemType,
+    normalTxt,
+    setNormalTxt,
+    convertedTxt,
+    setConvertedTxt,
+    defaultName,
+    setDefaultName,
+    enchantValue,
+    setEnchantValue,
+    DLOD,
+    setDLOD,
+  } = useContext(InputContext);
+
+  const [fullNBT, setFullNBT] = useState("");
 
   const enchantsList = [
     [
@@ -51,6 +63,7 @@ const ImportItem = () => {
   ];
 
   const convertText = (text) => {
+    setNormalTxt(text);
     setConvertedTxt(text.replace(/§/g, "&").replace(/&([^lmonk&])/g, "&r&$1"));
   };
 
@@ -73,6 +86,24 @@ const ImportItem = () => {
     navigator.clipboard.writeText(copiedObject);
   };
 
+  const handleFullNBT = (e) => {
+    let startIndex = e.indexOf('§8Name: §7"') + '§8Name: §7"'.length;
+    let endIndex = e.indexOf('§7"', startIndex);
+    let name = e.substring(startIndex, endIndex);
+    setFullNBT(e);
+    convertText(name);
+  };
+
+  const handleReset = () => {
+    setItemType(0);
+    setNormalTxt("");
+    setConvertedTxt("");
+    setDefaultName("");
+    setEnchantValue("");
+    setFullNBT("");
+    setDLOD(false);
+  };
+
   return (
     <div className="importItem-container">
       <div className="importItem-values">
@@ -81,6 +112,7 @@ const ImportItem = () => {
             <small>name</small>
             <input
               type="text"
+              value={normalTxt}
               onChange={(e) => convertText(e.target.value)}
               style={{ width: "8rem" }}
             />
@@ -89,6 +121,7 @@ const ImportItem = () => {
             <small>defaultName</small>
             <input
               type="text"
+              value={defaultName}
               onChange={(e) => setDefaultName(e.target.value)}
               style={{ width: "8rem" }}
             />
@@ -99,7 +132,7 @@ const ImportItem = () => {
             <small>type</small>
             <select
               name="Type"
-              defaultValue={itemType}
+              value={itemType}
               onChange={(e) => setItemType(Number(e.target.value))}
             >
               <option value={0}>Helmet</option>
@@ -118,6 +151,7 @@ const ImportItem = () => {
             <small>enchants</small>
             <input
               type="text"
+              value={enchantValue}
               onChange={(e) => setEnchantValue(e.target.value)}
               style={{ width: "3rem" }}
             />
@@ -128,7 +162,7 @@ const ImportItem = () => {
               <input
                 type="checkbox"
                 name="dontLeaveOnDeath"
-                defaultValue={DLOD}
+                checked={DLOD}
                 onChange={() => setDLOD(!DLOD)}
               />
             </div>
@@ -137,7 +171,7 @@ const ImportItem = () => {
           )}
         </div>
       </div>
-      <div>
+      <div className="importItem-prevContainer">
         <div className="importItem-preview">
           <h6>
             {convertedTxt !== ""
@@ -159,12 +193,17 @@ const ImportItem = () => {
                 </small>
               ))}
             </div>
-            <img src={mc_icons[itemType]} alt="" />
+            <img src={mc_icons[itemType]} alt="Big Item Icon" />
           </div>
           {DLOD && itemType === 6 ? (
             <div className="importItem-preview-leaveOnDeath">
               <small>
-                {["&4&l⚔ ", "&c&lNe se perd pas à la mort."].map((txt, i) => (
+                {[
+                  `&${findHexCharacters(convertedTxt)[0]}&l⚔ `,
+                  `&${
+                    findHexCharacters(convertedTxt)[1]
+                  }&lNe se perd pas à la mort.`,
+                ].map((txt, i) => (
                   <ConvertFinalText text={txt} key={txt + i} />
                 ))}
               </small>
@@ -173,8 +212,18 @@ const ImportItem = () => {
             false
           )}
         </div>
+        <div className="importItem-txtInput">
+          <small>fullNBT</small>
+          <input
+            type="text"
+            value={fullNBT}
+            onChange={(e) => handleFullNBT(e.target.value)}
+            style={{ width: "8rem" }}
+          />
+        </div>
         <div className="importItem-copy">
           <button onClick={handleCopy}>Copy</button>
+          <button onClick={handleReset}>Reset</button>
         </div>
       </div>
     </div>
