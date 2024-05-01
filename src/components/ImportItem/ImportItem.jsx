@@ -1,5 +1,5 @@
 import "./ImportItem.css";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import { ConvertFinalText, findHexCharacters } from "../../utils/functions.jsx";
 import { InputContext } from "../../utils/contexts/InputContext.jsx";
@@ -20,6 +20,8 @@ const ImportItem = () => {
     DLOD,
     setDLOD,
   } = useContext(InputContext);
+
+  const [fullNBT, setFullNBT] = useState("");
 
   const enchantsList = [
     [
@@ -84,12 +86,21 @@ const ImportItem = () => {
     navigator.clipboard.writeText(copiedObject);
   };
 
+  const handleFullNBT = (e) => {
+    let startIndex = e.indexOf('§8Name: §7"') + '§8Name: §7"'.length;
+    let endIndex = e.indexOf('§7"', startIndex);
+    let name = e.substring(startIndex, endIndex);
+    setFullNBT(e);
+    convertText(name);
+  };
+
   const handleReset = () => {
     setItemType(0);
     setNormalTxt("");
     setConvertedTxt("");
     setDefaultName("");
     setEnchantValue("");
+    setFullNBT("");
     setDLOD(false);
   };
 
@@ -160,7 +171,7 @@ const ImportItem = () => {
           )}
         </div>
       </div>
-      <div>
+      <div className="importItem-prevContainer">
         <div className="importItem-preview">
           <h6>
             {convertedTxt !== ""
@@ -200,6 +211,15 @@ const ImportItem = () => {
           ) : (
             false
           )}
+        </div>
+        <div className="importItem-txtInput">
+          <small>fullNBT</small>
+          <input
+            type="text"
+            value={fullNBT}
+            onChange={(e) => handleFullNBT(e.target.value)}
+            style={{ width: "8rem" }}
+          />
         </div>
         <div className="importItem-copy">
           <button onClick={handleCopy}>Copy</button>

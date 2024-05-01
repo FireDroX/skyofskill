@@ -21,6 +21,12 @@
   gap: 1rem;
 }
 
+.importItem-prevContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .importItem-preview {
   height: min-content;
   margin-inline: 0.8rem;
@@ -142,7 +148,6 @@
 }
 
 .importItem-copy {
-  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
