@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
 
       {["Minage", "Prestiges", "Caisses"].map((el, i) => (
-        <div onClick={() => handleNavigate(el)} key={el + i}>
+        <div onClick={() => handleNavigate(el.toLowerCase())} key={el + i}>
           <h5>{el}</h5>
           {createElement(componentsMap[el])}
         </div>

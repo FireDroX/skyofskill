@@ -21,7 +21,7 @@ export const LoadCaisse = ({ box, itemID, setItemID }) => {
             <div className="loadCaisse-item" key={title + index}>
               <img
                 src={mc_icons[item.type]}
-                alt=""
+                alt="Small Item Icon"
                 onClick={() => handleClick(index)}
                 style={{
                   backgroundColor:
@@ -55,7 +55,7 @@ export const LoadCaisse = ({ box, itemID, setItemID }) => {
                 </small>
               ))}
             </div>
-            <img src={mc_icons[items[itemID.index].type]} alt="" />
+            <img src={mc_icons[items[itemID.index].type]} alt="Big Item Icon" />
           </div>
           {items[itemID.index].dontLeaveOnDeath ? (
             <div className="loadCaisse-leaveOnDeath">

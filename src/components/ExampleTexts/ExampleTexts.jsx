@@ -80,9 +80,9 @@ const ExampleTexts = () => {
   ];
 
   const handleCopy = (i) => {
-    const text = textsArray[i].join('');
+    const text = textsArray[i].join("");
     navigator.clipboard.writeText(text);
-  }
+  };
 
   return (
     <div className="footer">

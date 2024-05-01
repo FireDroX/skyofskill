@@ -182,7 +182,7 @@ const ImportItem = () => {
                 </small>
               ))}
             </div>
-            <img src={mc_icons[itemType]} alt="" />
+            <img src={mc_icons[itemType]} alt="Big Item Icon" />
           </div>
           {DLOD && itemType === 6 ? (
             <div className="importItem-preview-leaveOnDeath">
