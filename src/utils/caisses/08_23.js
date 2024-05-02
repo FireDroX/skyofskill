@@ -43,13 +43,15 @@ const caisse = {
       ],
     },
     {
-      defaultName: "Calibre .36 PN",
+      name: "&r&f&kt&r&c&kt&r&f★&r&4ψ&r&f★&r&c&kt&r&f&kt&r&8&l &r&4&lC&r&c&la&r&4&ll&r&c&li&r&4&lb&r&c&lr&r&4&le &r&c.&r&4&l3&r&c&l6 &r&4&lP&r&c&lN &r&f&kt&r&c&kt&r&f★&r&4ψ&r&f★&r&c&kt&r&f&kt&r&8&l",
+      defaultName: "Calibre .36PN",
       type: 4,
       enchants: [
         "&aTranchant &r&272&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&r&d&kt&r&5✷&r&d&kt&r&d&l P&r&f&li&r&d&lo&r&f&lc&r&d&lh&r&f&le &r&d&lC&r&f&lo&r&d&lw&r&f&lB&r&d&lo&r&f&ly &r&d&kt&r&5✷&r&d&kt&r&d&l",

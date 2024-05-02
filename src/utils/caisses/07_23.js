@@ -43,13 +43,15 @@ const caisse = {
       ],
     },
     {
-      defaultName: "Katana Necrozma",
+      name: "&r&f&kt&r&8&kt&r&7×&r&f✩&r&7×&r&8&kt&r&f&kt&r&8&l &r&8&lK&r&7&la&r&f&lt&r&8&la&r&7&ln&r&f&la &r&8&lN&r&7&le&r&f&lc&r&8&lr&r&7&lo&r&f&lz&r&8&lm&r&7&la &r&f&kt&r&8&kt&r&7×&r&f✩&r&7×&r&8&kt&r&f&kt&r&8&l",
+      defaultName: "Katana Nekrozma",
       type: 4,
       enchants: [
         "&aTranchant &r&269&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&r&4&kt&r&c​✡&r&4&kt&r&4&l P&r&c&li&r&4&lo&r&c&lc&r&4&lh&r&c&le &r&4&lY&r&c&lV&r&4&lE&r&c&lL&r&4&lT&r&c&lA&r&4&lL &r&4&kt&r&c​✡&r&4&kt&r&4&l",
