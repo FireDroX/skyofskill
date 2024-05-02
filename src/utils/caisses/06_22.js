@@ -36,7 +36,7 @@ const caisse = {
       type: 7,
       enchants: [
         "&bEfficency &r&3100&r",
-        "&eSolidité &r&650r",
+        "&eSolidité &r&650&r",
         "&aFortune &r&2100&r",
       ],
     },

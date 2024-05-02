@@ -6,7 +6,11 @@ import { UserContext } from "../../utils/contexts/UserContext";
 
 import ImportItem from "../../components/ImportItem/ImportItem";
 import { LoadCaisse } from "../../components/LoadCaisse/LoadCaisse";
-import { numberToMonth } from "../../utils/functions";
+import {
+  numberToMonth,
+  extractAndConvertEnchantLevel,
+  filterItems,
+} from "../../utils/functions";
 
 const caissesDates = [
   "05_24",
@@ -132,19 +136,13 @@ const Caisses = () => {
                 <LoadCaisse
                   box={{
                     title: "",
-                    items: loopFinishedItems().filter(
-                      (item) =>
-                        item.defaultName.toLowerCase().match(search) ||
-                        (search === "type:pioche" && item.type === 7) ||
-                        (search === "type:arc" && item.type === 6) ||
-                        (search === "type:hache" && item.type === 5) ||
-                        (search === "type:épée" && item.type === 4) ||
-                        (search === "type:bottes" && item.type === 3) ||
-                        (search === "type:pantalon" && item.type === 2) ||
-                        (search === "type:plastron" && item.type === 1) ||
-                        (search === "type:casque" && item.type === 0) ||
-                        search === "type:all"
-                    ),
+                    items: loopFinishedItems()
+                      .filter((item) => filterItems(item, search))
+                      .sort(
+                        (a, b) =>
+                          extractAndConvertEnchantLevel(b) -
+                          extractAndConvertEnchantLevel(a)
+                      ),
                   }}
                   itemID={isClicked}
                   setItemID={setIsClicked}

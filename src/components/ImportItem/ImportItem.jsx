@@ -1,7 +1,8 @@
 import "./ImportItem.css";
 import { useContext, useState } from "react";
 
-import { ConvertFinalText, findHexCharacters } from "../../utils/functions.jsx";
+import ConvertFinalText from "../ConverFinalText/ConvertFinalText";
+import { findHexCharacters } from "../../utils/functions";
 import { InputContext } from "../../utils/contexts/InputContext.jsx";
 import mc_icons from "../../utils/mc_icons.js";
 

@@ -1,6 +1,6 @@
 import "./ExampleTexts.css";
 
-import { ConvertFinalText } from "../../utils/functions";
+import ConvertFinalText from "../ConverFinalText/ConvertFinalText";
 
 const ExampleTexts = () => {
   const textsArray = [
