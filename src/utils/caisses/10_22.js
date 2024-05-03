@@ -42,6 +42,17 @@ const caisse = {
       ],
     },
     {
+      name: "&r&2&l&kt&r&a&kt&r&e&kt&r&f⚔&r&e&kt&r&a&kt&r&2&l&kt&r&2&l P&r&a&li&r&e&lo&r&f&lc&r&2&lh&r&a&le &r&e&lE&r&f&lm&r&2&lp&r&a&lo&r&e&li&r&f&ls&r&2&lo&r&a&ln&r&e&ln&r&f&lé&r&2&le &r&2&l&kt&r&a&kt&r&e&kt&r&f⚔&r&e&kt&r&a&kt&r&2&l&kt&r&2&l",
+      defaultName: "Pioche Empoisonnée",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3150&r",
+        "&eSolidité &r&6100&r",
+        "&aFortune &r&2300&r",
+      ],
+      dontLeaveOnDeath: false,
+    },
+    {
       name: "&r&4&l&kt&r&c&kt&r&d&kt&r&4✟&r&d&kt&r&c&kt&r&4&l&kt&r&4&l P&r&c&li&r&d&lo&r&4&lc&r&c&lh&r&d&le &r&4&lZ&r&c&lo&r&d&lm&r&4&lb&r&c&li&r&d&lf&r&4&li&r&c&lé&r&d&le &r&4&l&kt&r&c&kt&r&d&kt&r&4✟&r&d&kt&r&c&kt&r&4&l&kt&r&4&l",
       defaultName: "Pioche Zombifiée",
       type: 7,
@@ -49,15 +60,6 @@ const caisse = {
         "&bEfficency &r&3150&r",
         "&eSolidité &r&6100&r",
         "&aFortune &r&2350&r",
-      ],
-    },
-    {
-      defaultName: "???",
-      type: 7,
-      enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
       ],
     },
     {
