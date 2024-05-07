@@ -5,6 +5,6 @@
 - Updated `file` 🔨
 - Deleted `file` 🔫
 - Fixed `problem` 🔮
-- New BUILD 💿
+- New BUILD 💿 : `date`
 - Mass Update 🎳 : `description`
 - Cleaned the code 🚿

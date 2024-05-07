@@ -2,7 +2,7 @@ import "./MinecraftColoredText.css";
 import { useState, useEffect } from "react";
 import { IoIosReturnLeft } from "react-icons/io";
 
-import { ConvertFinalText } from "../../utils/functions";
+import ConvertFinalText from "../ConverFinalText/ConvertFinalText";
 
 const MinecraftColoredText = () => {
   const [text, setText] = useState("");

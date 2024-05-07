@@ -83,6 +83,17 @@ const caisse = {
       ],
     },
     {
+      name: "&r&f&kt&r&c|&r&4☣&r&c|&r&f&kt&r&e&l &r&4&lP&r&c&li&r&4&lo&r&c&lc&r&4&lh&r&c&le &r&4&lD&r&c&lr&r&4&la&r&c&lk&r&4&la&r&c&lu&r&4&lf&r&c&le&r&4&lu &r&f&kt&r&c|&r&4☣&r&c|&r&f&kt",
+      defaultName: "Pioche Drakaufeu",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3850&r",
+        "&eSolidité &r&6850&r",
+        "&aFortune &r&2850&r",
+      ],
+      dontLeaveOnDeath: false,
+    },
+    {
       name: "&r&f&kt&r&e&kt&r&6​✡&r&e&kt&r&f&kt&r&b&l &r&6&lA&r&e&lr&r&f&lm&r&6&lu&r&e&lr&r&f&le&r&6&l R&r&e&lh&r&f&li&r&6&ln&r&e&lo&r&f&lf&r&6&lé&r&e&lr&r&f&lo&r&6&ls &r&f&kt&r&e&kt&r&6​✡&r&e&kt&r&f&kt&r&b&l",
       defaultName: "Armure Rhinoféros",
       type: 0,

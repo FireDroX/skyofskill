@@ -1,5 +1,7 @@
 import "./LoadCaisse.css";
-import { ConvertFinalText, findHexCharacters } from "../../utils/functions.jsx";
+
+import ConvertFinalText from "../ConverFinalText/ConvertFinalText";
+import { findHexCharacters } from "../../utils/functions";
 import mc_icons from "../../utils/mc_icons.js";
 
 export const LoadCaisse = ({ box, itemID, setItemID }) => {

@@ -52,15 +52,6 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
-      type: 7,
-      enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
-      ],
-    },
-    {
       name: "&r&1&l&kt&r&3&kt&r&b&kt&r&f✯&r&b&kt&r&3&kt&r&1&l&kt&r&1&l P&r&3&le&r&b&lr&r&f&lf&r&1&lo&r&3&lr&r&b&la&r&f&lt&r&1&le&r&9&lu&r&3&lr&r&b&l D&r&1&li&r&3&lv&r&b&li&r&f&ln &r&1&l&kt&r&3&kt&r&b&kt&r&f✯&r&b&kt&r&3&kt&r&1&l&kt&r&1&l",
       defaultName: "Perforateur Divin",
       type: 7,
@@ -69,6 +60,17 @@ const caisse = {
         "&eSolidité &r&6525&r",
         "&aFortune &r&2525&r",
       ],
+    },
+    {
+      name: "&r&c&kt&r&fϟ&r&4☣&r&fϟ&r&c&kt&r&4&l F&r&c&lo&r&f&lr&r&4&le&r&c&lu&r&f&ls&r&4&le&r&c&l d&r&f&l'&r&4&lH&r&c&la&r&f&ld&r&4&le&r&c&ls &r&c&kt&r&fϟ&r&4☣&r&fϟ&r&c&kt&r&4&l",
+      defaultName: "Foreuse d'Hades",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3625&r",
+        "&eSolidité &r&6625&r",
+        "&aFortune &r&2625&r",
+      ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&r&e&kt&r&6​⚔&r&e&kt&r&6&l &r&6&lA&r&e&lr&r&6&lm&r&e&lu&r&6&lr&r&e&le &r&6&ld&r&e&l'&r&6&lA&r&e&lr&r&6&lè&r&e&ls &r&e&kt&r&6​⚔&r&e&kt&r&6&l",

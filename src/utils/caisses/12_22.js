@@ -53,14 +53,15 @@ const caisse = {
       ],
     },
     {
-      name: "&r&f◘&r&d&kt&r&5&kt&r&d​❤&r&5&kt&r&d&kt&r&f◘&r&5&l &r&5&lA&r&d&ls&r&5&lp&r&d&li&r&5&lr&r&d&la&r&5&lt&r&d&le&r&5&lu&r&d&lr&r&5&l à &r&d&lC&r&5&la&r&d&ld&r&5&le&r&d&la&r&5&lu&r&d&lx &r&f◘&r&d&kt&r&5&kt&r&d​❤&r&5&kt&r&d&kt&r&f◘&r&5&l",
-      defaultName: "Aspirateur à Cadeaux",
+      name: "&r&6&l&kt&r&e&kt&r&b&kt&r&e❄&r&b&kt&r&e&kt&r&6&l&kt&r&6&l F&r&e&lo&r&6&lr&r&e&le&r&6&lu&r&e&ls&r&6&le &r&e&ld&r&6&lu &r&e&lL&r&6&lu&r&e&lt&r&6&li&r&e&ln &r&6&l&kt&r&e&kt&r&b&kt&r&e❄&r&b&kt&r&e&kt&r&6&l&kt&r&6&l",
+      defaultName: "Foreuse du Lutin",
       type: 7,
       enchants: [
         "&bEfficency &r&3150&r",
         "&eSolidité &r&6100&r",
-        "&aFortune &r&2450&r",
+        "&aFortune &r&2375&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&r&b&kt&r&f&kt&r&b​⚓&r&f&kt&r&b&kt&r&1&l &r&3&lP&r&b&le&r&f&lr&r&3&lc&r&b&le&r&f&lu&r&3&ls&r&b&le&r&f&l d&r&3&lu &r&b&lP&r&f&lè&r&3&lr&r&b&le &r&f&lN&r&3&lo&r&b&lë&r&f&ll &r&b&kt&r&f&kt&r&b​⚓&r&f&kt&r&b&kt&r&1&l",
