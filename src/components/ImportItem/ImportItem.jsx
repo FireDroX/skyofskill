@@ -69,7 +69,7 @@ const ImportItem = () => {
   };
 
   const copyItem = {
-    name: convertedTxt,
+    name: convertedTxt !== "" ? convertedTxt : undefined,
     defaultName: defaultName,
     type: itemType,
     enchants: enchantsList[itemType],

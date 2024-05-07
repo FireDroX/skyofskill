@@ -91,7 +91,9 @@ const Caisses = () => {
     for (let caisseDate = 0; caisseDate < caissesDates.length; caisseDate++) {
       const newCaisse = require(`../../utils/caisses/${caissesDates[caisseDate]}.js`);
       newCaisse.default.items
-        .filter((item) => item.hasOwnProperty("name"))
+        .filter(
+          (item) => item.hasOwnProperty("name") && item.name !== undefined
+        )
         .map((i) => finishedItems.push(i));
     }
     return finishedItems;
