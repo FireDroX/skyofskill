@@ -62,13 +62,15 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&2&kt&r&a&kt&r&f❤&r&a&kt&r&2&kt&r &r&2&l &nT&r&a&l&nronconneuse&r &r&a &l&nd'&r&2&l&nA&r&a&l&nmour&r&r &2 &kt&r&a&kt&r&f❤&r&a&kt&r&2&kt&r&2&l",
+      defaultName: "Tronçonneuse d'Amour",
       type: 7,
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3550&r",
+        "&eSolidité &r&6550&r",
+        "&aFortune &r&2550&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&r&c&kt&r&4​❤&r&c&kt&r&4&l C&r&c&lo&r&4&ls&r&c&lt&r&4&lu&r&c&lm&r&4&le &r&c&ld&r&4&le &r&c&lM&r&4&la&r&c&lr&r&4&li&r&c&la&r&4&lg&r&c&le &r&c&kt&r&4​❤&r&c&kt&r&4&l",

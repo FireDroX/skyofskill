@@ -124,13 +124,15 @@ const caisse = {
       enchants: ["&b&lProtection &r&3&l67&r", "&eSolidité &r&667&r"],
     },
     {
-      defaultName: "???",
+      name: "&r&f&ki&r&a&ki&r&2⚗&r&a⚛&r&2⚗&r&a&ki&r&f&ki&r&8&l &r&2&lC&r&a&lo&r&2&lu&r&a&lt&r&2&le&r&a&la&r&2&lu&r&a&l d&r&2&le &r&a&lT&r&2&lo&r&a&lx&r&2&li&r&a&lq&r&2&lu&r&a&le &r&f&ki&r&a&ki&r&2⚗&r&a⚛&r&2⚗&r&a&ki&r&f&ki",
+      defaultName: "Couteau de Toxique",
       type: 5,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&272&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
+      dontLeaveOnDeath: false,
     },
   ],
 };

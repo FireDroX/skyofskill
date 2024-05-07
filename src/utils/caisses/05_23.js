@@ -83,6 +83,17 @@ const caisse = {
       ],
     },
     {
+      name: "&r&c&kt&r&4❣&r&f❤&r&4❣&r&c&kt&r&e&l &r&4&lP&r&c&li&r&f&lo&r&4&lc&r&c&lh&r&f&le &r&4&le&r&c&ln &r&f&lC&r&4&lh&r&c&lo&r&f&lc&r&4&lo&r&c&ll&r&f&la&r&4&lt &r&c&kt&r&4❣&r&f❤&r&4❣&r&c&kt&r&e&l",
+      defaultName: "Pioche en Chocolat",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3800&r",
+        "&eSolidité &r&6800&r",
+        "&aFortune &r&2800&r",
+      ],
+      dontLeaveOnDeath: false,
+    },
+    {
       name: "&r&f&kt&r&b☉&r&f&kt&r&b&l A&r&f&lr&r&b&lm&r&f&lu&r&b&lr&r&f&le &r&a&lD&r&b&lr&r&c&la&r&d&lg&r&e&li&r&f&lb&r&a&lu&r&b&ls &r&f&kt&r&b☉&r&f&kt&r&b&l",
       defaultName: "Armure Dragibus",
       type: 0,

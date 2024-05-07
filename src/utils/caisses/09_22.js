@@ -13,10 +13,11 @@ const caisse = {
   title: "PIRATE",
   items: [
     {
+      name: "&r&4&l&kt&r&c&kt&r&7&kt&r&8⚔&r&7&kt&r&c&kt&r&4&l&kt&r&4&l D&r&c&la&r&7&lg&r&8&lu&r&4&le&r&c&l d&r&7&le&r&8&l P&r&4&li&r&c&lr&r&7&la&r&8&lt&r&4&le &r&4&l&kt&r&c&kt&r&7&kt&r&8⚔&r&7&kt&r&c&kt&r&4&l&kt&r&4&l",
       defaultName: "Dague de Pirate",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&239&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
@@ -31,13 +32,15 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&4&l&kt&r&c&kt&r&7&kt&r&8⚔&r&7&kt&r&c&kt&r&4&l&kt&r&4&l P&r&c&li&r&7&lo&r&8&lc&r&4&lh&r&c&le &r&7&lS&r&8&lo&r&4&lm&r&c&lb&r&7&lr&r&8&le &r&4&l&kt&r&c&kt&r&7&kt&r&8⚔&r&7&kt&r&c&kt&r&4&l&kt&r&4&l",
+      defaultName: "Pioche Sombre",
       type: 7,
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3150&r",
+        "&eSolidité &r&650&r",
+        "&aFortune &r&2180&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       defaultName: "???",

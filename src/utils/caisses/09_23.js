@@ -64,6 +64,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&f&kt&r&c&kt&r&8★&r&c✧&r&8★&r&c&kt&r&f&kt&r&8&l &r&c&lC&r&8&la&r&c&ln&r&8&lo&r&c&ln &r&8&ld&r&c&lu&r&8&l J&r&c&lu&r&8&lg&r&c&le&r&8&lm&r&c&le&r&8&ln&r&c&lt &r&f&kt&r&c&kt&r&8★&r&c✧&r&8★&r&c&kt&r&f&kt&r&8&l",
       defaultName: "Canon du Jugement",
       type: 4,
       enchants: [
