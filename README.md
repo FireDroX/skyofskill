@@ -120,15 +120,6 @@ Personnalisez votre texte avec des couleurs et des modifications infinies selon 
 
 ---
 
-<div align="center">
-  <br/>
-  <img src="https://github.com/SAWARATSUKI/ServiceLogos/blob/main/React/React.png?raw=true" alt="react" height="150" >
-  <br/>
-</div>
-
-> Icon by [@Sawaratsuki](https://x.com/sawaratsuki1004) ;
-> Github [ServiceLogos](https://github.com/SAWARATSUKI/ServiceLogos)
-
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&colorB=555
 [React-url]: https://react.dev/
 [contributors-shield]: https://img.shields.io/github/contributors/firedrox/skyofskill.svg?style=for-the-badge
@@ -136,4 +127,4 @@ Personnalisez votre texte avec des couleurs et des modifications infinies selon 
 [stars-icon]: https://img.shields.io/github/stars/firedrox/skyofskill.svg?style=for-the-badge
 [stars-url]: https://github.com/FireDroX/skyofskill/stargazers
 [discord-icon]: https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&colorB=555
-[discord-url]: https://discord.gg/qJsZxEaZVM
+[discord-url]: https://discord.gg/Zmmqd9Tbnn
