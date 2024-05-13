@@ -19,7 +19,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleNavigate = (goTo = String) => {
-    navigate("/skyofskill/" + goTo);
+    navigate(`/skyofskill?page=${goTo}`);
     document.title = "SkyOfSkill - " + goTo.toString().toUpperCase();
   };
 
