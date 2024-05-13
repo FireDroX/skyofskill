@@ -1,6 +1,6 @@
 import "./App.css";
-import { Suspense, lazy, createElement } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Suspense, lazy, useState, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Loader from "./components/Loader/Loader";
 import Navbar from "./components/Navbar/Navbar";
@@ -11,42 +11,41 @@ const Colors = lazy(() => import("./pages/colors/Colors"));
 const Minage = lazy(() => import("./pages/minage/Minage"));
 const Prestiges = lazy(() => import("./pages/prestiges/Prestiges"));
 
-const componentsMap = {
-  Caisses: Caisses,
-  Colors: Colors,
-  Prestiges: Prestiges,
-  Minage: Minage,
-};
-
 function App() {
+  function DynamicPage() {
+    const [page, setPage] = useState(null);
+    const location = useLocation();
+
+    useEffect(() => {
+      const queryParams = new URLSearchParams(location.search);
+      setPage(queryParams.get("page"));
+    }, [location]);
+
+    switch (page) {
+      case "caisses":
+        return <Caisses />;
+      case "colors":
+        return <Colors />;
+      case "minage":
+        return <Minage />;
+      case "prestiges":
+        return <Prestiges />;
+      default:
+        return <Home />;
+    }
+  }
   return (
     <>
       <Navbar />
-
       <Routes>
         <Route
           path="/skyofskill"
           element={
             <Suspense fallback={<Loader />}>
-              <Home />
+              <DynamicPage />
             </Suspense>
           }
         />
-
-        {["Caisses", "Colors", "Prestiges", "Minage"].map((el, i) => (
-          <Route
-            path={"/skyofskill/" + el.toLowerCase()}
-            key={el + i}
-            element={
-              <Suspense fallback={<Loader />}>
-                {createElement(componentsMap[el])}
-              </Suspense>
-            }
-          />
-        ))}
-
-        {/* REDIRECT WHEN NOT A PATH */}
-        <Route path="*" element={<Navigate to="/skyofskill" />} />
       </Routes>
     </>
   );

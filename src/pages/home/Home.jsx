@@ -63,7 +63,7 @@ const Home = () => {
             />
           </a>
           <a
-            href="https://discord.gg/qJsZxEaZVM"
+            href="https://discord.gg/Zmmqd9Tbnn"
             target="_blank"
             rel="noreferrer"
           >
