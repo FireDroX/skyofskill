@@ -2,6 +2,7 @@ import "./Caisses.css";
 import "../../components/MinecraftColoredText/MinecraftColoredText.css";
 
 import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { UserContext } from "../../utils/contexts/UserContext";
 
 import ImportItem from "../../components/ImportItem/ImportItem";
@@ -42,14 +43,16 @@ const caissesDates = [
 ];
 
 const Caisses = () => {
-  const { boxPage, setBoxPage, isClicked, setIsClicked } =
+  const { boxPage, setBoxPage, isClicked, setIsClicked, search, setSearch } =
     useContext(UserContext);
 
   const [caisse, setCaisse] = useState(
     require(`../../utils/caisses/${caissesDates[boxPage]}.js`)
   );
-  const [search, setSearch] = useState("");
+
   const [importMenu, setImportMenu] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleBtn = (e) => {
     switch (e) {
@@ -79,6 +82,30 @@ const Caisses = () => {
   const handleSearch = (e) => {
     setSearch(e.toLowerCase());
     setIsClicked({ clicked: false, index: 0 });
+
+    if (e.toLowerCase() !== "") {
+      if (document.location.search.match("&item=")) {
+        navigate(
+          document.location.search.replace(
+            "&item=" + search.replace(" ", "%20"),
+            "&item=" + e.toLowerCase().replace(" ", "%20")
+          )
+        );
+      } else {
+        navigate(
+          document.location.search +
+            "&item=" +
+            e.toLowerCase().replace(" ", "%20")
+        );
+      }
+    } else {
+      navigate(
+        document.location.search.replace(
+          "&item=" + search.replace(" ", "%20"),
+          ""
+        )
+      );
+    }
   };
 
   const getDate = () => {
