@@ -46,8 +46,12 @@ const Caisses = () => {
   const { boxPage, setBoxPage, isClicked, setIsClicked, search, setSearch } =
     useContext(UserContext);
 
+  console.log(boxPage);
+
   const [caisse, setCaisse] = useState(
-    require(`../../utils/caisses/${caissesDates[boxPage]}.js`)
+    require(`../../utils/caisses/${
+      caissesDates[boxPage <= caissesDates.length ? boxPage : 0]
+    }.js`)
   );
 
   const [importMenu, setImportMenu] = useState(false);
@@ -63,6 +67,16 @@ const Caisses = () => {
           );
           setBoxPage(boxPage + 1);
           setIsClicked({ clicked: false, index: 0 });
+          if (document.location.search.match("&box=")) {
+            navigate(
+              document.location.search.replace(
+                "&box=" + boxPage,
+                "&box=" + (boxPage + 1)
+              )
+            );
+          } else {
+            navigate(document.location.search + "&box=" + (boxPage + 1));
+          }
         }
         break;
       case "-":
@@ -72,40 +86,61 @@ const Caisses = () => {
           );
           setBoxPage(boxPage - 1);
           setIsClicked({ clicked: false, index: 0 });
+          if (document.location.search.match("&box=")) {
+            navigate(
+              document.location.search.replace(
+                "&box=" + boxPage,
+                "&box=" + (boxPage - 1)
+              )
+            );
+          } else {
+            navigate(document.location.search + "&box=" + (boxPage - 1));
+          }
         }
         break;
       default:
         break;
     }
+    navigate(
+      document.location.search.replace("&clicked=" + isClicked.clicked, "")
+    );
+    navigate(document.location.search.replace("&index=" + isClicked.index, ""));
   };
 
   const handleSearch = (e) => {
     setSearch(e.toLowerCase());
     setIsClicked({ clicked: false, index: 0 });
 
+    navigate(document.location.search.replace("&box=" + boxPage, ""));
+
     if (e.toLowerCase() !== "") {
       if (document.location.search.match("&item=")) {
         navigate(
           document.location.search.replace(
-            "&item=" + search.replace(" ", "%20"),
-            "&item=" + e.toLowerCase().replace(" ", "%20")
+            "&item=" + search.replaceAll(" ", "%20"),
+            "&item=" + e.toLowerCase().replaceAll(" ", "%20")
           )
         );
       } else {
         navigate(
           document.location.search +
             "&item=" +
-            e.toLowerCase().replace(" ", "%20")
+            e.toLowerCase().replaceAll(" ", "%20")
         );
       }
     } else {
       navigate(
         document.location.search.replace(
-          "&item=" + search.replace(" ", "%20"),
+          "&item=" + search.replaceAll(" ", "%20"),
           ""
         )
       );
     }
+
+    navigate(
+      document.location.search.replace("&clicked=" + isClicked.clicked, "")
+    );
+    navigate(document.location.search.replace("&index=" + isClicked.index, ""));
   };
 
   const getDate = () => {

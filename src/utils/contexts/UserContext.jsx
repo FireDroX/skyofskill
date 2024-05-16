@@ -16,8 +16,11 @@ export const UserProvider = ({ children }) => {
     parseInt(queryParams.get("next")) + 1 || 81
   );
   const [price, setPrice] = useState(0);
-  const [boxPage, setBoxPage] = useState(0);
-  const [isClicked, setIsClicked] = useState({ clicked: false, index: 0 });
+  const [boxPage, setBoxPage] = useState(parseInt(queryParams.get("box")) || 0);
+  const [isClicked, setIsClicked] = useState({
+    clicked: Boolean(queryParams.get("clicked")) || false,
+    index: parseInt(queryParams.get("index")) || 0,
+  });
   const [search, setSearch] = useState(
     queryParams.get("item")?.toLowerCase() || ""
   );
