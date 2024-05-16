@@ -1,17 +1,72 @@
 import "./LoadCaisse.css";
+import { useNavigate } from "react-router-dom";
 
-import ConvertFinalText from "../ConverFinalText/ConvertFinalText";
 import { findHexCharacters } from "../../utils/functions";
+import ConvertFinalText from "../ConverFinalText/ConvertFinalText";
 import mc_icons from "../../utils/mc_icons.js";
 
 export const LoadCaisse = ({ box, itemID, setItemID }) => {
+  const navigate = useNavigate();
   const title = box.title;
   const items = box.items.sort((a, b) => a.type - b.type);
 
   const handleClick = (i) => {
-    if (itemID.clicked && itemID.index !== i)
+    if (itemID.clicked && itemID.index !== i) {
       setItemID({ clicked: itemID.clicked, index: i });
-    else setItemID({ clicked: !itemID.clicked, index: i });
+
+      if (document.location.search.match("&clicked=")) {
+        navigate(
+          document.location.search.replace(
+            "&clicked=" + itemID.clicked,
+            "&clicked=" + itemID.clicked
+          )
+        );
+      } else {
+        navigate(document.location.search + "&clicked=" + itemID.clicked);
+      }
+      if (document.location.search.match("&index=")) {
+        navigate(
+          document.location.search.replace(
+            "&index=" + itemID.index,
+            "&index=" + i
+          )
+        );
+      } else {
+        navigate(document.location.search + "&index=" + i);
+      }
+    } else {
+      setItemID({ clicked: !itemID.clicked, index: i });
+
+      if (!itemID.clicked) {
+        if (document.location.search.match("&clicked=")) {
+          navigate(
+            document.location.search.replace(
+              "&clicked=" + itemID.clicked,
+              "&clicked=" + !itemID.clicked
+            )
+          );
+        } else {
+          navigate(document.location.search + "&clicked=" + !itemID.clicked);
+        }
+        if (document.location.search.match("&index=")) {
+          navigate(
+            document.location.search.replace(
+              "&index=" + itemID.index,
+              "&index=" + i
+            )
+          );
+        } else {
+          navigate(document.location.search + "&index=" + i);
+        }
+      } else {
+        navigate(
+          document.location.search.replace("&clicked=" + itemID.clicked, "")
+        );
+        navigate(
+          document.location.search.replace("&index=" + itemID.index, "")
+        );
+      }
+    }
   };
 
   return (

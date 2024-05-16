@@ -1,6 +1,5 @@
 ### List of commit messages
 
-- Added `number` item(s) 📦 : `user`
 - Created `file` ✨
 - Updated `file` 🔨
 - Deleted `file` 🔫
@@ -8,3 +7,5 @@
 - New BUILD 💿 : `date`
 - Mass Update 🎳 : `description`
 - Cleaned the code 🚿
+- Added `number` item(s) 📦 : `user`
+- Improved `this` 💡
