@@ -60,7 +60,9 @@ En utilisant cette formule, vous pouvez estimer la production toutes les 30 seco
 Affichez tous les éléments du serveur en un coup d'œil ! Des pioches aux armures, en passant par les épées, les arcs et les haches. Et avec une touche de couleur !
 
 <div align="center">
-  <img src="src/assets/example/example_item.png" alt="Example" />
+  <a href="https://firedrox.github.io/skyofskill?page=caisses&box=1&clicked=true&index=11">
+    <img src="src/assets/example/example_item.png" alt="Example" />
+  </a>
 </div>
 <br />
 
@@ -77,7 +79,9 @@ Facilitez le calcul du coût pour passer un ou plusieurs niveaux de prestige, et
 <br />
 
 <div align="center">
-  <img src="src/assets/example/example_prestiges.png" alt="Prestiges" />
+  <a href="https://firedrox.github.io/skyofskill?page=prestiges">
+    <img src="src/assets/example/example_prestiges.png" alt="Prestiges" />
+  </a>
 </div>
 <br />
 
