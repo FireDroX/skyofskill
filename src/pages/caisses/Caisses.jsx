@@ -46,8 +46,6 @@ const Caisses = () => {
   const { boxPage, setBoxPage, isClicked, setIsClicked, search, setSearch } =
     useContext(UserContext);
 
-  console.log(boxPage);
-
   const [caisse, setCaisse] = useState(
     require(`../../utils/caisses/${
       caissesDates[boxPage <= caissesDates.length ? boxPage : 0]
@@ -144,7 +142,8 @@ const Caisses = () => {
   };
 
   const getDate = () => {
-    let dateArray = caissesDates[boxPage].split("_");
+    let dateArray =
+      caissesDates[boxPage <= caissesDates.length ? boxPage : 0].split("_");
     return `${numberToMonth(dateArray[0]) + " 20" + dateArray[1]}`;
   };
 
@@ -190,7 +189,9 @@ const Caisses = () => {
                     itemID={isClicked}
                     setItemID={setIsClicked}
                   />
-                  {caissesDates[boxPage].match("_") ? (
+                  {caissesDates[
+                    boxPage <= caissesDates.length ? boxPage : 0
+                  ].match("_") ? (
                     <small>Box de {getDate()}</small>
                   ) : (
                     false
