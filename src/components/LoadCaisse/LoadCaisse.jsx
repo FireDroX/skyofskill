@@ -10,58 +10,35 @@ export const LoadCaisse = ({ box, itemID, setItemID }) => {
   const title = box.title;
   const items = box.items.sort((a, b) => a.type - b.type);
 
-  const handleClick = (i) => {
-    if (itemID.clicked && itemID.index !== i) {
-      setItemID({ clicked: itemID.clicked, index: i });
+  const handleClick = (itemIndex) => {
+    if (itemID.index !== itemIndex && itemID.clicked) {
+      // Switch from one item to another
+      setItemID({ clicked: true, index: itemIndex });
 
-      if (document.location.search.match("&clicked=")) {
-        navigate(
-          document.location.search.replace(
-            "&clicked=" + itemID.clicked,
-            "&clicked=" + itemID.clicked
-          )
-        );
-      } else {
-        navigate(document.location.search + "&clicked=" + itemID.clicked);
-      }
+      // Dynamic URL changes
       if (document.location.search.match("&index=")) {
         navigate(
           document.location.search.replace(
             "&index=" + itemID.index,
-            "&index=" + i
+            "&index=" + itemIndex
           )
         );
       } else {
-        navigate(document.location.search + "&index=" + i);
+        navigate(document.location.search + "&index=" + itemIndex);
       }
     } else {
-      setItemID({ clicked: !itemID.clicked, index: i });
+      // Enable/Disable an item
+      setItemID({ clicked: !itemID.clicked, index: itemIndex });
 
-      if (!itemID.clicked) {
-        if (document.location.search.match("&clicked=")) {
-          navigate(
-            document.location.search.replace(
-              "&clicked=" + itemID.clicked,
-              "&clicked=" + !itemID.clicked
-            )
-          );
-        } else {
-          navigate(document.location.search + "&clicked=" + !itemID.clicked);
-        }
-        if (document.location.search.match("&index=")) {
-          navigate(
-            document.location.search.replace(
-              "&index=" + itemID.index,
-              "&index=" + i
-            )
-          );
-        } else {
-          navigate(document.location.search + "&index=" + i);
-        }
-      } else {
-        navigate(
-          document.location.search.replace("&clicked=" + itemID.clicked, "")
-        );
+      // Dynamic URL changes
+      // Enable (changing false to true)
+      if (itemID.clicked === false) {
+        navigate(document.location.search + "&clicked=" + true);
+        navigate(document.location.search + "&index=" + itemIndex);
+      }
+      // Disable (changing true to false)
+      else {
+        navigate(document.location.search.replace("&clicked=true", ""));
         navigate(
           document.location.search.replace("&index=" + itemID.index, "")
         );
@@ -91,7 +68,7 @@ export const LoadCaisse = ({ box, itemID, setItemID }) => {
           ))}
         </div>
       </div>
-      {itemID.clicked === true ? (
+      {itemID.clicked === true && items.length >= itemID.index ? (
         <div className="loadCaisse-enchants">
           <h6>
             {items[itemID.index].name
