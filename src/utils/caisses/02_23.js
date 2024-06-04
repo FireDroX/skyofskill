@@ -97,13 +97,15 @@ const caisse = {
       enchants: ["&b&lProtection &r&3&l48&r", "&eSolidité &r&648&r"],
     },
     {
-      defaultName: "???",
+      name: "&r&r&r&4&l&kt&r&r&r&c&kt&r&r&r&f&kt&r&r&r&8​❤&r&r&r&f&kt&r&r&r&c&kt&r&r&r&4&l&kt&r&r&r&4&l C&r&r&r&c&lo&r&r&r&4&le&r&r&r&c&lu&r&r&r&4&lr&r&r&r&8&l B&r&r&r&7&lr&r&r&r&8&li&r&r&r&7&ls&r&r&l&r&8é &r&r&r&4&l&kt&r&r&r&c&kt&r&r&r&f&kt&r&r&r&8​❤&r&r&r&f&kt&r&r&r&c&kt&r&r&r&4&l&kt&r&r&r&4&l",
+      defaultName: "Coeur Brisé",
       type: 5,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&253&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
+      dontLeaveOnDeath: false,
     },
   ],
 };
