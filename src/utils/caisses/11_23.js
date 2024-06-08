@@ -23,6 +23,7 @@ const caisse = {
       ],
     },
     {
+      name: "&r&f&ki&r&b♨&r&f✹&r&b♨&r&f&ki&r&a &r&b&lV&r&f&lo&r&b&li&r&f&lt&r&b&lu&r&f&lr&r&b&le&r&f&l F&r&b&la&r&f&ln&r&b&lt&r&f&lô&r&b&lm&r&f&le &r&f&ki&r&b♨&r&f✹&r&b♨&r&f&ki",
       defaultName: "Voiture Fantôme",
       type: 6,
       enchants: [
@@ -30,6 +31,7 @@ const caisse = {
         "&eSolidité &r&610&r",
         "&bInfinity &r&3I&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&r&5&ki&r&f​⬇&r&d​✈&r&f​⬇&r&5&ki&r&5 &l S&r&d&lk&r&5&la&r&d&lt&r&5&le A&r&d&lp&r&5&lo&r&d&lc&r&5&la&r&d&ll&r&5&ly&r&d&lp&r&5&lt&r&d&li&r&5&lq&r&d&lu&r&5&le &r&5&ki&r&f​⬇&r&d​✈&r&f​⬇&r&5&ki&r&5",

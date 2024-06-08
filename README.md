@@ -108,8 +108,8 @@ Personnalisez votre texte avec des couleurs et des modifications infinies selon 
 
   - FireDroX (228 objets)
   - OverRhity (20 objets)
-  - HDIFOX302 (17 objets)
-  - yoann71C (17 objets)
+  - yoann71C (19 objets)
+  - hdifox302 (17 objets)
   - silexspagna (15 objets)
   - sarsja (2 objets)
   - Diictateur_DowN (2 objets)
