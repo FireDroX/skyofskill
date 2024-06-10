@@ -1,6 +1,6 @@
 import "./PrestigesPrice.css";
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useCallback } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { FaCoins } from "react-icons/fa6";
 
 import { compactNumber, formatNumberWithSpaces } from "../../utils/functions";
@@ -15,7 +15,9 @@ const PrestigesPrice = ({
   setPrice,
 }) => {
   const navigate = useNavigate();
-  const calcPrice = () => {
+  const location = useLocation();
+
+  const calcPrice = useCallback(() => {
     const current =
       currentPrestige >= 1 && currentPrestige <= 86 ? currentPrestige : 76;
     const next = nextPrestige >= 1 && nextPrestige <= 86 ? nextPrestige : 81;
@@ -26,39 +28,25 @@ const PrestigesPrice = ({
       0
     );
     setPrice(totalPrice);
+  }, [currentPrestige, nextPrestige, setPrice]);
+
+  const updateURLParams = (key, value) => {
+    const searchParams = new URLSearchParams(location.search);
+    searchParams.set(key, value);
+    navigate(`${location.pathname}?${searchParams.toString()}`);
   };
 
   const handleCurrentPrestige = (prestige) => {
     setCurrentPrestige(prestige);
-
-    if (document.location.search.match("&current=")) {
-      navigate(
-        document.location.search.replace(
-          "&current=" + (currentPrestige - 1),
-          "&current=" + (prestige - 1)
-        )
-      );
-    } else {
-      navigate(document.location.search + "&current=" + (prestige - 1));
-    }
+    updateURLParams("current", prestige - 1);
   };
 
   const handleNextPrestige = (prestige) => {
     setNextPrestige(prestige);
-
-    if (document.location.search.match("&next=")) {
-      navigate(
-        document.location.search.replace(
-          "&next=" + (currentPrestige - 1),
-          "&next=" + (prestige - 1)
-        )
-      );
-    } else {
-      navigate(document.location.search + "&next=" + (prestige - 1));
-    }
+    updateURLParams("next", prestige - 1);
   };
 
-  useEffect(() => calcPrice(), [currentPrestige, nextPrestige]);
+  useEffect(() => calcPrice(), [currentPrestige, nextPrestige, calcPrice]);
 
   return (
     <div className="calc-prestige">

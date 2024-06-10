@@ -4,7 +4,6 @@ import { createElement } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { FaSackDollar } from "react-icons/fa6";
-import { IoColorPalette } from "react-icons/io5";
 import { GiWarPick, GiOpenChest } from "react-icons/gi";
 
 const logo = require("../../assets/logo.png");

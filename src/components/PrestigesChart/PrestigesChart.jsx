@@ -30,7 +30,7 @@ const PrestigesChart = ({ page, setPage }) => {
       setPage(Number(0));
       window.removeEventListener("resize", handleWidth);
     };
-  }, [isSmallSize]);
+  }, [isSmallSize, setPage]);
 
   const newPrestige = [[], []];
   for (let i = 0; i < chartPrestiges.length; i += 17) {
@@ -41,15 +41,10 @@ const PrestigesChart = ({ page, setPage }) => {
   }
 
   const handleBtn = (e) => {
-    switch (e) {
-      case "+":
-        if (page !== newPrestige[isSmallSize].length - 1) setPage(page + 1);
-        break;
-      case "-":
-        if (page !== 0) setPage(page - 1);
-        break;
-      default:
-        break;
+    if (e === "+" && page < newPrestige[isSmallSize].length - 1) {
+      setPage(page + 1);
+    } else if (e === "-" && page > 0) {
+      setPage(page - 1);
     }
   };
 
