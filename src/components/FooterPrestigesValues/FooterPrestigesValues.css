@@ -1,13 +1,14 @@
 .footer {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  scale: 0.8;
 }
 
-.footer > h6 {
+.footer > summary {
   color: var(--text85);
+  font-size: 12px;
 }
 .footer small {
   color: var(--text70);
@@ -19,10 +20,14 @@
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  padding-bottom: 2rem;
+  padding-block: 1.5rem;
 }
 
 .footer tr {
   border: 1px solid var(--text55);
-  padding: 0.3rem;
+  padding: 0.2rem;
+}
+
+.parent > tr > td > small {
+  font-size: 10px;
 }
