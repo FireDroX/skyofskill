@@ -103,13 +103,15 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&b&ki&r&f*&r&b❄&r&f*&r&b&ki&r&4&l &r&b&lB&r&f&la&r&b&lg&r&f&lu&r&b&le&r&f&lt&r&b&lt&r&f&le &r&b&ld&r&f&le &r&b&ll&r&f&la&r&b&l F&r&f&lo&r&b&lr&r&f&lt&r&b&lu&r&f&ln&r&b&le &r&b&ki&r&f*&r&b❄&r&f*&r&b&ki",
+      defaultName: "Baguette de la Fortune",
       type: 7,
       enchants: [
-        "&bEfficency &r&3????&r",
-        "&eSolidité &r&6????&r",
-        "&aFortune &r&2????&r",
+        "&bEfficency &r&31800&r",
+        "&eSolidité &r&61800&r",
+        "&aFortune &r&21800&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&f&kt&r&e&kt&r&f☉&r&e​☄&r&f☉&r&e&kt&r&f&kt&r&f&l A&r&e&lr&r&f&lm&r&e&lu&r&f&lr&r&e&le&r&f&l F&r&e&li&r&f&lr&r&e&le&r&f&lW&r&e&lo&r&f&lr&r&e&lk &r&f&kt&r&e&kt&r&f☉&r&e​☄&r&f☉&r&e&kt&r&f&kt&r",

@@ -10,7 +10,7 @@
  */
 
 const caisse = {
-  title: "SUPERHERO",
+  title: "SUPERHEROS",
   items: [
     {
       name: "&r&f&kii&r&cϟ&r&9❆&r&cϟ&r&f&kii&r&9 &l A&r&c&lr&r&9&lc &r&c&lS&r&9&lu&r&c&lp&r&9&le&r&c&lr&r&f-&r&9&lH&r&c&lé&r&9&lr&r&c&lo&r&9&ls &r&f&kii&r&cϟ&r&9❆&r&cϟ&r&f&kii",

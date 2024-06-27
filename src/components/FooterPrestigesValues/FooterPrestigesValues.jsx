@@ -5,11 +5,11 @@ import { mines } from "../../utils/values";
 
 const FooterPrestigesValues = () => {
   return (
-    <div className="footer">
-      <h6>
+    <details className="footer">
+      <summary>
         Formulé selon le principe qu'un bloc cassé avec une fortune 0 équivaut à
         :
-      </h6>
+      </summary>
       <table>
         <tbody className="parent">
           {mines.map((mine, index) => (
@@ -23,7 +23,7 @@ const FooterPrestigesValues = () => {
           ))}
         </tbody>
       </table>
-    </div>
+    </details>
   );
 };
 

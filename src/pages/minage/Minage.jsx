@@ -3,7 +3,6 @@ import "./Minage.css";
 import { useContext } from "react";
 import { UserContext } from "../../utils/contexts/UserContext";
 
-import UnbanTimer from "../../components/UnbanTimer/UnbanTimer";
 import InputValues from "../../components/InputValues/InputValues";
 import OutputValues from "../../components/OutputValues/OutputValues";
 import FooterPrestigesValues from "../../components/FooterPrestigesValues/FooterPrestigesValues";
@@ -23,7 +22,6 @@ const Minage = () => {
   return (
     <section className="App">
       <div>
-        <UnbanTimer />
         <div className="minage-values">
           <InputValues
             fortune={fortune}

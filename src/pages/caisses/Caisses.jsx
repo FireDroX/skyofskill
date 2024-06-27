@@ -14,6 +14,7 @@ import {
 } from "../../utils/functions";
 
 const caissesDates = [
+  "07_24",
   "06_24",
   "05_24",
   "04_24",
@@ -149,17 +150,18 @@ const Caisses = () => {
   };
 
   const loopFinishedItems = () => {
-    let finishedItems = [];
-    for (let caisseDate = 0; caisseDate < caissesDates.length; caisseDate++) {
-      const newCaisse = require(`../../utils/caisses/${caissesDates[caisseDate]}.js`);
-      newCaisse.default.items
-        .filter(
-          (item) => item.hasOwnProperty("name") && item.name !== undefined
-        )
-        .map((i) => finishedItems.push(i));
-    }
-    return finishedItems;
+    return caissesDates.reduce((acc, caisseDate) => {
+      const newCaisse = require(`../../utils/caisses/${caisseDate}.js`);
+      const items = newCaisse.default.items.filter(
+        (item) => item?.name !== undefined
+      );
+      return [...acc, ...items];
+    }, []);
   };
+
+  const filteredItems = loopFinishedItems().filter((item) =>
+    filterItems(item, search)
+  );
 
   return (
     <section className="App">
@@ -176,7 +178,7 @@ const Caisses = () => {
                 <input
                   name="Rechercher un item"
                   type="text"
-                  value={search.toLowerCase()}
+                  value={search}
                   onChange={(e) => handleSearch(e.target.value)}
                 />
               </div>
@@ -190,31 +192,25 @@ const Caisses = () => {
                     itemID={isClicked}
                     setItemID={setIsClicked}
                   />
-                  {caissesDates[
-                    boxPage <= caissesDates.length ? boxPage : 0
-                  ].match("_") ? (
+                  {caissesDates[boxPage].includes("_") && (
                     <small>Box de {getDate()}</small>
-                  ) : (
-                    false
                   )}
                 </>
               ) : (
                 <LoadCaisse
                   box={{
                     title: "",
-                    items: loopFinishedItems()
-                      .filter((item) => filterItems(item, search))
-                      .sort(
-                        (a, b) =>
-                          extractAndConvertEnchantLevel(b) -
-                          extractAndConvertEnchantLevel(a)
-                      ),
+                    items: filteredItems.sort(
+                      (a, b) =>
+                        extractAndConvertEnchantLevel(b) -
+                        extractAndConvertEnchantLevel(a)
+                    ),
                   }}
                   itemID={isClicked}
                   setItemID={setIsClicked}
                 />
               )}
-              {search === "" ? (
+              {search === "" && (
                 <div className="input-btns">
                   <button
                     style={{
@@ -222,6 +218,7 @@ const Caisses = () => {
                         boxPage === 0 ? "var(--primary15)" : "var(--primary65)",
                     }}
                     onClick={() => handleBtn("-")}
+                    disabled={boxPage === 0}
                   >
                     {"<"}
                   </button>
@@ -233,12 +230,11 @@ const Caisses = () => {
                           : "var(--primary65)",
                     }}
                     onClick={() => handleBtn("+")}
+                    disabled={boxPage === caissesDates.length - 1}
                   >
                     {">"}
                   </button>
                 </div>
-              ) : (
-                false
               )}
             </>
           )}
