@@ -76,13 +76,15 @@ const caisse = {
       ],
     },
     {
-      defaultName: "Spatio-Sabre",
+      name: "&r&4&ki&r&8♱&r&4۞&r&8♱&r&4&ki&r&4&l &r&4&lS&r&8&lp&r&4&la&r&8&lt&r&4&li&r&8&lo&r&7-&r&4&lS&r&8&la&r&4&lb&r&8&lr&r&4&le &r&4&ki&r&8♱&r&4۞&r&8♱&r&4&ki&r&4&l",
+      defaultName: "Spatio Sabre",
       type: 4,
       enchants: [
         "&aTranchant &r&286&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&b&kt&r&8⁑&r&b​☀&r&8⁑&r&b&kt&r&b&l F&r&8&lo&r&b&lr&r&8&le&r&b&lu&r&8&ls&r&b&le &r&8&lP&r&b&lu&r&8&ll&r&b&ls&r&8&la&r&b&lr &r&b&kt&r&8⁑&r&b​☀&r&8⁑&r&b&kt&r",

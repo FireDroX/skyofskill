@@ -114,6 +114,7 @@ Personnalisez votre texte avec des couleurs et des modifications infinies selon 
   - sarsja (2 objets)
   - Diictateur_DowN (2 objets)
   - M_ell_o (1 objet)
+  - xifoxEnTMAX (1 objet)
 
 - Pour l'aide sur les prix des différents niveaux de prestige :
 
