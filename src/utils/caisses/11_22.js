@@ -23,21 +23,23 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      name: "&2&kt&r&a&kt&r&f&l✟&r&a&kt&r&2&kt&r&2&l Cl&r&a&low&r&2&ln T&r&a&lue&r&2&lur &r&2&kt&r&a&kt&r&f&l✟&r&a&kt&r&2&kt&r",
+      defaultName: "Clown Tueur",
       type: 4,
       enchants: [
-        "&aTranchant &r&2??&r",
+        "&aTranchant &r&246&r",
         "&eSolidité &r&610&r",
         "&dAura de Feu &r&510&r",
       ],
     },
     {
-      defaultName: "???",
+      name: "&r&4&l&kt&r&c&kt&r&d&kt&r&4✟&r&d&kt&r&c&kt&r&4&l&kt&r&4&l P&r&c&li&r&d&lo&r&4&lc&r&c&lh&r&d&le &r&4&lZ&r&c&lo&r&d&lm&r&4&lb&r&c&li&r&d&lf&r&4&li&r&c&lé&r&d&le &r&4&l&kt&r&c&kt&r&d&kt&r&4✟&r&d&kt&r&c&kt&r&4&l&kt&r&4&l",
+      defaultName: "Pioche Zombifiée",
       type: 7,
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3150&r",
+        "&eSolidité &r&6100&r",
+        "&aFortune &r&2350&r",
       ],
     },
     {
@@ -61,12 +63,12 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
+      defaultName: "Foreuse d'Âmes",
       type: 7,
       enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
+        "&bEfficency &r&3300&r",
+        "&eSolidité &r&6100&r",
+        "&aFortune &r&2450&r",
       ],
     },
     {
