@@ -43,15 +43,6 @@ const caisse = {
       ],
     },
     {
-      defaultName: "???",
-      type: 7,
-      enchants: [
-        "&bEfficency &r&3???&r",
-        "&eSolidité &r&6???&r",
-        "&aFortune &r&2???&r",
-      ],
-    },
-    {
       name: "&r&6&l&kt&r&6&kt&r&e&kt&r&a​❤&r&e&kt&r&6&kt&r&e&l&kt&r&6&l Ma&r&e&lst&r&6&lic&r&e&lat&r&6&leu&r&e&lr d&r&6&le L&r&e&lov&r&6&lés &r&6&l&kt&r&6&kt&r&e&kt&r&a​❤&r&e&kt&r&6&kt&r&e&l&kt&r&6&l",
       type: 7,
       defaultName: "Masticateur de Lovés",
@@ -71,6 +62,16 @@ const caisse = {
         "&aFortune &r&2550&r",
       ],
       dontLeaveOnDeath: false,
+    },
+    {
+      name: "&c&kt&r&f&kt&r&c&kt&r&4&l​❤&r&c&kt&r&f&kt&r&c&kt&r&4&l F&r&c&lo&r&4&lr&r&c&le&r&4&lu&r&c&ls&r&4&le &r&c&là &r&4&lL&r&c&lo&r&4&lv&r&c&lé&r&4&ls &r&c&kt&r&f&kt&r&c&kt&r&4&l​❤&r&c&kt&r&f&kt&r&c&kt&r",
+      defaultName: "Foreuse à Lovés",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&3600&r",
+        "&eSolidité &r&6600&r",
+        "&aFortune &r&2600&r",
+      ],
     },
     {
       name: "&r&c&kt&r&4​❤&r&c&kt&r&4&l C&r&c&lo&r&4&ls&r&c&lt&r&4&lu&r&c&lm&r&4&le &r&c&ld&r&4&le &r&c&lM&r&4&la&r&c&lr&r&4&li&r&c&la&r&4&lg&r&c&le &r&c&kt&r&4​❤&r&c&kt&r&4&l",
