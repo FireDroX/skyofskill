@@ -119,7 +119,7 @@ Personnalisez votre texte avec des couleurs et des modifications infinies selon 
 - Pour l'aide sur les prix des différents niveaux de prestige :
 
   - Okamino\_
-  - HDIFOX302
+  - hdifox302
   - OverRhity
 
 <p align="right">(<a href="#readme-top">Retour en haut de la page</a>)</p>
