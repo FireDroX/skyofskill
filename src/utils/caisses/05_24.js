@@ -143,7 +143,7 @@ const caisse = {
     },
     {
       name: "&r&f&k&l|&r&r&r&d★&r&5☭&r&d★&r&f&k&l|&r&r &r&8&lA&r&f&lR&r&5&lC &r&8D&r&f&lE &r&5&lH&r&8&lA&r&f&lW&r&5&lK&r&8&lE&r&f&lY&r&5&lE &r&f&k&l|&r&r&r&d★&r&5☭&r&d★&r&f&k&l|&r&7",
-      defaultName: "Lance Toile",
+      defaultName: "Arc de Hawkeye",
       type: 6,
       enchants: [
         "&bPunch &r&3VI&r",
