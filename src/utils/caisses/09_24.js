@@ -10,7 +10,7 @@
  */
 
 const caisse = {
-  title: "SUPREME",
+  title: "SUPREME - STARS",
   items: [
     {
       name: "&r&8&kt&r&8&kt&r&f&l✛&r&7&l☉&r&f&l✛&r&8&kt&r&8&kt&r&8&l C&r&7&lh&r&8&la&r&7&ls&r&8&ls&r&7&le&r&8&lu&r&7&lr &r&8&lT&r&7&lI&r&8&lE &r&8&kt&r&8&kt&r&f&l✛&r&7&l☉&r&f&l✛&r&8&kt&r&8&kt&r&r",
