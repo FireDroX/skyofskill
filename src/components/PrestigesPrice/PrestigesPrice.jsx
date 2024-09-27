@@ -16,11 +16,15 @@ const PrestigesPrice = ({
 }) => {
   const navigate = useNavigate();
   const location = useLocation();
+  const MAX_PRESTIGE = 90;
 
   const calcPrice = useCallback(() => {
     const current =
-      currentPrestige >= 1 && currentPrestige <= 86 ? currentPrestige : 76;
-    const next = nextPrestige >= 1 && nextPrestige <= 86 ? nextPrestige : 81;
+      currentPrestige >= 1 && currentPrestige <= MAX_PRESTIGE + 1
+        ? currentPrestige
+        : 56;
+    const next =
+      nextPrestige >= 1 && nextPrestige <= MAX_PRESTIGE + 1 ? nextPrestige : 61;
     if (current >= next) return setPrice(0);
     const selectedPrestiges = prestiges.slice(current, next);
     const totalPrice = selectedPrestiges.reduce(
@@ -55,7 +59,9 @@ const PrestigesPrice = ({
         <select
           name="Votre prestige"
           defaultValue={
-            currentPrestige >= 1 && currentPrestige <= 86 ? currentPrestige : 76
+            currentPrestige >= 1 && currentPrestige <= MAX_PRESTIGE + 1
+              ? currentPrestige
+              : 76
           }
           onChange={(e) => handleCurrentPrestige(Number(e.target.value))}
         >
@@ -71,7 +77,9 @@ const PrestigesPrice = ({
         <select
           name="Prestige souhaité"
           defaultValue={
-            nextPrestige >= 1 && nextPrestige <= 86 ? nextPrestige : 81
+            nextPrestige >= 1 && nextPrestige <= MAX_PRESTIGE + 1
+              ? nextPrestige
+              : 81
           }
           onChange={(e) => handleNextPrestige(Number(e.target.value))}
         >

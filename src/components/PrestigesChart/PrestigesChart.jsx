@@ -33,11 +33,11 @@ const PrestigesChart = ({ page, setPage }) => {
   }, [isSmallSize, setPage]);
 
   const newPrestige = [[], []];
-  for (let i = 0; i < chartPrestiges.length; i += 17) {
-    newPrestige[0].push(chartPrestiges.slice(i, i + 17));
+  for (let i = 0; i < chartPrestiges.length; i += 10) {
+    newPrestige[0].push(chartPrestiges.slice(i, i + 10));
   }
-  for (let i = 0; i < chartPrestiges.length; i += 5) {
-    newPrestige[1].push(chartPrestiges.slice(i, i + 5));
+  for (let i = 0; i < chartPrestiges.length; i += 9) {
+    newPrestige[1].push(chartPrestiges.slice(i, i + 9));
   }
 
   const handleBtn = (e) => {

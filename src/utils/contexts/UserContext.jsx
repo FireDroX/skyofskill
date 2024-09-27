@@ -4,16 +4,16 @@ export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const queryParams = new URLSearchParams(document.location.search);
-  const [fortune, setFortune] = useState(2050);
+  const [fortune, setFortune] = useState(3050);
   const [blocs, setBlocs] = useState(15500);
-  const [mine, setMine] = useState(14);
-  const [boost, setBoost] = useState(12);
+  const [mine, setMine] = useState(13);
+  const [boost, setBoost] = useState(10);
   const [page, setPage] = useState(0);
   const [currentPrestige, setCurrentPrestige] = useState(
-    parseInt(queryParams.get("current")) + 1 || 76
+    parseInt(queryParams.get("current")) + 1 || 56
   );
   const [nextPrestige, setNextPrestige] = useState(
-    parseInt(queryParams.get("next")) + 1 || 81
+    parseInt(queryParams.get("next")) + 1 || 61
   );
   const [price, setPrice] = useState(0);
   const [boxPage, setBoxPage] = useState(parseInt(queryParams.get("box")) || 0);
