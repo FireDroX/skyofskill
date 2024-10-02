@@ -6,21 +6,20 @@ import { mines } from "../../utils/values";
 const FooterPrestigesValues = () => {
   return (
     <details className="footer">
-      <summary>
-        Formulé selon le principe qu'un bloc cassé avec une fortune 0 équivaut à
-        :
-      </summary>
+      <summary>Mine de la moins rentable à la plus rentable :</summary>
       <table>
         <tbody className="parent">
-          {mines.map((mine, index) => (
-            <tr key={index}>
-              <td>
-                <small>
-                  {mine.name} = {formatNumberWithSpaces(mine.value)}
-                </small>
-              </td>
-            </tr>
-          ))}
+          {[...mines]
+            .sort((a, b) => a.value - b.value)
+            .map((mine, index) => (
+              <tr key={index}>
+                <td>
+                  <small>
+                    {mine.name} = {formatNumberWithSpaces(mine.value)}
+                  </small>
+                </td>
+              </tr>
+            ))}
         </tbody>
       </table>
     </details>
