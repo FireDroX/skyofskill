@@ -50,9 +50,10 @@
 }
 
 .loadCaisse-enchants {
+  position: relative;
   height: min-content;
   margin-inline: 0.8rem;
-  padding: 1.5rem;
+  padding: 2rem;
   background-color: var(--primary5);
   border-radius: 30px;
   display: flex;
@@ -95,4 +96,27 @@
   font-size: 0.666rem;
   user-select: none;
   font-family: "Minecraftia";
+}
+
+.loadCaisse-more {
+  background-color: var(--primary45);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  color: var(--text75);
+}
+
+.loadCaisse-more:hover {
+  cursor: pointer;
+}
+
+.loadCaisse-more > svg {
+  scale: 0.6;
 }

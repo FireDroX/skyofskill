@@ -1,5 +1,6 @@
 import "./LoadCaisse.css";
 import { useNavigate } from "react-router-dom";
+import { FaCopy } from "react-icons/fa6";
 
 import { findHexCharacters } from "../../utils/functions";
 import ConvertFinalText from "../ConverFinalText/ConvertFinalText";
@@ -107,6 +108,14 @@ export const LoadCaisse = ({ box, itemID, setItemID }) => {
           ) : (
             false
           )}
+          <div
+            className="loadCaisse-more"
+            onClick={() =>
+              navigator.clipboard.writeText(items[itemID.index].name)
+            }
+          >
+            <FaCopy />
+          </div>
         </div>
       ) : (
         false
