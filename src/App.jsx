@@ -10,6 +10,9 @@ const Caisses = lazy(() => import("./pages/caisses/Caisses"));
 const Colors = lazy(() => import("./pages/colors/Colors"));
 const Minage = lazy(() => import("./pages/minage/Minage"));
 const Prestiges = lazy(() => import("./pages/prestiges/Prestiges"));
+const Halloween_2024 = lazy(() =>
+  import("./pages/halloween_2024/Halloween_2024")
+);
 
 function App() {
   function DynamicPage() {
@@ -22,6 +25,8 @@ function App() {
     }, [location]);
 
     switch (page) {
+      case "halloween_2024":
+        return <Halloween_2024 />;
       case "caisses":
         return <Caisses />;
       case "colors":
