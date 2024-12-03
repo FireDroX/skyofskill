@@ -161,6 +161,20 @@ const caisse = {
       ],
       dontLeaveOnDeath: true,
     },
+    {
+      name: "&r&4&ki&r&f❤&r&4&ki&r&4&l 36&r&f&l3*&r&4&l 36&r&f&l3* &r&4&lAl&r&f&llo&r&4&l Pè&r&f&lre&r&4&l No&r&f&lël &r&4&ki&r&f❤&r&4&ki&r&4",
+      defaultName: "3630 3630 Allo Père Noël",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&34500&r",
+        "&eSolidité &r&64500&r",
+        "&aFortune &r&24500&r",
+        "",
+        "",
+        "&8▶ &r&fAchète &r&e&l45,000 Tokens&r",
+      ],
+      dontLeaveOnDeath: false,
+    },
   ],
 };
 
