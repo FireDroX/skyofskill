@@ -105,6 +105,8 @@ export const checkItemType = (item, searchType) => {
       return item.type === 0;
     case "all":
       return true;
+    case "inf":
+      return item.dontLeaveOnDeath === true;
     default:
       return false;
   }
