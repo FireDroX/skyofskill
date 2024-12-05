@@ -13,6 +13,7 @@ const Prestiges = lazy(() => import("./pages/prestiges/Prestiges"));
 const Halloween_2024 = lazy(() =>
   import("./pages/halloween_2024/Halloween_2024")
 );
+const Noel_2024 = lazy(() => import("./pages/noel_2024/Noel_2024"));
 
 function App() {
   function DynamicPage() {
@@ -27,6 +28,8 @@ function App() {
     switch (page) {
       case "halloween_2024":
         return <Halloween_2024 />;
+      case "noel_2024":
+        return <Noel_2024 />;
       case "caisses":
         return <Caisses />;
       case "colors":
