@@ -64,13 +64,11 @@ const caisse = {
       dontLeaveOnDeath: false,
     },
     {
+      name: "&r&f&ki&r&7&ki&r&8*&r&b⚖&r&8*&r&7&ki&r&f&ki&r&8&l &r&b&lS&r&8&la&r&7&lb&r&b&lr&r&8&le &r&7&ld&r&b&lu&r&8&l F&r&7&la&r&b&ln&r&8&lt&r&7&lô&r&b&lm&r&8&le &r&f&ki&r&7&ki&r&8*&r&b⚖&r&8*&r&7&ki&r&f&ki",
       defaultName: "Sabre du Fantôme",
       type: 4,
-      enchants: [
-        "&aTranchant &r&275&r",
-        "&eSolidité &r&610&r",
-        "&dAura de Feu &r&510&r",
-      ],
+      enchants: ["&aTranchant &r&275&r","&eSolidité &r&610&r","&dAura de Feu &r&510&r"],
+      dontLeaveOnDeath: false,
     },
     {
       name: "&r&f&ki&r&9​↕&r&f​⚠&r&9​↕&r&f&ki&r&6&l &r&9&lS&r&f&lc&r&9&li&r&f&le&r&9&l d&r&f&lu&r&9&l C&r&f&la&r&9&lm&r&f&lb&r&9&lr&r&f&li&r&9&lo&r&f&ll&r&9&le&r&f&lu&r&9&lr &r&f&ki&r&9​↕&r&f​⚠&r&9​↕&r&f&ki&r&6&l",
