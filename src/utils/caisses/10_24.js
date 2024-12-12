@@ -165,7 +165,7 @@ const caisse = {
       dontLeaveOnDeath: false,
     },
     {
-      name: "&r&8&kt&r&4&kt&r&c░&r&8✟&r&c░&r&4&kt&r&8&kt&r&4&l&r&r &r&8&lD&r&c&lé&r&8&lt&r&4&lo&r&8&ln&r&c&la&r&8&lt&r&4&le&r&8&lu&r&c&lr&r&8&l T&r&4&lh&r&8&le&r&c&lr&r&8&lm&r&4&li&r&8&lq&r&c&lu&r&8&le&r&4&l V&r&8&la&r&c&ld&r&8&lo&r&4&lr &r&8&kt&r&4&kt&r&c░&r&7✟&r&c░&r&4&kt&r&8&kt&r&4&l&r&r",
+      name: "&r&8&kt&r&4&kt&r&c░&r&8✟&r&c░&r&4&kt&r&8&kt&r&4&l&r&r &r&8&lD&r&c&lé&r&8&lt&r&4&lo&r&8&ln&r&c&la&r&8&lt&r&4&le&r&8&lu&r&c&lr&r&8&l T&r&4&lh&r&8&le&r&c&lr&r&8&lm&r&4&li&r&8&lq&r&c&lu&r&8&le&r&4&l V&r&8&la&r&c&ld&r&8&lo&r&4&lr &r&8&kt&r&4&kt&r&c░&r&8✟&r&c░&r&4&kt&r&8&kt&r&4&l&r&r",
       defaultName: "Détonateur Thermique Vador",
       type: 6,
       enchants: [
