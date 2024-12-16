@@ -106,7 +106,7 @@ Personnalisez votre texte avec des couleurs et des modifications infinies selon 
 
 - Pour l'aide concernant les noms des objets des caisses :
 
-  - FireDroX (293 objets)
+  - FireDroX (tout le reste)
   - OverRhity (20 objets)
   - yoann71C (19 objets)
   - hdifox302 (17 objets)
@@ -115,6 +115,7 @@ Personnalisez votre texte avec des couleurs et des modifications infinies selon 
   - sarsja (2 objets)
   - Diictateur_DowN (2 objets)
   - xifoxEnTMAX (1 objet)
+  - DiaBlo8zZz (1 objet)
 
 - Pour l'aide sur les prix des différents niveaux de prestige :
 

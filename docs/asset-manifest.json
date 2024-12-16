@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/skyofskill/static/css/main.26f5cf9d.css",
-    "main.js": "/skyofskill/static/js/main.ef05bb44.js",
+    "main.js": "/skyofskill/static/js/main.5f658bee.js",
     "static/css/149.7e01cae5.chunk.css": "/skyofskill/static/css/149.7e01cae5.chunk.css",
     "static/js/149.d58511e7.chunk.js": "/skyofskill/static/js/149.d58511e7.chunk.js",
     "static/css/654.f420b1c7.chunk.css": "/skyofskill/static/css/654.f420b1c7.chunk.css",
-    "static/js/654.2473b576.chunk.js": "/skyofskill/static/js/654.2473b576.chunk.js",
+    "static/js/654.7278a273.chunk.js": "/skyofskill/static/js/654.7278a273.chunk.js",
     "static/css/364.c7091d06.chunk.css": "/skyofskill/static/css/364.c7091d06.chunk.css",
     "static/js/364.9c43bb39.chunk.js": "/skyofskill/static/js/364.9c43bb39.chunk.js",
     "static/css/661.d91150f8.chunk.css": "/skyofskill/static/css/661.d91150f8.chunk.css",
-    "static/js/661.3048c0f1.chunk.js": "/skyofskill/static/js/661.3048c0f1.chunk.js",
+    "static/js/661.878b894d.chunk.js": "/skyofskill/static/js/661.878b894d.chunk.js",
     "static/css/730.1bf3d4b0.chunk.css": "/skyofskill/static/css/730.1bf3d4b0.chunk.css",
-    "static/js/730.39832247.chunk.js": "/skyofskill/static/js/730.39832247.chunk.js",
+    "static/js/730.dd5822fb.chunk.js": "/skyofskill/static/js/730.dd5822fb.chunk.js",
     "static/css/452.1776a193.chunk.css": "/skyofskill/static/css/452.1776a193.chunk.css",
     "static/js/452.2f3e3a15.chunk.js": "/skyofskill/static/js/452.2f3e3a15.chunk.js",
     "static/css/404.e07c6a69.chunk.css": "/skyofskill/static/css/404.e07c6a69.chunk.css",
@@ -21,17 +21,17 @@
     "static/css/608.29bb69dc.chunk.css": "/skyofskill/static/css/608.29bb69dc.chunk.css",
     "index.html": "/skyofskill/index.html",
     "main.26f5cf9d.css.map": "/skyofskill/static/css/main.26f5cf9d.css.map",
-    "main.ef05bb44.js.map": "/skyofskill/static/js/main.ef05bb44.js.map",
+    "main.5f658bee.js.map": "/skyofskill/static/js/main.5f658bee.js.map",
     "149.7e01cae5.chunk.css.map": "/skyofskill/static/css/149.7e01cae5.chunk.css.map",
     "149.d58511e7.chunk.js.map": "/skyofskill/static/js/149.d58511e7.chunk.js.map",
     "654.f420b1c7.chunk.css.map": "/skyofskill/static/css/654.f420b1c7.chunk.css.map",
-    "654.2473b576.chunk.js.map": "/skyofskill/static/js/654.2473b576.chunk.js.map",
+    "654.7278a273.chunk.js.map": "/skyofskill/static/js/654.7278a273.chunk.js.map",
     "364.c7091d06.chunk.css.map": "/skyofskill/static/css/364.c7091d06.chunk.css.map",
     "364.9c43bb39.chunk.js.map": "/skyofskill/static/js/364.9c43bb39.chunk.js.map",
     "661.d91150f8.chunk.css.map": "/skyofskill/static/css/661.d91150f8.chunk.css.map",
-    "661.3048c0f1.chunk.js.map": "/skyofskill/static/js/661.3048c0f1.chunk.js.map",
+    "661.878b894d.chunk.js.map": "/skyofskill/static/js/661.878b894d.chunk.js.map",
     "730.1bf3d4b0.chunk.css.map": "/skyofskill/static/css/730.1bf3d4b0.chunk.css.map",
-    "730.39832247.chunk.js.map": "/skyofskill/static/js/730.39832247.chunk.js.map",
+    "730.dd5822fb.chunk.js.map": "/skyofskill/static/js/730.dd5822fb.chunk.js.map",
     "452.1776a193.chunk.css.map": "/skyofskill/static/css/452.1776a193.chunk.css.map",
     "452.2f3e3a15.chunk.js.map": "/skyofskill/static/js/452.2f3e3a15.chunk.js.map",
     "404.e07c6a69.chunk.css.map": "/skyofskill/static/css/404.e07c6a69.chunk.css.map",
@@ -42,6 +42,6 @@
   },
   "entrypoints": [
     "static/css/main.26f5cf9d.css",
-    "static/js/main.ef05bb44.js"
+    "static/js/main.5f658bee.js"
   ]
 }
