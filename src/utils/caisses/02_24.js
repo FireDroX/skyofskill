@@ -55,7 +55,8 @@ const caisse = {
       dontLeaveOnDeath: true,
     },
     {
-      defaultName: "???",
+      name: "&r&f&ki&r&6⊹&r&e⛃&r&6⊹&r&f&ki&r&6 &l A&r&e&lr&r&6&lc&r&e&l d&r&6&le&r&e&l M&r&6&li&r&e&ld&r&6&la&r&e&ls &r&f&ki&r&6⊹&r&e⛃&r&6⊹&r&f&ki",
+      defaultName: "Arc de Midas",
       type: 6,
       enchants: [
         "&bPunch &r&3VI&r",
