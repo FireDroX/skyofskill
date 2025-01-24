@@ -18,6 +18,7 @@ export const mines = [
   { name: "Mine p85", value: 36700 },
   { name: "Mine p90", value: 40000 },
   { name: "Mine p95", value: 43500 },
+  { name: "Mine p100", value: 46000 },
   { name: "Mine A", value: 9 },
   { name: "Mine B", value: 10 },
   { name: "Mine C", value: 15 },
@@ -166,4 +167,9 @@ export const prestiges = [
   { name: "P93", prix: 330000000000000 },
   { name: "P94", prix: 340000000000000 },
   { name: "P95", prix: 480000000000000 },
+  { name: "P96", prix: 400000000000000 },
+  { name: "P97", prix: 600000000000000 },
+  { name: "P98", prix: 800000000000000 },
+  { name: "P99", prix: 1000000000000000 },
+  { name: "P100", prix: 2000000000000000 },
 ];

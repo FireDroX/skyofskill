@@ -16,7 +16,7 @@ const PrestigesPrice = ({
 }) => {
   const navigate = useNavigate();
   const location = useLocation();
-  const MAX_PRESTIGE = 95;
+  const MAX_PRESTIGE = 100;
 
   const calcPrice = useCallback(() => {
     const current =
