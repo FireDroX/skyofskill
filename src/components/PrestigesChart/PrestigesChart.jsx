@@ -33,8 +33,8 @@ const PrestigesChart = ({ page, setPage }) => {
   }, [isSmallSize, setPage]);
 
   const newPrestige = [[], []];
-  for (let i = 0; i < chartPrestiges.length; i += 19) {
-    newPrestige[0].push(chartPrestiges.slice(i, i + 19));
+  for (let i = 0; i < chartPrestiges.length; i += 10) {
+    newPrestige[0].push(chartPrestiges.slice(i, i + 10));
   }
   for (let i = 0; i < chartPrestiges.length; i += 5) {
     newPrestige[1].push(chartPrestiges.slice(i, i + 5));
