@@ -14,6 +14,7 @@ import {
 } from "../../utils/functions";
 
 const caissesDates = [
+  "02_25",
   "01_25",
   "12_24",
   "11_24",
