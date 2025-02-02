@@ -161,6 +161,20 @@ const caisse = {
       ],
       dontLeaveOnDeath: true,
     },
+    {
+      name: "&r&7&ki&r&8♱&r&9✧&r&8♱&r&7&ki&r&7&l C&r&8&lo&r&9&ll&r&7&ll&r&8&le&r&9&lc&r&7&lt&r&8&le&r&9&lu&r&7&ls&r&8&le &r&9&ld&r&7&le&r&8&l S&r&9&la&r&7&lp&r&8&lh&r&9&li&r&7&lr &r&7&ki&r&8♱&r&9✧&r&8♱&r&7&ki",
+      defaultName: "Collecteuse de Saphir",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&35000&r",
+        "&eSolidité &r&65000&r",
+        "&aFortune &r&25000&r",
+        "",
+        "",
+        "&8▶ &r&fAchète &r&e&l40,000 Tokens&r",
+      ],
+      dontLeaveOnDeath: false,
+    },
   ],
 };
 
