@@ -161,6 +161,20 @@ const caisse = {
       ],
       dontLeaveOnDeath: true,
     },
+    {
+      name: "&r&1&ki&r&6&ki&r&f&l&kt&r&1:&r&6◤◥&r&1:&r&f&kt&r&6&ki&r&1&ki&r&1&l N&r&f&li&r&6&lg&r&1&lh&r&f&lt&r&6&lh&r&1&la&r&f&lw&r&6&lk&r&1&ls &r&1&ki&r&6&ki&r&f&l&kt&r&1:&r&6◤◥&r&1:&r&f&kt&r&6&ki&r&1&ki",
+      defaultName: "Nighthawks",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&35250&r",
+        "&eSolidité &r&65250&r",
+        "&aFortune &r&25250&r",
+        "",
+        "",
+        "&8▶ &r&fAchète &r&e&l30,000 Tokens&r",
+      ],
+      dontLeaveOnDeath: false,
+    },
   ],
 };
 
