@@ -152,7 +152,7 @@ const caisse = {
     },
     {
       name: "&r&6&kii&r&e⦚&r&6◬&r&e⦚&r&6&kii&r&e &l Wi&r&7&ln&r&6&lc&r&e&lhe&r&7&ls&r&6&lt&r&e&ler&r&7&l d&r&6&lu &r&e&lDé&r&6&ls&r&7&le&r&e&lrt&r&7&le&r&6&lu&r&e&lr &r&6&kii&r&e⦚&r&6◬&r&e⦚&r&6&kii",
-      defaultName: "Wubcgester du Déserteur",
+      defaultName: "Winchester du Déserteur",
       type: 6,
       enchants: [
         "&bPunch &r&3VIII&r",
