@@ -161,6 +161,20 @@ const caisse = {
       ],
       dontLeaveOnDeath: true,
     },
+    {
+      name: "&r&4&ki&r&8&ki&r&c&l&kt&r&4⬆&r&c☣&r&4⬆&r&c&kt&r&8&ki&r&4&ki&r&c&l Dy&r&8&ln&r&4&la&r&c&lmi&r&8&lt&r&4&le &r&c&ldu &r&8&lB&r&4&la&r&c&lnd&r&8&li&r&4&lt &r&4&ki&r&8&ki&r&c&l&kt&r&4⬆&r&c☣&r&4⬆&r&c&kt&r&8&ki&r&4&ki",
+      defaultName: "Dynamite du Bandit",
+      type: 7,
+      enchants: [
+        "&bEfficency &r&35500&r",
+        "&eSolidité &r&65500&r",
+        "&aFortune &r&25500&r",
+        "",
+        "",
+        "&8▶ &r&fAchète &r&e&l30,000 Tokens&r",
+      ],
+      dontLeaveOnDeath: false,
+    },
   ],
 };
 
